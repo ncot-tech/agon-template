@@ -1,0 +1,3 @@
+Changelog for %PROJNAME%
+
+%DATE% - Project created by automated tooling
