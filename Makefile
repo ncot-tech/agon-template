@@ -2,8 +2,8 @@
 # Makefile Options
 # ----------------------------
 
-NAME = %PROJNAME%
-DESCRIPTION = "%DESCRIPTION%"
+NAME = ${REPO_NAME_SNAKE}
+DESCRIPTION = "${REPO_DESCRIPTION}"
 COMPRESSED = NO
 
 CFLAGS = -Wall -Wextra -Oz

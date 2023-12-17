@@ -1,10 +1,3 @@
-/*
- * Title:		%LONGPROJNAME%
- * Author:		%AUTHOR%
- * Created:		%DATE%
- *
- */
- 
 #include <stdio.h>
 
 // Parameters:

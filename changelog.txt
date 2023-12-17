@@ -1,3 +1,2 @@
-Changelog for %PROJNAME%
+Changelog for ${REPO_NAME}
 
-%DATE% - Project created by automated tooling
