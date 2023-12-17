@@ -1,0 +1,23 @@
+RGB2222 format images
+
+Save them as whatever then use imagemagick to convert to png
+
+convert blah.png -posterize 4 output.png
+
+Then run them through the png2rgb.py tool which will output a picture format of my own making which consists of
+
+Header: 10 bytes
+
+NCOTB - magic string meaning RGB2222 bitmap image
+WIDTH - 16 bit little endian
+HEIGHT - 16 bit little endian
+BPP - 1 byte
+
+Pixel Data: Rest of file
+
+1 byte per pixel, RGBA 2 bits each
+
+To use this, read the first 10 bytes, check it starts with "NCOTB".
+Then use the width * height * bpp to know the size of the image data in bytes.
+
+
