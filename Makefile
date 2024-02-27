@@ -2,7 +2,7 @@
 # Makefile Options
 # ----------------------------
 
-NAME = agon-light-test
+NAME = agon-test
 DESCRIPTION = "Test for the Agon Light C Compiler"
 COMPRESSED = NO
 
@@ -35,4 +35,8 @@ inst_sd: $(BINDIR)/$(TARGETBIN)
 	cp $(BINDIR)/autoexec.txt $(SD_CARD)
 
 emulate: autoexec.txt inst_emu
-	gnome-terminal --working-directory=$(EMULATOR_DIR) -- ./$(EMULATOR_BIN) $(EMULATOR_FLAGS)
+	if [ `uname -n` = "penguin" ]; then \
+		cd $(EMULATOR_DIR) && ./$(EMULATOR_BIN) $(EMULATOR_FLAGS); \
+	else \
+		gnome-terminal --working-directory=$(EMULATOR_DIR) -- ./$(EMULATOR_BIN) $(EMULATOR_FLAGS); \
+	fi

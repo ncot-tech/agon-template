@@ -1,45 +1,45 @@
-#include <stdio.h>
-
-// Parameters:
-// - argc: Argument count
-// - argv: Pointer to the argument string - zero terminated, parameters separated by spaces
-//
-
 #include <agon/vdp_vdu.h>
 #include <agon/vdp_key.h>
 #include <stdio.h>
 #include <mos_api.h>
+#include "graphics.h"
+#include <math.h>
 
-#define SC_MODE 8
-#define SC_WIDTH 320
-#define SC_HEIGHT 240
+// https://github.com/AgonConsole8/agon-docs/blob/main/VDP---Screen-Modes.md
+#define SC_MODE 136
+#define SC_WIDTH 1280
+#define SC_HEIGHT 1024
 
 
 static volatile SYSVAR *sv;
 
-int main(int argc, char * argv[])
-//int main(void)
+void draw_colour_bars()
+{
+    uint8_t c = 0;
+    for (int y = 0; y < SC_HEIGHT; y+= 8) {
+        vdp_plot_rect(c, 0, y, SC_WIDTH, 8);
+        c++;
+    }
+}
+
+int main(void)
 {
 	
 	sv = vdp_vdu_init();
-        if ( vdp_key_init() == -1 ) return 1;
+    if ( vdp_key_init() == -1 ) return 1;
 
-        vdp_mode( SC_MODE );
-        vdp_clear_screen();
-        vdp_logical_scr_dims( false );
-        vdp_cursor_enable( false );
-	
-	printf("Hello World!\n\r");
+    set_video_mode(SC_MODE);
+    vdp_clear_screen();
+    vdp_logical_scr_dims( false );
+    vdp_cursor_enable( false );
 
-	printf("Arguments:\n\r");
-	printf("- argc: %d\n\r", argc);
-	
-	for(int i = 0; i < argc; i++)
-	{
-		printf("- argv[%d]: %s\n\r", i, argv[i]);
-	}
-
-	while (1) {}
+	while (1) {
+        draw_colour_bars();
+        waitvblank();
+        flip_buffer();
+    }
 
 	return 0;
 }
+
+// # vim: set expandtab tabstop=4:
