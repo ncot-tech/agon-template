@@ -16,8 +16,8 @@ static volatile SYSVAR *sv;
 void draw_colour_bars()
 {
     uint8_t c = 0;
-    for (int y = 0; y < SC_HEIGHT; y+= 8) {
-        vdp_plot_rect(c, 0, y, SC_WIDTH, 8);
+    for (int y = 0; y < SC_HEIGHT; y+= 16) {
+        vdp_plot_rect(c, 0, y, SC_WIDTH, 16);
         c++;
     }
 }
@@ -30,7 +30,7 @@ int main(void)
 
     set_video_mode(SC_MODE);
     vdp_clear_screen();
-    vdp_logical_scr_dims( false );
+    vdp_logical_scr_dims( true );
     vdp_cursor_enable( false );
 
 	while (1) {
