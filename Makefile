@@ -2,7 +2,7 @@
 # Makefile Options
 # ----------------------------
 
-NAME = agon-light-test
+NAME = agon-test
 DESCRIPTION = "Test for the Agon Light C Compiler"
 COMPRESSED = NO
 
