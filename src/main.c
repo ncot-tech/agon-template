@@ -2,7 +2,7 @@
 #include <agon/vdp_key.h>
 #include <stdio.h>
 #include <mos_api.h>
-#include "graphics.h"
+#include "graphics/graphics.h"
 #include <math.h>
 
 // https://github.com/AgonConsole8/agon-docs/blob/main/VDP---Screen-Modes.md
