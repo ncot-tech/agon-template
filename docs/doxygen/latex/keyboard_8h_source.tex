@@ -1,0 +1,69 @@
+\hypertarget{keyboard_8h_source}{}\doxysection{keyboard.\+h}
+\label{keyboard_8h_source}\index{src/input/keyboard.h@{src/input/keyboard.h}}
+\mbox{\hyperlink{keyboard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_KEYBOARD\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_KEYBOARD\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{keyboard_8h_a8f5b922fa554929d59b4aed09ddfdabb}{current\_keystates}}[]; }
+\DoxyCodeLine{7 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{keyboard_8h_af72a27c0afd2db2c7bf510c71d26c209}{previous\_keystates}}[]; }
+\DoxyCodeLine{8 \textcolor{keyword}{extern} \textcolor{keyword}{volatile} uint8\_t *\mbox{\hyperlink{keyboard_8h_a706dd1763017e2307cd4085b6a5a7189}{keymap}}; }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define RAW\_KEY\_UP (*(keymap+7) \& 0x02)}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define RAW\_KEY\_DOWN (*(keymap+5) \& 0x02)}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define RAW\_KEY\_LEFT (*(keymap+3) \& 0x02)}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define RAW\_KEY\_RIGHT (*(keymap+15) \& 0x02)}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define RAW\_KEY\_SPACE (*(keymap+12) \& 0x04)}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define RAW\_KEY\_W (*(keymap+4) \& 0x02)}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define RAW\_KEY\_S (*(keymap+10) \& 0x02)}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define RAW\_KEY\_A (*(keymap+8) \& 0x02)}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define RAW\_KEY\_D (*(keymap+6) \& 0x04)}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define RAW\_KEY\_LCTRL (*keymap \& 0x10)}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define RAW\_KEY\_LALT (*keymap \& 0x20)}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define RAW\_KEY\_LSHIFT (*keymap \& 0x08)}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define RAW\_KEY\_RSHIFT (*keymap \& 0x40)}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define RAW\_KEY\_RCTRL (*keymap \& 0x80)}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define RAW\_KEY\_RALT (*(keymap+1) \& 0x01)}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define RAW\_KEY\_ESC (*(keymap+14) \& 0x01)}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define RAW\_KEY\_Z (*(keymap+12) \& 0x02)}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define RAW\_KEY\_X (*(keymap+8) \& 0x04)}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define RAW\_KEY\_C (*(keymap+10) \& 0x04)}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define KEY\_UP 0}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define KEY\_DOWN 1}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define KEY\_LEFT 2}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define KEY\_RIGHT 3}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define KEY\_SPACE 4}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define KEY\_W 5}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define KEY\_S 6}}
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define KEY\_A 7}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define KEY\_D 10}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define KEY\_LCTRL 11}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define KEY\_LALT 12}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define KEY\_LSHIFT 13}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define KEY\_RSHIFT 14}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define KEY\_RCTRL 15}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define KEY\_RALT 16}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define KEY\_ESC 17}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define KEY\_Z 21}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define KEY\_X 22}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define KEY\_C 23}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define TOGGLE\_BIT(dest, source, bit\_pos) (dest = (dest \& \string~(1 << (bit\_pos))) | (!!source << (bit\_pos)))}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#define BIT\_CHECK(b,bit\_pos) ((b) \&   (1<<(bit\_pos)))}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define IS\_KEY\_HELD(keycode) (BIT\_CHECK(current\_keystates[(keycode) / 10], (keycode) \% 10))}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define WAS\_KEY\_HELD(keycode) (BIT\_CHECK(previous\_keystates[(keycode) / 10], (keycode) \% 10))}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define IS\_KEY\_PRESSED(keycode) (IS\_KEY\_HELD(keycode) \&\& !WAS\_KEY\_HELD(keycode))}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{64 \textcolor{keywordtype}{void} \mbox{\hyperlink{keyboard_8h_a6bcd625c19ec94a2ea79cd6fe4f4d673}{keyboard\_update}}();}
+\DoxyCodeLine{70 \textcolor{keywordtype}{void} \mbox{\hyperlink{keyboard_8h_aaeb4e4a3c4813ee1efc6b98bba9ec781}{keyboard\_init}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

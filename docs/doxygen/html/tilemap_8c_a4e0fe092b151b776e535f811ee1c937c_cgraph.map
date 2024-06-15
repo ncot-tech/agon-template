@@ -1,0 +1,6 @@
+<map id="tilemap_draw" name="tilemap_draw">
+<area shape="rect" id="node1" title="Draws a tilemap on the screen." alt="" coords="5,31,119,57"/>
+<area shape="rect" id="node2" href="$maths__utils_8c.html#a82ef8eaa5cae46667d35ff40383dab03" title="Maps one range of integers to another." alt="" coords="208,5,259,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="167,56,300,83"/>
+<area shape="rect" id="node4" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="348,56,437,83"/>
+</map>

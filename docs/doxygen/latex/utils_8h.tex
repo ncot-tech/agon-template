@@ -1,0 +1,175 @@
+\hypertarget{utils_8h}{}\doxysection{src/vdp/utils.h File Reference}
+\label{utils_8h}\index{src/vdp/utils.h@{src/vdp/utils.h}}
+{\ttfamily \#include $<$agon/vdp\+\_\+vdu.\+h$>$}\newline
+{\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8h_ad1c403a5b0d221c03e8563f389d74b10}{write16bit}} (int16\+\_\+t w)
+\begin{DoxyCompactList}\small\item\em Writes a 16 bit value to the VDP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_af71d49fed6cebb52fc826569e40c218a}{vdp\+\_\+swap\+\_\+screen\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em VDU 23,0,C3 -\/ Swap screen buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_a2468052f8acab5e72b4b28e161cee0d0}{vdp\+\_\+set\+\_\+screen\+\_\+mode}} (uint8\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Changes the current screen mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_a606aa6336a757ee6ad2f3b446252b486}{vdp\+\_\+enable\+\_\+logical\+\_\+screen\+\_\+scaling}} (uint8\+\_\+t on)
+\begin{DoxyCompactList}\small\item\em Turn logical screen scaling on and off, where 1=on and 0=off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_a85a8b87e20d294c313faf5bc96496185}{vdp\+\_\+move\+\_\+origin}} (int16\+\_\+t x, int16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Set graphics origin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8h_ac67f9f9547089e2d20eb020272549f2a}{vdp\+\_\+gcol}} (uint8\+\_\+t colour)
+\begin{DoxyCompactList}\small\item\em Changes graphics colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8h_a606aa6336a757ee6ad2f3b446252b486}\label{utils_8h_a606aa6336a757ee6ad2f3b446252b486}} 
+\index{utils.h@{utils.h}!vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}}
+\index{vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{vdp\_enable\_logical\_screen\_scaling()}{vdp\_enable\_logical\_screen\_scaling()}}
+{\footnotesize\ttfamily void vdp\+\_\+enable\+\_\+logical\+\_\+screen\+\_\+scaling (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{on }\end{DoxyParamCaption})}
+
+
+
+Turn logical screen scaling on and off, where 1=on and 0=off. 
+
+VDU 23, 0, \&C0, n
+
+When logical scaling is turned off, the graphics system will no longer use the 1280x1024 logical coordinate system and instead use pixel coordinates. The screen origin point at 0,0 will change to be the top left of the screen, and the Y axis will go down the screen instead of up.
+
+
+\begin{DoxyParams}{Parameters}
+{\em on} & \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_a606aa6336a757ee6ad2f3b446252b486_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8h_ac67f9f9547089e2d20eb020272549f2a}\label{utils_8h_ac67f9f9547089e2d20eb020272549f2a}} 
+\index{utils.h@{utils.h}!vdp\_gcol@{vdp\_gcol}}
+\index{vdp\_gcol@{vdp\_gcol}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{vdp\_gcol()}{vdp\_gcol()}}
+{\footnotesize\ttfamily void vdp\+\_\+gcol (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+
+
+
+Changes graphics colour. 
+
+This is just here for completeness, most drawing commands have a colour parameter and will do this for you.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{utils_8h_a85a8b87e20d294c313faf5bc96496185}\label{utils_8h_a85a8b87e20d294c313faf5bc96496185}} 
+\index{utils.h@{utils.h}!vdp\_move\_origin@{vdp\_move\_origin}}
+\index{vdp\_move\_origin@{vdp\_move\_origin}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{vdp\_move\_origin()}{vdp\_move\_origin()}}
+{\footnotesize\ttfamily void vdp\+\_\+move\+\_\+origin (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Set graphics origin. 
+
+VDU 29, x; y;
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X Coordinate of new origin \\
+\hline
+{\em y} & Y Coordinate of new origin \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{utils_8h_a85a8b87e20d294c313faf5bc96496185_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8h_a2468052f8acab5e72b4b28e161cee0d0}\label{utils_8h_a2468052f8acab5e72b4b28e161cee0d0}} 
+\index{utils.h@{utils.h}!vdp\_set\_screen\_mode@{vdp\_set\_screen\_mode}}
+\index{vdp\_set\_screen\_mode@{vdp\_set\_screen\_mode}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{vdp\_set\_screen\_mode()}{vdp\_set\_screen\_mode()}}
+{\footnotesize\ttfamily void vdp\+\_\+set\+\_\+screen\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Changes the current screen mode. 
+
+See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode number. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_a2468052f8acab5e72b4b28e161cee0d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8h_af71d49fed6cebb52fc826569e40c218a}\label{utils_8h_af71d49fed6cebb52fc826569e40c218a}} 
+\index{utils.h@{utils.h}!vdp\_swap\_screen\_buffer@{vdp\_swap\_screen\_buffer}}
+\index{vdp\_swap\_screen\_buffer@{vdp\_swap\_screen\_buffer}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{vdp\_swap\_screen\_buffer()}{vdp\_swap\_screen\_buffer()}}
+{\footnotesize\ttfamily void vdp\+\_\+swap\+\_\+screen\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+VDU 23,0,C3 -\/ Swap screen buffers. 
+
+Only does something with double buffered screen modes. See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}} Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_af71d49fed6cebb52fc826569e40c218a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{utils_8h_ad1c403a5b0d221c03e8563f389d74b10}\label{utils_8h_ad1c403a5b0d221c03e8563f389d74b10}} 
+\index{utils.h@{utils.h}!write16bit@{write16bit}}
+\index{write16bit@{write16bit}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{write16bit()}{write16bit()}}
+{\footnotesize\ttfamily void write16bit (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{w }\end{DoxyParamCaption})}
+
+
+
+Writes a 16 bit value to the VDP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The 16 bit value to write \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h_ad1c403a5b0d221c03e8563f389d74b10_icgraph}
+\end{center}
+\end{figure}

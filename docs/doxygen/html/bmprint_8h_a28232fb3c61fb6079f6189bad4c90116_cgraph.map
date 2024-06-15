@@ -1,0 +1,5 @@
+<map id="bm_put_string" name="bm_put_string">
+<area shape="rect" id="node1" title="Draws a string of characters on the screen, spaced apart an appropriate amount." alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="172,5,305,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="353,5,443,32"/>
+</map>

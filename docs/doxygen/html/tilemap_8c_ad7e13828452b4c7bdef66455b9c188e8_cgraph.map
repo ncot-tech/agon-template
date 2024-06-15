@@ -1,0 +1,4 @@
+<map id="tilemap_get_tileid" name="tilemap_get_tileid">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$maths__utils_8c.html#a82ef8eaa5cae46667d35ff40383dab03" title="Maps one range of integers to another." alt="" coords="196,5,247,32"/>
+</map>

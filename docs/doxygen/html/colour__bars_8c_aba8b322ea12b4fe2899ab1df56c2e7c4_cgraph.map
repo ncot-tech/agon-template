@@ -1,0 +1,6 @@
+<map id="draw_palette" name="draw_palette">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$colour__bars_8c.html#a01913054a73767b81ad3ff857feb19c6" title=" " alt="" coords="163,5,304,32"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a4f96120c506f2b22cc3f4c7792e0d86a" title=" " alt="" coords="352,5,465,32"/>
+<area shape="rect" id="node4" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="513,5,603,32"/>
+</map>

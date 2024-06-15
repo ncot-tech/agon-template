@@ -3,9 +3,9 @@
 
 #include <stdint.h>
 
-extern uint8_t current_keystates[];
-extern uint8_t previous_keystates[];
-extern volatile uint8_t *keymap;
+extern uint8_t current_keystates[]; /**< Array of the current keyboard states */
+extern uint8_t previous_keystates[]; /**< Array of the keyboard states in the previous frame */
+extern volatile uint8_t *keymap; /**< The raw keymap data from the OS */
 
 #define RAW_KEY_UP (*(keymap+7) & 0x02)
 #define RAW_KEY_DOWN (*(keymap+5) & 0x02)
@@ -58,7 +58,15 @@ extern volatile uint8_t *keymap;
 #define WAS_KEY_HELD(keycode) (BIT_CHECK(previous_keystates[(keycode) / 10], (keycode) % 10))
 #define IS_KEY_PRESSED(keycode) (IS_KEY_HELD(keycode) && !WAS_KEY_HELD(keycode))
 
-void update_keys();
-void init_keys();
+/**
+ * Sets up the keystates arrays.
+ */
+void keyboard_update();
+/**
+ * Updates the pointer to the MOS keyboard map.
+ * 
+ * Call this at the start of your Main function before trying to use the keyboard_update function.
+ */
+void keyboard_init();
 
 #endif

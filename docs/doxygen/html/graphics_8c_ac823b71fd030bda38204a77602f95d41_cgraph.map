@@ -1,0 +1,4 @@
+<map id="vdp_plot_point" name="vdp_plot_point">
+<area shape="rect" id="node1" title="Plots a point on the screen using the VDP." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="173,5,263,32"/>
+</map>

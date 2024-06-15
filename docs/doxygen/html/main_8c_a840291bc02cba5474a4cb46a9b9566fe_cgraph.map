@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,60,260"/>
+<area shape="rect" id="node2" href="$colour__bars_8c.html#a8c3915a46635ab2c06bab56e915d7c8e" title=" " alt="" coords="114,56,255,83"/>
+<area shape="rect" id="node8" href="$colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="120,107,249,133"/>
+<area shape="rect" id="node11" href="$utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0" title="Changes the current screen mode." alt="" coords="545,157,716,184"/>
+<area shape="rect" id="node12" href="$colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63" title=" " alt="" coords="108,208,261,235"/>
+<area shape="rect" id="node13" href="$screen_8c.html#a3e60acd7192fba1d2dcf0dd167afd8b8" title=" " alt="" coords="127,259,242,285"/>
+<area shape="rect" id="node14" href="$keyboard_8c.html#aaeb4e4a3c4813ee1efc6b98bba9ec781" title="Updates the pointer to the MOS keyboard map." alt="" coords="128,309,241,336"/>
+<area shape="rect" id="node15" href="$keyboard_8c.html#a6bcd625c19ec94a2ea79cd6fe4f4d673" title="Sets up the keystates arrays." alt="" coords="335,335,472,361"/>
+<area shape="rect" id="node16" href="$screen_8c.html#ad0a0d65fe13242143deb13586e5bc7f4" title=" " alt="" coords="133,411,236,437"/>
+<area shape="rect" id="node3" href="$colour__bars_8c.html#aba8b322ea12b4fe2899ab1df56c2e7c4" title=" " alt="" coords="349,5,458,32"/>
+<area shape="rect" id="node7" href="$utils_8c.html#af71d49fed6cebb52fc826569e40c218a" title="VDU 23,0,C3 &#45; Swap screen buffers." alt="" coords="309,56,497,83"/>
+<area shape="rect" id="node4" href="$colour__bars_8c.html#a01913054a73767b81ad3ff857feb19c6" title=" " alt="" coords="560,5,701,32"/>
+<area shape="rect" id="node5" href="$graphics_8c.html#a4f96120c506f2b22cc3f4c7792e0d86a" title=" " alt="" coords="764,5,877,32"/>
+<area shape="rect" id="node6" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="925,5,1015,32"/>
+<area shape="rect" id="node9" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="320,107,487,133"/>
+<area shape="rect" id="node10" href="$utils_8c.html#a606aa6336a757ee6ad2f3b446252b486" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="556,91,705,133"/>
+</map>

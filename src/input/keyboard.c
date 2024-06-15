@@ -7,13 +7,13 @@ volatile uint8_t *keymap;
 uint8_t previous_keystates[3];
 uint8_t current_keystates[3];
 
-void init_keys()
+void keyboard_init()
 {
     keymap = mos_getkbmap();
-    update_keys();
+    keyboard_update();
 }
 
-void update_keys()
+void keyboard_update()
 {
 	previous_keystates[0] = current_keystates[0];
 	previous_keystates[1] = current_keystates[1];

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Agon",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "../CEdev/include"
+            ],
+            "defines": [],
+            "compilerPath": "../CEdev/bin/ez80-clang",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

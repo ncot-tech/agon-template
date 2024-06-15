@@ -1,10 +1,12 @@
 #include "bmprint.h"
 #include <stdarg.h>
 #include <string.h>
-#include "xitoa.h"
-#include "graphics.h"
+#include <mos_api.h>
+#include <stdlib.h>
+#include "../maths/xitoa.h"
+#include "../vdp/bitmaps.h"
 
-void load_font_def(char *font_def, font *font)
+void load_font_def(char *font_def, Font *font)
 {
     uint8_t file = mos_fopen(font_def, 0x01);
 	if (!file) {
@@ -38,13 +40,13 @@ void load_font_def(char *font_def, font *font)
             font->font_name, font->char_width, font->char_height, font->char_count, font->start_bitmap_id);
 }
 
-uint8_t bm_load_font(char *font_def, font *font)
+uint8_t bm_load_font(char *font_def, Font *font)
 {
     load_font_def(font_def, font);
 
-    bitmap_load_result res;
+    BITMAP_LOAD_RESULT res;
 
-    ncotb_header image_header;
+    Bitmap_header image_header;
     
     // Cut up the font_def to remove the .fon and then replace with
     // the 3 digit count and .222
@@ -63,20 +65,20 @@ uint8_t bm_load_font(char *font_def, font *font)
 			printf ("Failed to load %s\n", fontname);
 			return 1;
 		}
-		assign_buffer_to_bitmap(font->start_bitmap_id + i,RGBA2222,image_header.width,image_header.height);
+		vdp_assign_buffer_to_bitmap(font->start_bitmap_id + i,RGBA2222,image_header.width,image_header.height);
                 vdp_plot_bitmap(font->start_bitmap_id + i, 0,image_header.height);
 	}
 
     return 0;
 }
 
-void bm_put_char(font *font, int16_t screenx, int16_t screeny, char c)
+void bm_put_char(Font *font, int16_t screenx, int16_t screeny, char c)
 {
     int id = ((c-32) <= 58) ? (c-32) : 10;
     vdp_plot_bitmap(font->start_bitmap_id + id, screenx, screeny);
 }
 
-void bm_put_string(font *font, int16_t screenx, int16_t screeny, char *s)
+void bm_put_string(Font *font, int16_t screenx, int16_t screeny, char *s)
 {
     char *currentChar = s;
     int xpos = 0;
@@ -95,7 +97,7 @@ void bm_put_string(font *font, int16_t screenx, int16_t screeny, char *s)
     }
 }
 
-void bm_printf(font *font, int16_t screenx, int16_t screeny, char *format, ...)
+void bm_printf(Font *font, int16_t screenx, int16_t screeny, char *format, ...)
 {
     char tmpStr[33];
     int xpos = 0;

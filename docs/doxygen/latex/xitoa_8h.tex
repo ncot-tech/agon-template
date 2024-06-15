@@ -1,0 +1,48 @@
+\hypertarget{xitoa_8h}{}\doxysection{src/maths/xitoa.h File Reference}
+\label{xitoa_8h}\index{src/maths/xitoa.h@{src/maths/xitoa.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{xitoa_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{xitoa_8h_a07f48abaff3d03e301b7cba644a97639}{xitoa}} (int value, char $\ast$result, int base)
+\begin{DoxyCompactList}\small\item\em Converts an integer to another number base as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{xitoa_8h_a07f48abaff3d03e301b7cba644a97639}\label{xitoa_8h_a07f48abaff3d03e301b7cba644a97639}} 
+\index{xitoa.h@{xitoa.h}!xitoa@{xitoa}}
+\index{xitoa@{xitoa}!xitoa.h@{xitoa.h}}
+\doxysubsubsection{\texorpdfstring{xitoa()}{xitoa()}}
+{\footnotesize\ttfamily char $\ast$ xitoa (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{char $\ast$}]{result,  }\item[{int}]{base }\end{DoxyParamCaption})}
+
+
+
+Converts an integer to another number base as a string. 
+
+This will convert an integer to other number bases and return a string. Specify the base, for example \textquotesingle{}16\textquotesingle{} for hex, \textquotesingle{}2\textquotesingle{} for binary. No memory allocation is done, and no bounds checking is performed, so make sure the string you pass in is long enough.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em value} & The value to convert. \\
+\hline
+\mbox{\texttt{ in}}  & {\em result} & A pointer to a long enough string for the output. \\
+\hline
+\mbox{\texttt{ in}}  & {\em base} & The base to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to result 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{xitoa_8h_a07f48abaff3d03e301b7cba644a97639_icgraph}
+\end{center}
+\end{figure}

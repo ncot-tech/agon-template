@@ -1,0 +1,2 @@
+* Incorporate error screen into places where fatal errors can happen
+* Create a loading / startup screen so people know what is going on while stuff loads
