@@ -3,15 +3,10 @@
 #include <stdlib.h>
 #include "buffers.h"
 #include "utils.h"
+#include "../debug/debug.h"
 
-BITMAP_LOAD_RESULT load_bitmap_into_buffer(uint16_t buffer_id, char *filename, Bitmap_header *header_data)
+BITMAP_LOAD_RESULT load_bitmap_into_buffer_fp(uint16_t buffer_id, uint8_t file, Bitmap_header *header_data)
 {
-
-    uint8_t file = mos_fopen(filename, 0x01);
-    if (!file) {
-        return BAD_FILE;
-    }
-
     if (!header_data) {
         return MALLOC_FAIL;
     }
@@ -36,8 +31,23 @@ BITMAP_LOAD_RESULT load_bitmap_into_buffer(uint16_t buffer_id, char *filename, B
         mos_fread(file, buf, header_data->width);
         add_stream_to_buffer(buffer_id, buf, header_data->width);
     }
-    mos_fclose(file);
+
     return SUCCESS;
+}
+
+BITMAP_LOAD_RESULT load_bitmap_into_buffer(uint16_t buffer_id, char *filename, Bitmap_header *header_data)
+{
+    BITMAP_LOAD_RESULT res = SUCCESS;
+
+    uint8_t file = mos_fopen(filename, 0x01);
+    if (!file) {
+        return BAD_FILE;
+    }
+
+    res = load_bitmap_into_buffer_fp(buffer_id, file, header_data);
+    
+    mos_fclose(file);
+    return res;
 }
 
 void vdp_draw_current_bitmap(uint16_t x, uint16_t y)
@@ -72,4 +82,10 @@ void vdp_assign_buffer_to_bitmap(uint16_t buffer_id, BITMAP_FORMAT bitmap_format
     write16bit(width);
     write16bit(height);
     putch(bitmap_format);
+}
+
+void debug_print_bitmap(Bitmap_header *header)
+{
+    debug_printf("Bitmap width %d, height %d, bpp %d\n",
+        header->width, header->height, header->bpp);
 }

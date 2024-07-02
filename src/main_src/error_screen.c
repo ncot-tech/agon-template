@@ -10,7 +10,6 @@
  */
 
 void error_screen_init(void) {
-    debug_print("error_screen_init\n");
     change_screen_mode(0, 1, 1);
     vdp_colour(134);
     vdp_clear_screen();

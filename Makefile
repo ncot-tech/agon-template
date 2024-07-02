@@ -35,9 +35,11 @@ DIST=dist
 IMAGES=data/images
 FONTS=data/fonts
 TILES=data/tiles
+SPRITES=data/sprites
 PNG2RGB=tools/png2rgb.py
 MAKE_TILEMAP=tools/make_tilemap.py
 MAKE_FONT=tools/make_font.py
+MAKE_SPRITE=tools/make_sprite.py
 COMPRESSED = NO
 VERSION_FILE = src/version.h
 DOXYFILE = Doxyfile
@@ -74,7 +76,14 @@ fonts: $(wildcard $(FONTS)/*)
 		$(MAKE_FONT) $$file $(DIST)/$(NAME)/fonts $(FONT_CHAR_WIDTH) $(FONT_CHAR_HEIGHT) $(FONT_BITMAP_START_ID); \
     done
 
-assets: fonts tiles images
+sprites: $(wildcard $(SPRITES)/*.json)
+	mkdir -p $(DIST)/$(NAME)/sprites
+	@for file in $^; do \
+		echo "Processing $$file into $(DIST)/$(NAME)/sprites"; \
+		$(MAKE_SPRITE) $$file $(DIST)/$(NAME)/sprites; \
+    done
+
+assets: fonts tiles images sprites
 
 distclean: clean
 	rm -rf $(DIST)

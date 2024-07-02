@@ -6,16 +6,21 @@
 #include "input/keyboard.h"
 #include "main_src/colour_bars.h"
 #include "main_src/error_screen.h"
-#include "debug.h"
+#include "debug/debug.h"
+#include "global.h"
 
-volatile SYSVAR *sv;
+
 
 int main(void)
 {
     // Initialise various parts of the system
-	sv = vdp_vdu_init();
+	globals.sysvars = vdp_vdu_init();
     if ( vdp_key_init() == -1 ) return 1;
     keyboard_init();
+
+    log_init("debug.txt");
+    debug_printf("I am a line of text\n");
+    debug_printf("I am more text\n");
 
     // You need to do this for every screen in your program
     // See the docs for the screen state machine for more info

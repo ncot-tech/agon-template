@@ -24,7 +24,7 @@ typedef enum {
     RGBA2222,
     MONO
 } BITMAP_FORMAT;
-
+void debug_print_bitmap(Bitmap_header *header);
 void vdp_assign_buffer_to_bitmap(uint16_t buffer_id, BITMAP_FORMAT bitmap_format, uint16_t width, uint16_t height);
 
 /**
@@ -39,16 +39,8 @@ void vdp_assign_buffer_to_bitmap(uint16_t buffer_id, BITMAP_FORMAT bitmap_format
  * @return BITMAP_LOAD_RESULT 
  */
 BITMAP_LOAD_RESULT load_bitmap_into_buffer(uint16_t buffer_id, char *filename, Bitmap_header *header_data);
+BITMAP_LOAD_RESULT load_bitmap_into_buffer_fp(uint16_t buffer_id, uint8_t file, Bitmap_header *header_data);
 
-void vdp_draw_current_bitmap(uint16_t x, uint16_t y);
 
-/**
- * @brief Plots a VDP bitmap to the screen. Also selects the bitmap first.
- * 
- * @param buffer_id 
- * @param x 
- * @param y 
- */
-void vdp_plot_bitmap(uint16_t buffer_id, int16_t x, int16_t y);
 
 #endif

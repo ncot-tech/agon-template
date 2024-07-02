@@ -2,9 +2,14 @@
 #include "colour_bars.h"
 #include "../vdp/utils.h"
 #include "../vdp/graphics.h"
-#include "debug.h"
+#include "../vdp/bitmaps.h"
+#include "../debug/debug.h"
 #include "../input/keyboard.h"
 #include "../error.h"
+#include "../sprites/spritedef.h"
+#include "../sprites/sprite.h"
+
+uint16_t id;
 
 void draw_colour_bars()
 {
@@ -33,8 +38,13 @@ void draw_palette()
 
 // Define functions for Screen 1
 void colour_bars_init(void) {
-    debug_print("colour_bars_init %d\n", 136);
-    change_screen_mode(136, 0, 1);
+    change_screen_mode(8, 0, 1);
+    spritedef_init(0);
+    sprite_system_init();
+    id = spritedef_load("sprites/Sprite-0001.spr");
+    debug_printf ("Loaded sprite def %d\n", id);
+    sprite_instantiate(id, (Point){100,100});
+    sprite_set_animation_state(id, FORWARD);
 }
 
 int colour_bars_update(void) {
@@ -42,15 +52,23 @@ int colour_bars_update(void) {
 //        return 1; // ID of the next screen
 //    }
 
+    sprite_system_update();
     if (IS_KEY_PRESSED(KEY_SPACE))
         raise_fatal_error("OUT OF CHEESE ERROR", "+++ REDO FROM START +++");
+    if (IS_KEY_PRESSED(KEY_X))
+        sprite_set_state(id, 1);
 
     return -1; // Continue with the current screen
 }
 
 void colour_bars_draw(void) {
     vdp_clear_screen();
-    draw_palette();
+    
+    //draw_palette();
+    //vdp_plot_bitmap(0,200,200);
+    //vdp_plot_rect(100,100,16,16,3);
+    //vdp_plot_bitmap(5,100,100);
+    sprite_system_draw();
     waitvblank();
-    vdp_swap_screen_buffer();
+   // vdp_swap_screen_buffer();
 }

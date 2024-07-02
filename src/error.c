@@ -6,6 +6,7 @@
 #include "vdp/graphics.h"
 #include "screen/screen.h"
 #include <string.h>
+#include "sprites/spritedef.h"
 
 extern volatile SYSVAR *sv;
 
@@ -23,7 +24,7 @@ void raise_fatal_error(char *title, char *details)
     printf("%c%c%s\n", 17, 14, title);
     for (int i = 0; i < strlen(title); i++)
         putch('=');
-    putch('\n\r');
+    putch('\n');putch('\r');
     printf("%c%c%s\n", 17, 3, details);
 
     while(1) {} // Bye!

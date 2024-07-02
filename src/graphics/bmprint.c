@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include "../maths/xitoa.h"
 #include "../vdp/bitmaps.h"
+#include "../vdp/graphics.h"
 
 void load_font_def(char *font_def, Font *font)
 {

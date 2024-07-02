@@ -3,6 +3,7 @@
 #include <string.h>
 #include "../maths/xitoa.h"
 #include "../vdp/bitmaps.h"
+#include "../vdp/graphics.h"
 
 void tilemap_load(char *map_def, Tilemap *map)
 {
