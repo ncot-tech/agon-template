@@ -1,6 +1,10 @@
 <map id="vdp_enable_logical_screen_scaling" name="vdp_enable_logical_screen_scaling">
-<area shape="rect" id="node1" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="500,5,649,47"/>
-<area shape="rect" id="node2" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="285,13,452,39"/>
-<area shape="rect" id="node3" href="$colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="108,13,237,39"/>
-<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,13,60,39"/>
+<area shape="rect" id="node1" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="875,20,1024,61"/>
+<area shape="rect" id="node2" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="660,27,827,54"/>
+<area shape="rect" id="node3" href="$colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="120,27,249,54"/>
+<area shape="rect" id="node5" href="$error__screen_8c.html#accbd07fc3e43f8710f01b6589e53ac83" title=" " alt="" coords="475,27,612,54"/>
+<area shape="rect" id="node6" href="$error_8c.html#a02a6947e6c74d99d2a9d4cc03a122968" title=" " alt="" coords="476,78,611,105"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,53,60,79"/>
+<area shape="rect" id="node7" href="$colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63" title=" " alt="" coords="108,78,261,105"/>
+<area shape="rect" id="node8" href="$spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="309,27,427,54"/>
 </map>

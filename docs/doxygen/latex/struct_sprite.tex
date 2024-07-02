@@ -1,0 +1,130 @@
+\hypertarget{struct_sprite}{}\doxysection{Sprite Struct Reference}
+\label{struct_sprite}\index{Sprite@{Sprite}}
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+
+
+Collaboration diagram for Sprite\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{struct_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_sprite_a4fc3a0c58dfbd1e68224521185cb9384}{id}}
+\item 
+\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$ \mbox{\hyperlink{struct_sprite_a466e077abf8f39af5d8e5c03f26ef9a7}{sprite\+\_\+def}}
+\item 
+\mbox{\hyperlink{struct_point}{Point}} \mbox{\hyperlink{struct_sprite_ad2a909baca1c640ce68abccca12ca396}{position}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_sprite_a700fcfa26c02c159974ef2c603d73981}{animation\+\_\+timer}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{struct_sprite_af94d7260079d0691cea4563f1ab80c02}{current\+\_\+animation\+\_\+state}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{struct_sprite_af6028bd63181bceb94d4b6dbabac5021}{current\+\_\+animation\+\_\+frame}}
+\item 
+\mbox{\hyperlink{sprite_8h_aa0dd5a1c8bf41af8f5b5e8ae73df8b12}{SPRITE\+\_\+\+ANIMATION\+\_\+\+STATE}} \mbox{\hyperlink{struct_sprite_aa1b609a3ada2bacb5b077ae4f1c471d0}{animation\+\_\+state}}
+\item 
+\mbox{\hyperlink{sprite_8h_a45a6ffa9a5d6174f37be78bb2f155552}{SPRITE\+\_\+\+ACTIVE\+\_\+\+STATE}} \mbox{\hyperlink{struct_sprite_a6810a547f536f77f9be535fab0ab31d7}{sprite\+\_\+active\+\_\+state}}
+\item 
+\mbox{\hyperlink{sprite_8h_aab26495e13edfe56098239ac04707b20}{SPRITE\+\_\+\+VISIBLE\+\_\+\+STATE}} \mbox{\hyperlink{struct_sprite_aae2234aa302b6810ab03d6315921ccba}{sprite\+\_\+visible\+\_\+state}}
+\item 
+\mbox{\hyperlink{struct_rect}{Rect}} \mbox{\hyperlink{struct_sprite_a68efe18d2e85e79644cc5f7179031c4c}{collision\+\_\+rect}}
+\item 
+\mbox{\hyperlink{sprite_8h_a8681b465d06864078791dea3ec347250}{Collision\+Func\+Ptr}} \mbox{\hyperlink{struct_sprite_a16905abde57750cec54de0311a6ae7e5}{collision\+\_\+func}}
+\item 
+\mbox{\hyperlink{sprite_8h_a738a5a48df1b1b4d069e351cdfaff1d6}{Update\+Func\+Ptr}} \mbox{\hyperlink{struct_sprite_a17f25ee542bbdaf0b2f16ad178c9143d}{update\+\_\+func}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_sprite_a0f53d287ac7c064d1a49d4bd93ca1cb9}{user\+\_\+data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_sprite_aa1b609a3ada2bacb5b077ae4f1c471d0}\label{struct_sprite_aa1b609a3ada2bacb5b077ae4f1c471d0}} 
+\index{Sprite@{Sprite}!animation\_state@{animation\_state}}
+\index{animation\_state@{animation\_state}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{animation\_state}{animation\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite_8h_aa0dd5a1c8bf41af8f5b5e8ae73df8b12}{SPRITE\+\_\+\+ANIMATION\+\_\+\+STATE}} animation\+\_\+state}
+
+\mbox{\Hypertarget{struct_sprite_a700fcfa26c02c159974ef2c603d73981}\label{struct_sprite_a700fcfa26c02c159974ef2c603d73981}} 
+\index{Sprite@{Sprite}!animation\_timer@{animation\_timer}}
+\index{animation\_timer@{animation\_timer}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{animation\_timer}{animation\_timer}}
+{\footnotesize\ttfamily uint32\+\_\+t animation\+\_\+timer}
+
+\mbox{\Hypertarget{struct_sprite_a16905abde57750cec54de0311a6ae7e5}\label{struct_sprite_a16905abde57750cec54de0311a6ae7e5}} 
+\index{Sprite@{Sprite}!collision\_func@{collision\_func}}
+\index{collision\_func@{collision\_func}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{collision\_func}{collision\_func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite_8h_a8681b465d06864078791dea3ec347250}{Collision\+Func\+Ptr}} collision\+\_\+func}
+
+\mbox{\Hypertarget{struct_sprite_a68efe18d2e85e79644cc5f7179031c4c}\label{struct_sprite_a68efe18d2e85e79644cc5f7179031c4c}} 
+\index{Sprite@{Sprite}!collision\_rect@{collision\_rect}}
+\index{collision\_rect@{collision\_rect}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{collision\_rect}{collision\_rect}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_rect}{Rect}} collision\+\_\+rect}
+
+\mbox{\Hypertarget{struct_sprite_af6028bd63181bceb94d4b6dbabac5021}\label{struct_sprite_af6028bd63181bceb94d4b6dbabac5021}} 
+\index{Sprite@{Sprite}!current\_animation\_frame@{current\_animation\_frame}}
+\index{current\_animation\_frame@{current\_animation\_frame}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{current\_animation\_frame}{current\_animation\_frame}}
+{\footnotesize\ttfamily uint16\+\_\+t current\+\_\+animation\+\_\+frame}
+
+\mbox{\Hypertarget{struct_sprite_af94d7260079d0691cea4563f1ab80c02}\label{struct_sprite_af94d7260079d0691cea4563f1ab80c02}} 
+\index{Sprite@{Sprite}!current\_animation\_state@{current\_animation\_state}}
+\index{current\_animation\_state@{current\_animation\_state}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{current\_animation\_state}{current\_animation\_state}}
+{\footnotesize\ttfamily uint8\+\_\+t current\+\_\+animation\+\_\+state}
+
+\mbox{\Hypertarget{struct_sprite_a4fc3a0c58dfbd1e68224521185cb9384}\label{struct_sprite_a4fc3a0c58dfbd1e68224521185cb9384}} 
+\index{Sprite@{Sprite}!id@{id}}
+\index{id@{id}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily uint16\+\_\+t id}
+
+\mbox{\Hypertarget{struct_sprite_ad2a909baca1c640ce68abccca12ca396}\label{struct_sprite_ad2a909baca1c640ce68abccca12ca396}} 
+\index{Sprite@{Sprite}!position@{position}}
+\index{position@{position}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_point}{Point}} position}
+
+\mbox{\Hypertarget{struct_sprite_a6810a547f536f77f9be535fab0ab31d7}\label{struct_sprite_a6810a547f536f77f9be535fab0ab31d7}} 
+\index{Sprite@{Sprite}!sprite\_active\_state@{sprite\_active\_state}}
+\index{sprite\_active\_state@{sprite\_active\_state}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{sprite\_active\_state}{sprite\_active\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite_8h_a45a6ffa9a5d6174f37be78bb2f155552}{SPRITE\+\_\+\+ACTIVE\+\_\+\+STATE}} sprite\+\_\+active\+\_\+state}
+
+\mbox{\Hypertarget{struct_sprite_a466e077abf8f39af5d8e5c03f26ef9a7}\label{struct_sprite_a466e077abf8f39af5d8e5c03f26ef9a7}} 
+\index{Sprite@{Sprite}!sprite\_def@{sprite\_def}}
+\index{sprite\_def@{sprite\_def}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{sprite\_def}{sprite\_def}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}}$\ast$ sprite\+\_\+def}
+
+\mbox{\Hypertarget{struct_sprite_aae2234aa302b6810ab03d6315921ccba}\label{struct_sprite_aae2234aa302b6810ab03d6315921ccba}} 
+\index{Sprite@{Sprite}!sprite\_visible\_state@{sprite\_visible\_state}}
+\index{sprite\_visible\_state@{sprite\_visible\_state}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{sprite\_visible\_state}{sprite\_visible\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite_8h_aab26495e13edfe56098239ac04707b20}{SPRITE\+\_\+\+VISIBLE\+\_\+\+STATE}} sprite\+\_\+visible\+\_\+state}
+
+\mbox{\Hypertarget{struct_sprite_a17f25ee542bbdaf0b2f16ad178c9143d}\label{struct_sprite_a17f25ee542bbdaf0b2f16ad178c9143d}} 
+\index{Sprite@{Sprite}!update\_func@{update\_func}}
+\index{update\_func@{update\_func}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{update\_func}{update\_func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{sprite_8h_a738a5a48df1b1b4d069e351cdfaff1d6}{Update\+Func\+Ptr}} update\+\_\+func}
+
+\mbox{\Hypertarget{struct_sprite_a0f53d287ac7c064d1a49d4bd93ca1cb9}\label{struct_sprite_a0f53d287ac7c064d1a49d4bd93ca1cb9}} 
+\index{Sprite@{Sprite}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{user\_data}{user\_data}}
+{\footnotesize\ttfamily void$\ast$ user\+\_\+data}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/sprites/\mbox{\hyperlink{sprite_8h}{sprite.\+h}}\end{DoxyCompactItemize}

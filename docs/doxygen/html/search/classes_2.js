@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['point_0',['Point',['../struct_point.html',1,'']]]
+  ['globals_0',['Globals',['../struct_globals.html',1,'']]]
 ];

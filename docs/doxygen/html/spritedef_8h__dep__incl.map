@@ -1,0 +1,8 @@
+<map id="src/sprites/spritedef.h" name="src/sprites/spritedef.h">
+<area shape="rect" id="node1" title=" " alt="" coords="164,5,333,32"/>
+<area shape="rect" id="node2" href="$error_8c.html" title=" " alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="$colour__bars_8c.html" title=" " alt="" coords="81,155,237,196"/>
+<area shape="rect" id="node4" href="$sprite_8c.html" title=" " alt="" coords="274,162,423,189"/>
+<area shape="rect" id="node5" href="$sprite_8h.html" title=" " alt="" coords="173,80,324,107"/>
+<area shape="rect" id="node6" href="$spritedef_8c.html" title=" " alt="" coords="399,80,567,107"/>
+</map>

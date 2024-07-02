@@ -1,11 +1,12 @@
 <map id="src/vdp/bitmaps.c" name="src/vdp/bitmaps.c">
-<area shape="rect" id="node1" title=" " alt="" coords="166,5,309,32"/>
-<area shape="rect" id="node2" href="$bitmaps_8h.html" title=" " alt="" coords="112,80,200,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="115,155,205,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="362,80,433,107"/>
-<area shape="rect" id="node6" href="$buffers_8h.html" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node7" href="$utils_8h.html" title=" " alt="" coords="275,80,338,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="21,155,88,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="238,155,367,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="392,155,464,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="219,5,362,32"/>
+<area shape="rect" id="node2" href="$bitmaps_8h.html" title=" " alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="192,155,283,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="523,80,594,107"/>
+<area shape="rect" id="node6" href="$buffers_8h.html" title=" " alt="" coords="117,80,200,107"/>
+<area shape="rect" id="node7" href="$utils_8h.html" title=" " alt="" coords="437,80,499,107"/>
+<area shape="rect" id="node10" href="$debug_8h.html" title=" " alt="" coords="275,80,413,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="59,155,125,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="355,155,485,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="509,155,581,181"/>
 </map>

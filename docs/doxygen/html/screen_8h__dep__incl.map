@@ -1,7 +1,10 @@
 <map id="src/screen/screen.h" name="src/screen/screen.h">
-<area shape="rect" id="node1" title=" " alt="" coords="139,5,293,32"/>
-<area shape="rect" id="node2" href="$colour__bars_8h.html" title=" " alt="" coords="49,80,205,121"/>
-<area shape="rect" id="node5" href="$screen_8c.html" title=" " alt="" coords="229,87,384,114"/>
-<area shape="rect" id="node3" href="$main_8c.html" title=" " alt="" coords="5,177,99,203"/>
-<area shape="rect" id="node4" href="$colour__bars_8c.html" title=" " alt="" coords="123,169,279,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="210,5,365,32"/>
+<area shape="rect" id="node2" href="$error_8c.html" title=" " alt="" coords="5,87,97,114"/>
+<area shape="rect" id="node3" href="$colour__bars_8h.html" title=" " alt="" coords="121,80,277,121"/>
+<area shape="rect" id="node6" href="$error__screen_8h.html" title=" " alt="" coords="302,80,451,121"/>
+<area shape="rect" id="node8" href="$screen_8c.html" title=" " alt="" coords="475,87,630,114"/>
+<area shape="rect" id="node4" href="$main_8c.html" title=" " alt="" coords="243,177,337,203"/>
+<area shape="rect" id="node5" href="$colour__bars_8c.html" title=" " alt="" coords="63,169,219,211"/>
+<area shape="rect" id="node7" href="$error__screen_8c.html" title=" " alt="" coords="361,169,510,211"/>
 </map>

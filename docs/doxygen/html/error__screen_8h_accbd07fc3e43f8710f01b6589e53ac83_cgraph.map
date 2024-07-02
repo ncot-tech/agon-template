@@ -1,0 +1,7 @@
+<map id="error_screen_init" name="error_screen_init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,67,143,94"/>
+<area shape="rect" id="node2" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="191,42,357,69"/>
+<area shape="rect" id="node5" href="$utils_8c.html#ae9960bce2205e56728ef713d34a40206" title="Changes the text colour." alt="" coords="227,93,321,119"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a606aa6336a757ee6ad2f3b446252b486" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="416,5,565,47"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0" title="Changes the current screen mode." alt="" coords="405,71,576,98"/>
+</map>

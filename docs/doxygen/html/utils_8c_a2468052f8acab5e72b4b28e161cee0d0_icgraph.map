@@ -1,6 +1,10 @@
 <map id="vdp_set_screen_mode" name="vdp_set_screen_mode">
-<area shape="rect" id="node1" title="Changes the current screen mode." alt="" coords="500,31,671,57"/>
-<area shape="rect" id="node2" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="285,5,452,32"/>
-<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,60,57"/>
-<area shape="rect" id="node3" href="$colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="108,5,237,32"/>
+<area shape="rect" id="node1" title="Changes the current screen mode." alt="" coords="875,111,1045,138"/>
+<area shape="rect" id="node2" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="660,86,827,113"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,86,60,113"/>
+<area shape="rect" id="node3" href="$colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="120,35,249,62"/>
+<area shape="rect" id="node5" href="$error__screen_8c.html#accbd07fc3e43f8710f01b6589e53ac83" title=" " alt="" coords="475,35,612,62"/>
+<area shape="rect" id="node6" href="$error_8c.html#a02a6947e6c74d99d2a9d4cc03a122968" title=" " alt="" coords="476,86,611,113"/>
+<area shape="rect" id="node7" href="$colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63" title=" " alt="" coords="108,86,261,113"/>
+<area shape="rect" id="node8" href="$spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="309,35,427,62"/>
 </map>

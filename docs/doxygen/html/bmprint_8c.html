@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -95,21 +95,24 @@ $(document).ready(function(){initNavTree('bmprint_8c.html',''); initResizable();
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="xitoa_8h_source.html">../maths/xitoa.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="bitmaps_8h_source.html">../vdp/bitmaps.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphics_8h_source.html">../vdp/graphics.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bmprint.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="bmprint_8c__incl.png" border="0" usemap="#asrc_2graphics_2bmprint_8c" alt=""/></div>
 <map name="asrc_2graphics_2bmprint_8c" id="asrc_2graphics_2bmprint_8c">
-<area shape="rect" title=" " alt="" coords="243,5,417,32"/>
-<area shape="rect" href="bmprint_8h.html" title=" " alt="" coords="5,80,92,107"/>
-<area shape="rect" title=" " alt="" coords="117,80,194,107"/>
-<area shape="rect" title=" " alt="" coords="219,80,292,107"/>
-<area shape="rect" title=" " alt="" coords="411,155,502,181"/>
-<area shape="rect" title=" " alt="" coords="368,80,439,107"/>
-<area shape="rect" href="xitoa_8h.html" title=" " alt="" coords="463,80,594,107"/>
-<area shape="rect" href="bitmaps_8h.html" title=" " alt="" coords="619,80,753,107"/>
-<area shape="rect" title=" " alt="" coords="13,155,85,181"/>
-<area shape="rect" title=" " alt="" coords="653,155,719,181"/>
+<area shape="rect" title=" " alt="" coords="185,5,360,32"/>
+<area shape="rect" href="bmprint_8h.html" title=" " alt="" coords="44,155,131,181"/>
+<area shape="rect" title=" " alt="" coords="23,80,101,107"/>
+<area shape="rect" title=" " alt="" coords="125,80,199,107"/>
+<area shape="rect" title=" " alt="" coords="343,155,434,181"/>
+<area shape="rect" title=" " alt="" coords="275,80,345,107"/>
+<area shape="rect" href="xitoa_8h.html" title=" " alt="" coords="370,80,501,107"/>
+<area shape="rect" href="bitmaps_8h.html" title=" " alt="" coords="525,80,660,107"/>
+<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="684,80,821,107"/>
+<area shape="rect" title=" " alt="" coords="621,229,693,256"/>
+<area shape="rect" title=" " alt="" coords="553,155,619,181"/>
+<area shape="rect" href="point_8h.html" title=" " alt="" coords="694,155,825,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -173,15 +176,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="bmprint_8c_a867b981d550b09df515a4959bccbfea0_cgraph.png" border="0" usemap="#abmprint_8c_a867b981d550b09df515a4959bccbfea0_cgraph" alt=""/></div>
 <map name="abmprint_8c_a867b981d550b09df515a4959bccbfea0_cgraph" id="abmprint_8c_a867b981d550b09df515a4959bccbfea0_cgraph">
-<area shape="rect" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="5,120,119,147"/>
-<area shape="rect" href="bitmaps_8c.html#a382846f69c1d1979fe2914dfe3f17a87" title="Loads a bitmap image into a VDP buffer." alt="" coords="167,40,352,67"/>
-<area shape="rect" href="bmprint_8c.html#a7bb7c99ccc6f61452831abf824f73ad6" title=" " alt="" coords="203,91,316,117"/>
-<area shape="rect" href="bitmaps_8c.html#a08f9873e481adb7aa8d93000f7166b1d" title=" " alt="" coords="177,142,342,183"/>
-<area shape="rect" href="graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="419,208,552,235"/>
-<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="400,5,571,32"/>
-<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="418,56,553,83"/>
-<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="619,107,708,133"/>
-<area shape="rect" href="buffers_8c.html#a49b72cc5962e1b043e656f531e1424e9" title=" " alt="" coords="404,157,567,184"/>
+<area shape="rect" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="5,128,119,155"/>
+<area shape="rect" href="bitmaps_8c.html#a382846f69c1d1979fe2914dfe3f17a87" title="Loads a bitmap image into a VDP buffer." alt="" coords="167,52,352,79"/>
+<area shape="rect" href="bmprint_8c.html#a7bb7c99ccc6f61452831abf824f73ad6" title=" " alt="" coords="203,103,316,129"/>
+<area shape="rect" href="bitmaps_8c.html#a08f9873e481adb7aa8d93000f7166b1d" title=" " alt="" coords="421,142,586,183"/>
+<area shape="rect" href="graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="437,208,570,235"/>
+<area shape="rect" href="bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284" title=" " alt="" coords="400,52,607,79"/>
+<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="655,5,825,32"/>
+<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="673,56,807,83"/>
+<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="873,107,963,133"/>
+<area shape="rect" href="buffers_8c.html#a49b72cc5962e1b043e656f531e1424e9" title=" " alt="" coords="659,157,821,184"/>
 </map>
 </div>
 

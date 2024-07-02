@@ -1,10 +1,12 @@
 <map id="src/vdp/utils.h" name="src/vdp/utils.h">
-<area shape="rect" id="node1" title=" " alt="" coords="495,5,614,32"/>
-<area shape="rect" id="node2" href="$main_8c.html" title=" " alt="" coords="5,87,99,114"/>
-<area shape="rect" id="node3" href="$colour__bars_8c.html" title=" " alt="" coords="123,80,279,121"/>
-<area shape="rect" id="node4" href="$screen_8c.html" title=" " alt="" coords="304,87,459,114"/>
-<area shape="rect" id="node5" href="$bitmaps_8c.html" title=" " alt="" coords="483,87,626,114"/>
-<area shape="rect" id="node6" href="$buffers_8c.html" title=" " alt="" coords="650,87,787,114"/>
-<area shape="rect" id="node7" href="$graphics_8c.html" title=" " alt="" coords="812,87,959,114"/>
-<area shape="rect" id="node8" href="$utils_8c.html" title=" " alt="" coords="983,87,1102,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="612,5,731,32"/>
+<area shape="rect" id="node2" href="$error_8c.html" title=" " alt="" coords="5,87,97,114"/>
+<area shape="rect" id="node3" href="$main_8c.html" title=" " alt="" coords="122,87,215,114"/>
+<area shape="rect" id="node4" href="$colour__bars_8c.html" title=" " alt="" coords="240,80,396,121"/>
+<area shape="rect" id="node5" href="$error__screen_8c.html" title=" " alt="" coords="421,80,570,121"/>
+<area shape="rect" id="node6" href="$screen_8c.html" title=" " alt="" coords="594,87,749,114"/>
+<area shape="rect" id="node7" href="$bitmaps_8c.html" title=" " alt="" coords="773,87,916,114"/>
+<area shape="rect" id="node8" href="$buffers_8c.html" title=" " alt="" coords="940,87,1077,114"/>
+<area shape="rect" id="node9" href="$graphics_8c.html" title=" " alt="" coords="1102,87,1249,114"/>
+<area shape="rect" id="node10" href="$utils_8c.html" title=" " alt="" coords="1273,87,1392,114"/>
 </map>

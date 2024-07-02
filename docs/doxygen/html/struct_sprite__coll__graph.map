@@ -1,0 +1,8 @@
+<map id="Sprite" name="Sprite">
+<area shape="rect" id="node1" title=" " alt="" coords="154,275,217,301"/>
+<area shape="rect" id="node2" href="$struct_sprite_def.html" title=" " alt="" coords="39,184,124,211"/>
+<area shape="rect" id="node3" href="$struct_sprite_animation_def.html" title=" " alt="" coords="5,95,157,121"/>
+<area shape="rect" id="node4" href="$struct_sprite_frame.html" title=" " alt="" coords="29,5,134,32"/>
+<area shape="rect" id="node5" href="$struct_point.html" title=" " alt="" coords="158,184,213,211"/>
+<area shape="rect" id="node6" href="$struct_rect.html" title=" " alt="" coords="248,184,299,211"/>
+</map>

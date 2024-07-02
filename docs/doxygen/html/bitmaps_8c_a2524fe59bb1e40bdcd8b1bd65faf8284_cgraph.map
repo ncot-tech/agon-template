@@ -1,0 +1,6 @@
+<map id="load_bitmap_into_buffer_fp" name="load_bitmap_into_buffer_fp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,212,57"/>
+<area shape="rect" id="node2" href="$buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="260,5,431,32"/>
+<area shape="rect" id="node4" href="$buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="278,56,413,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="479,31,568,57"/>
+</map>

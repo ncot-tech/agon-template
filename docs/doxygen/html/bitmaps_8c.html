@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -93,25 +93,29 @@ $(document).ready(function(){initNavTree('bitmaps_8c.html',''); initResizable();
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="buffers_8h_source.html">buffers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="debug_8h_source.html">../debug/debug.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bitmaps.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="bitmaps_8c__incl.png" border="0" usemap="#asrc_2vdp_2bitmaps_8c" alt=""/></div>
 <map name="asrc_2vdp_2bitmaps_8c" id="asrc_2vdp_2bitmaps_8c">
-<area shape="rect" title=" " alt="" coords="166,5,309,32"/>
-<area shape="rect" href="bitmaps_8h.html" title=" " alt="" coords="112,80,200,107"/>
-<area shape="rect" title=" " alt="" coords="115,155,205,181"/>
-<area shape="rect" title=" " alt="" coords="362,80,433,107"/>
-<area shape="rect" href="buffers_8h.html" title=" " alt="" coords="5,80,88,107"/>
-<area shape="rect" href="utils_8h.html" title=" " alt="" coords="275,80,338,107"/>
-<area shape="rect" title=" " alt="" coords="21,155,88,181"/>
-<area shape="rect" title=" " alt="" coords="238,155,367,181"/>
-<area shape="rect" title=" " alt="" coords="392,155,464,181"/>
+<area shape="rect" title=" " alt="" coords="219,5,362,32"/>
+<area shape="rect" href="bitmaps_8h.html" title=" " alt="" coords="5,80,93,107"/>
+<area shape="rect" title=" " alt="" coords="192,155,283,181"/>
+<area shape="rect" title=" " alt="" coords="523,80,594,107"/>
+<area shape="rect" href="buffers_8h.html" title=" " alt="" coords="117,80,200,107"/>
+<area shape="rect" href="utils_8h.html" title=" " alt="" coords="437,80,499,107"/>
+<area shape="rect" href="debug_8h.html" title=" " alt="" coords="275,80,413,107"/>
+<area shape="rect" title=" " alt="" coords="59,155,125,181"/>
+<area shape="rect" title=" " alt="" coords="355,155,485,181"/>
+<area shape="rect" title=" " alt="" coords="509,155,581,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2524fe59bb1e40bdcd8b1bd65faf8284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775ae">BITMAP_LOAD_RESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284">load_bitmap_into_buffer_fp</a> (uint16_t buffer_id, uint8_t file, <a class="el" href="struct_bitmap__header.html">Bitmap_header</a> *header_data)</td></tr>
+<tr class="separator:a2524fe59bb1e40bdcd8b1bd65faf8284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382846f69c1d1979fe2914dfe3f17a87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775ae">BITMAP_LOAD_RESULT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmaps_8c.html#a382846f69c1d1979fe2914dfe3f17a87">load_bitmap_into_buffer</a> (uint16_t buffer_id, char *filename, <a class="el" href="struct_bitmap__header.html">Bitmap_header</a> *header_data)</td></tr>
 <tr class="memdesc:a382846f69c1d1979fe2914dfe3f17a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a bitmap image into a VDP buffer.  <a href="bitmaps_8c.html#a382846f69c1d1979fe2914dfe3f17a87">More...</a><br /></td></tr>
 <tr class="separator:a382846f69c1d1979fe2914dfe3f17a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,8 +123,49 @@ Functions</h2></td></tr>
 <tr class="separator:a42b639c4a10d566b61e7567c1fe2a662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08f9873e481adb7aa8d93000f7166b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmaps_8c.html#a08f9873e481adb7aa8d93000f7166b1d">vdp_assign_buffer_to_bitmap</a> (uint16_t buffer_id, <a class="el" href="bitmaps_8h.html#a621226db864b071183decacb4e7db9f0">BITMAP_FORMAT</a> bitmap_format, uint16_t width, uint16_t height)</td></tr>
 <tr class="separator:a08f9873e481adb7aa8d93000f7166b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d167a3f862e37179c73acca79022f56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bitmaps_8c.html#a3d167a3f862e37179c73acca79022f56">debug_print_bitmap</a> (<a class="el" href="struct_bitmap__header.html">Bitmap_header</a> *header)</td></tr>
+<tr class="separator:a3d167a3f862e37179c73acca79022f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a3d167a3f862e37179c73acca79022f56" name="a3d167a3f862e37179c73acca79022f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d167a3f862e37179c73acca79022f56">&#9670;&nbsp;</a></span>debug_print_bitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void debug_print_bitmap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bitmap__header.html">Bitmap_header</a> *&#160;</td>
+          <td class="paramname"><em>header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bitmaps_8c_a3d167a3f862e37179c73acca79022f56_cgraph.png" border="0" usemap="#abitmaps_8c_a3d167a3f862e37179c73acca79022f56_cgraph" alt=""/></div>
+<map name="abitmaps_8c_a3d167a3f862e37179c73acca79022f56_cgraph" id="abitmaps_8c_a3d167a3f862e37179c73acca79022f56_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" href="debug_8c.html#a62c38c9caa26674373a77b2c8f53c68d" title=" " alt="" coords="208,5,315,32"/>
+<area shape="rect" href="xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639" title="Converts an integer to another number base as a string." alt="" coords="363,5,417,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bitmaps_8c_a3d167a3f862e37179c73acca79022f56_icgraph.png" border="0" usemap="#abitmaps_8c_a3d167a3f862e37179c73acca79022f56_icgraph" alt=""/></div>
+<map name="abitmaps_8c_a3d167a3f862e37179c73acca79022f56_icgraph" id="abitmaps_8c_a3d167a3f862e37179c73acca79022f56_icgraph">
+<area shape="rect" title=" " alt="" coords="451,5,605,32"/>
+<area shape="rect" href="spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="285,5,403,32"/>
+<area shape="rect" href="colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="108,5,237,32"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a382846f69c1d1979fe2914dfe3f17a87" name="a382846f69c1d1979fe2914dfe3f17a87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a382846f69c1d1979fe2914dfe3f17a87">&#9670;&nbsp;</a></span>load_bitmap_into_buffer()</h2>
 
@@ -170,9 +215,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="bitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87_cgraph.png" border="0" usemap="#abitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87_cgraph" alt=""/></div>
 <map name="abitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87_cgraph" id="abitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87_cgraph">
 <area shape="rect" title="Loads a bitmap image into a VDP buffer." alt="" coords="5,31,191,57"/>
-<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="239,5,409,32"/>
-<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="257,56,391,83"/>
-<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="457,31,547,57"/>
+<area shape="rect" href="bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284" title=" " alt="" coords="239,31,445,57"/>
+<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="493,5,664,32"/>
+<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="511,56,646,83"/>
+<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="712,31,801,57"/>
 </map>
 </div>
 <div class="dynheader">
@@ -183,6 +229,65 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Loads a bitmap image into a VDP buffer." alt="" coords="167,31,352,57"/>
 <area shape="rect" href="bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="5,5,119,32"/>
 <area shape="rect" href="tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="8,56,116,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2524fe59bb1e40bdcd8b1bd65faf8284" name="a2524fe59bb1e40bdcd8b1bd65faf8284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2524fe59bb1e40bdcd8b1bd65faf8284">&#9670;&nbsp;</a></span>load_bitmap_into_buffer_fp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775ae">BITMAP_LOAD_RESULT</a> load_bitmap_into_buffer_fp </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>buffer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_bitmap__header.html">Bitmap_header</a> *&#160;</td>
+          <td class="paramname"><em>header_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph.png" border="0" usemap="#abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph" alt=""/></div>
+<map name="abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph" id="abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,212,57"/>
+<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="260,5,431,32"/>
+<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="278,56,413,83"/>
+<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="479,31,568,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph.png" border="0" usemap="#abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph" alt=""/></div>
+<map name="abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph" id="abitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph">
+<area shape="rect" title=" " alt="" coords="519,81,725,108"/>
+<area shape="rect" href="bitmaps_8c.html#a382846f69c1d1979fe2914dfe3f17a87" title="Loads a bitmap image into a VDP buffer." alt="" coords="285,56,471,83"/>
+<area shape="rect" href="spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="319,107,437,133"/>
+<area shape="rect" href="bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="116,5,229,32"/>
+<area shape="rect" href="tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="119,56,227,83"/>
+<area shape="rect" href="colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="108,107,237,133"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,107,60,133"/>
 </map>
 </div>
 
@@ -240,9 +345,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph.png" border="0" usemap="#abitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph" alt=""/></div>
 <map name="abitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph" id="abitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph">
-<area shape="rect" title=" " alt="" coords="167,23,332,65"/>
-<area shape="rect" href="bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="5,5,119,32"/>
-<area shape="rect" href="tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="8,56,116,83"/>
+<area shape="rect" title=" " alt="" coords="451,49,616,90"/>
+<area shape="rect" href="bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="287,5,401,32"/>
+<area shape="rect" href="spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="285,56,403,83"/>
+<area shape="rect" href="tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="290,107,398,133"/>
+<area shape="rect" href="colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="108,56,237,83"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,56,60,83"/>
 </map>
 </div>
 

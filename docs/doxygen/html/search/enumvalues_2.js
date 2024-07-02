@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['not_5fimage_0',['NOT_IMAGE',['../bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370',1,'bitmaps.h']]]
+  ['forward_0',['FORWARD',['../sprite_8h.html#aa0dd5a1c8bf41af8f5b5e8ae73df8b12aa26736999186daf8146f809e863712a1',1,'sprite.h']]]
 ];

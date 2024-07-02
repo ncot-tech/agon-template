@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -90,29 +90,28 @@ $(document).ready(function(){initNavTree('graphics_8h_source.html',''); initResi
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __GRAPHICS_H_</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="struct_point.html">    6</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_point.html">Point</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="struct_point.html#ae1c2d516777e6b42af0d281c9ecc7375">    7</a></span>    int16_t <a class="code hl_variable" href="struct_point.html#ae1c2d516777e6b42af0d281c9ecc7375">x</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_point.html#af77b1a54442f2443cf64a4766f916bcd">    8</a></span>    int16_t <a class="code hl_variable" href="struct_point.html#af77b1a54442f2443cf64a4766f916bcd">y</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="graphics_8h.html#a332e649c40b7d806629d2cfa046f3ee0">    9</a></span>} <a class="code hl_typedef" href="graphics_8h.html#a332e649c40b7d806629d2cfa046f3ee0">Point</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#aa73e15c3a69b169da85c45f234234222">vdp_draw_line</a>(int16_t origin_x, int16_t origin_y, int16_t end_x, int16_t end_y, uint8_t colour);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#ac823b71fd030bda38204a77602f95d41">vdp_plot_point</a>(uint16_t x, uint16_t y, uint8_t colour);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a98c2cbc83d0c9cf100abd0d3a589feee">vdp_plot_circle</a>(uint16_t x, uint16_t y, uint16_t diameter, uint8_t colour);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a28a88ee103c8e7796c591ab84eac7dc2">vdp_draw_triangle</a>(<a class="code hl_struct" href="struct_point.html">Point</a> p1, <a class="code hl_struct" href="struct_point.html">Point</a> p2, <a class="code hl_struct" href="struct_point.html">Point</a> p3, uint8_t colour);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a4f96120c506f2b22cc3f4c7792e0d86a">vdp_plot_rect</a>(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t colour);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../maths/point.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#aa73e15c3a69b169da85c45f234234222">vdp_draw_line</a>(int16_t origin_x, int16_t origin_y, int16_t end_x, int16_t end_y, uint8_t colour);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#ac823b71fd030bda38204a77602f95d41">vdp_plot_point</a>(uint16_t x, uint16_t y, uint8_t colour);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a98c2cbc83d0c9cf100abd0d3a589feee">vdp_plot_circle</a>(uint16_t x, uint16_t y, uint16_t diameter, uint8_t colour);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a28a88ee103c8e7796c591ab84eac7dc2">vdp_draw_triangle</a>(<a class="code hl_struct" href="struct_point.html">Point</a> p1, <a class="code hl_struct" href="struct_point.html">Point</a> p2, <a class="code hl_struct" href="struct_point.html">Point</a> p3, uint8_t colour);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a4f96120c506f2b22cc3f4c7792e0d86a">vdp_plot_rect</a>(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t colour);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a42b639c4a10d566b61e7567c1fe2a662">vdp_draw_current_bitmap</a>(uint16_t x, uint16_t y);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="graphics_8h.html#a6307714183c020f335ec89a052b74787">vdp_plot_bitmap</a>(uint16_t buffer_id, int16_t x, int16_t y);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="agraphics_8h_html_a28a88ee103c8e7796c591ab84eac7dc2"><div class="ttname"><a href="graphics_8h.html#a28a88ee103c8e7796c591ab84eac7dc2">vdp_draw_triangle</a></div><div class="ttdeci">void vdp_draw_triangle(Point p1, Point p2, Point p3, uint8_t colour)</div><div class="ttdef"><b>Definition:</b> graphics.c:35</div></div>
-<div class="ttc" id="agraphics_8h_html_a332e649c40b7d806629d2cfa046f3ee0"><div class="ttname"><a href="graphics_8h.html#a332e649c40b7d806629d2cfa046f3ee0">Point</a></div><div class="ttdeci">struct Point Point</div></div>
+<div class="ttc" id="agraphics_8h_html_a42b639c4a10d566b61e7567c1fe2a662"><div class="ttname"><a href="graphics_8h.html#a42b639c4a10d566b61e7567c1fe2a662">vdp_draw_current_bitmap</a></div><div class="ttdeci">void vdp_draw_current_bitmap(uint16_t x, uint16_t y)</div><div class="ttdef"><b>Definition:</b> bitmaps.c:53</div></div>
 <div class="ttc" id="agraphics_8h_html_a4f96120c506f2b22cc3f4c7792e0d86a"><div class="ttname"><a href="graphics_8h.html#a4f96120c506f2b22cc3f4c7792e0d86a">vdp_plot_rect</a></div><div class="ttdeci">void vdp_plot_rect(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t colour)</div><div class="ttdef"><b>Definition:</b> graphics.c:50</div></div>
+<div class="ttc" id="agraphics_8h_html_a6307714183c020f335ec89a052b74787"><div class="ttname"><a href="graphics_8h.html#a6307714183c020f335ec89a052b74787">vdp_plot_bitmap</a></div><div class="ttdeci">void vdp_plot_bitmap(uint16_t buffer_id, int16_t x, int16_t y)</div><div class="ttdoc">Plots a VDP bitmap to the screen.</div><div class="ttdef"><b>Definition:</b> graphics.c:57</div></div>
 <div class="ttc" id="agraphics_8h_html_a98c2cbc83d0c9cf100abd0d3a589feee"><div class="ttname"><a href="graphics_8h.html#a98c2cbc83d0c9cf100abd0d3a589feee">vdp_plot_circle</a></div><div class="ttdeci">void vdp_plot_circle(uint16_t x, uint16_t y, uint16_t diameter, uint8_t colour)</div><div class="ttdef"><b>Definition:</b> graphics.c:28</div></div>
 <div class="ttc" id="agraphics_8h_html_aa73e15c3a69b169da85c45f234234222"><div class="ttname"><a href="graphics_8h.html#aa73e15c3a69b169da85c45f234234222">vdp_draw_line</a></div><div class="ttdeci">void vdp_draw_line(int16_t origin_x, int16_t origin_y, int16_t end_x, int16_t end_y, uint8_t colour)</div><div class="ttdoc">Draws a line between two points using the VDP.</div><div class="ttdef"><b>Definition:</b> graphics.c:8</div></div>
 <div class="ttc" id="agraphics_8h_html_ac823b71fd030bda38204a77602f95d41"><div class="ttname"><a href="graphics_8h.html#ac823b71fd030bda38204a77602f95d41">vdp_plot_point</a></div><div class="ttdeci">void vdp_plot_point(uint16_t x, uint16_t y, uint8_t colour)</div><div class="ttdoc">Plots a point on the screen using the VDP.</div><div class="ttdef"><b>Definition:</b> graphics.c:43</div></div>
-<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> graphics.h:6</div></div>
-<div class="ttc" id="astruct_point_html_ae1c2d516777e6b42af0d281c9ecc7375"><div class="ttname"><a href="struct_point.html#ae1c2d516777e6b42af0d281c9ecc7375">Point::x</a></div><div class="ttdeci">int16_t x</div><div class="ttdef"><b>Definition:</b> graphics.h:7</div></div>
-<div class="ttc" id="astruct_point_html_af77b1a54442f2443cf64a4766f916bcd"><div class="ttname"><a href="struct_point.html#af77b1a54442f2443cf64a4766f916bcd">Point::y</a></div><div class="ttdeci">int16_t y</div><div class="ttdef"><b>Definition:</b> graphics.h:8</div></div>
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> point.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

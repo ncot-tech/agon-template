@@ -1,4 +1,4 @@
-\hypertarget{md_docs_pages_notes_autotoc_md14}{}\doxysection{VIM Commands}\label{md_docs_pages_notes_autotoc_md14}
+\hypertarget{md_docs_pages_notes_autotoc_md20}{}\doxysection{VIM Commands}\label{md_docs_pages_notes_autotoc_md20}
 
 \begin{DoxyItemize}
 \item Ctrl-\/w s, ctrl-\/w v -\/ Split current window half horizontally or vertically with same file in it
@@ -7,5 +7,14 @@
 \item Ctrl-\/w q -\/ Close
 \item Ctrl-\/w arrows -\/ move between buffers
 \item \+:vs filename -\/ open file in new vertical split
-\end{DoxyItemize}\hypertarget{md_docs_pages_notes_autotoc_md15}{}\doxysection{Git}\label{md_docs_pages_notes_autotoc_md15}
-There is a git pre-\/commit hook that reminds me to update the changelog 
+\end{DoxyItemize}\hypertarget{md_docs_pages_notes_autotoc_md21}{}\doxysection{Git}\label{md_docs_pages_notes_autotoc_md21}
+There is a git pre-\/commit hook that reminds me to update the changelog\hypertarget{md_docs_pages_notes_autotoc_md22}{}\doxysection{Python venv}\label{md_docs_pages_notes_autotoc_md22}
+Use a venv to make the python scripts not pollute your own Python install with their junk.
+
+
+\begin{DoxyEnumerate}
+\item Run {\ttfamily python -\/m venv venv} from inside the main source directory
+\item Activate the virtual env with {\ttfamily venv/bin/activate}
+\item Install the dependences by typing {\ttfamily pip install -\/r tools/requirements.\+txt}
+\item Deactivate it when you are done using {\ttfamily deactivate} 
+\end{DoxyEnumerate}

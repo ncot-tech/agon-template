@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['screen_0',['Screen',['../struct_screen.html',1,'']]]
+  ['point_0',['Point',['../struct_point.html',1,'']]]
 ];

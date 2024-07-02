@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -84,9 +84,7 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -97,88 +95,37 @@ $(document).ready(function(){initNavTree('main_8c.html',''); initResizable(); })
 <code>#include &quot;<a class="el" href="graphics_8h_source.html">vdp/graphics.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="keyboard_8h_source.html">input/keyboard.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="colour__bars_8h_source.html">main_src/colour_bars.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="error__screen_8h_source.html">main_src/error_screen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="debug_8h_source.html">debug/debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c__incl.png" border="0" usemap="#asrc_2main_8c" alt=""/></div>
 <map name="asrc_2main_8c" id="asrc_2main_8c">
-<area shape="rect" title=" " alt="" coords="298,5,391,32"/>
+<area shape="rect" title=" " alt="" coords="457,5,550,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,132,107"/>
-<area shape="rect" title=" " alt="" coords="199,229,290,256"/>
-<area shape="rect" title=" " alt="" coords="207,80,274,107"/>
-<area shape="rect" href="utils_8h.html" title=" " alt="" coords="298,80,391,107"/>
-<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="416,80,537,107"/>
-<area shape="rect" href="keyboard_8h.html" title=" " alt="" coords="562,80,698,107"/>
-<area shape="rect" href="colour__bars_8h.html" title=" " alt="" coords="723,80,903,107"/>
-<area shape="rect" title=" " alt="" coords="283,155,412,181"/>
-<area shape="rect" title=" " alt="" coords="441,155,513,181"/>
-<area shape="rect" href="screen_8h.html" title=" " alt="" coords="639,155,784,181"/>
+<area shape="rect" title=" " alt="" coords="234,229,325,256"/>
+<area shape="rect" title=" " alt="" coords="974,80,1041,107"/>
+<area shape="rect" href="utils_8h.html" title=" " alt="" coords="598,155,691,181"/>
+<area shape="rect" href="graphics_8h.html" title=" " alt="" coords="828,80,949,107"/>
+<area shape="rect" href="keyboard_8h.html" title=" " alt="" coords="715,155,851,181"/>
+<area shape="rect" href="colour__bars_8h.html" title=" " alt="" coords="309,80,489,107"/>
+<area shape="rect" href="error__screen_8h.html" title=" " alt="" coords="513,80,701,107"/>
+<area shape="rect" href="debug_8h.html" title=" " alt="" coords="21,155,143,181"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="167,155,242,181"/>
+<area shape="rect" title=" " alt="" coords="580,229,709,256"/>
+<area shape="rect" title=" " alt="" coords="799,229,871,256"/>
+<area shape="rect" href="point_8h.html" title=" " alt="" coords="926,155,1057,181"/>
+<area shape="rect" href="screen_8h.html" title=" " alt="" coords="327,155,472,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a6fd4eca6489c7a417e639fbedb4113ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6fd4eca6489c7a417e639fbedb4113ea">DEBUG_TEST</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a6fd4eca6489c7a417e639fbedb4113ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7377cc956f5c81538f0fbf0a0492a539"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a7377cc956f5c81538f0fbf0a0492a539">debug_print</a>(fmt, ...)</td></tr>
-<tr class="separator:a7377cc956f5c81538f0fbf0a0492a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad5d3fc112316362c155d957861d0d023"><td class="memItemLeft" align="right" valign="top">volatile SYSVAR *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad5d3fc112316362c155d957861d0d023">sv</a></td></tr>
-<tr class="separator:ad5d3fc112316362c155d957861d0d023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a7377cc956f5c81538f0fbf0a0492a539" name="a7377cc956f5c81538f0fbf0a0492a539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7377cc956f5c81538f0fbf0a0492a539">&#9670;&nbsp;</a></span>debug_print</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define debug_print</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">fmt, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">do</span> { <span class="keywordflow">if</span> (<a class="code hl_define" href="main_8c.html#a6fd4eca6489c7a417e639fbedb4113ea">DEBUG_TEST</a>) fprintf(stderr, <span class="stringliteral">&quot;%s:%d:%s(): &quot;</span> fmt, __FILE__, \</div>
-<div class="line">                                __LINE__, __func__, __VA_ARGS__); } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="amain_8c_html_a6fd4eca6489c7a417e639fbedb4113ea"><div class="ttname"><a href="main_8c.html#a6fd4eca6489c7a417e639fbedb4113ea">DEBUG_TEST</a></div><div class="ttdeci">#define DEBUG_TEST</div><div class="ttdef"><b>Definition:</b> main.c:9</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6fd4eca6489c7a417e639fbedb4113ea" name="a6fd4eca6489c7a417e639fbedb4113ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fd4eca6489c7a417e639fbedb4113ea">&#9670;&nbsp;</a></span>DEBUG_TEST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEBUG_TEST&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
@@ -200,39 +147,44 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
 <map name="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,60,260"/>
-<area shape="rect" href="colour__bars_8c.html#a8c3915a46635ab2c06bab56e915d7c8e" title=" " alt="" coords="114,56,255,83"/>
-<area shape="rect" href="colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="120,107,249,133"/>
-<area shape="rect" href="utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0" title="Changes the current screen mode." alt="" coords="545,157,716,184"/>
-<area shape="rect" href="colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63" title=" " alt="" coords="108,208,261,235"/>
-<area shape="rect" href="screen_8c.html#a3e60acd7192fba1d2dcf0dd167afd8b8" title=" " alt="" coords="127,259,242,285"/>
-<area shape="rect" href="keyboard_8c.html#aaeb4e4a3c4813ee1efc6b98bba9ec781" title="Updates the pointer to the MOS keyboard map." alt="" coords="128,309,241,336"/>
-<area shape="rect" href="keyboard_8c.html#a6bcd625c19ec94a2ea79cd6fe4f4d673" title="Sets up the keystates arrays." alt="" coords="335,335,472,361"/>
-<area shape="rect" href="screen_8c.html#ad0a0d65fe13242143deb13586e5bc7f4" title=" " alt="" coords="133,411,236,437"/>
-<area shape="rect" href="colour__bars_8c.html#aba8b322ea12b4fe2899ab1df56c2e7c4" title=" " alt="" coords="349,5,458,32"/>
-<area shape="rect" href="utils_8c.html#af71d49fed6cebb52fc826569e40c218a" title="VDU 23,0,C3 &#45; Swap screen buffers." alt="" coords="309,56,497,83"/>
-<area shape="rect" href="colour__bars_8c.html#a01913054a73767b81ad3ff857feb19c6" title=" " alt="" coords="560,5,701,32"/>
-<area shape="rect" href="graphics_8c.html#a4f96120c506f2b22cc3f4c7792e0d86a" title=" " alt="" coords="764,5,877,32"/>
-<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="925,5,1015,32"/>
-<area shape="rect" href="screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="320,107,487,133"/>
-<area shape="rect" href="utils_8c.html#a606aa6336a757ee6ad2f3b446252b486" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="556,91,705,133"/>
+<area shape="rect" title=" " alt="" coords="5,819,60,845"/>
+<area shape="rect" href="colour__bars_8c.html#a8c3915a46635ab2c06bab56e915d7c8e" title=" " alt="" coords="114,5,255,32"/>
+<area shape="rect" href="debug_8c.html#a62c38c9caa26674373a77b2c8f53c68d" title=" " alt="" coords="813,208,920,235"/>
+<area shape="rect" href="colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead" title=" " alt="" coords="120,465,249,492"/>
+<area shape="rect" href="utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0" title="Changes the current screen mode." alt="" coords="1000,753,1171,780"/>
+<area shape="rect" href="colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63" title=" " alt="" coords="108,717,261,744"/>
+<area shape="rect" href="screen_8c.html#a3e60acd7192fba1d2dcf0dd167afd8b8" title=" " alt="" coords="127,844,242,871"/>
+<area shape="rect" href="keyboard_8c.html#aaeb4e4a3c4813ee1efc6b98bba9ec781" title="Updates the pointer to the MOS keyboard map." alt="" coords="128,945,241,972"/>
+<area shape="rect" href="keyboard_8c.html#a6bcd625c19ec94a2ea79cd6fe4f4d673" title="Sets up the keystates arrays." alt="" coords="325,920,463,947"/>
+<area shape="rect" href="debug_8c.html#a40d9885a85bf94d787b850a7f34ab750" title=" " alt="" coords="149,996,220,1023"/>
+<area shape="rect" href="screen_8c.html#ad0a0d65fe13242143deb13586e5bc7f4" title=" " alt="" coords="133,1047,236,1073"/>
+<area shape="rect" href="sprite_8c.html#ae5c64d48999accbf8b37bc1a22f41cd6" title=" " alt="" coords="315,5,473,32"/>
+<area shape="rect" href="spritedef_8c.html#a586ef020ca5ace67c370e4c2ffd2edba" title=" " alt="" coords="545,5,715,32"/>
+<area shape="rect" href="graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="800,81,933,108"/>
+<area shape="rect" href="xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639" title="Converts an integer to another number base as a string." alt="" coords="1058,208,1113,235"/>
+<area shape="rect" href="utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="1041,461,1130,488"/>
+<area shape="rect" href="screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="783,640,950,667"/>
+<area shape="rect" href="sprite_8c.html#abc9afcbdfcb1479313157eeba370330a" title=" " alt="" coords="325,208,463,235"/>
+<area shape="rect" href="sprite_8c.html#a848f2de506a411786f9b80883d12eb76" title=" " alt="" coords="313,487,475,529"/>
+<area shape="rect" href="sprite_8c.html#a81488510f23ee0eba3fddd8f605c4aab" title=" " alt="" coords="321,553,467,580"/>
+<area shape="rect" href="spritedef_8c.html#ae5ac18d8187e29efb8445b93aee0b649" title=" " alt="" coords="339,604,449,631"/>
+<area shape="rect" href="spritedef_8c.html#a32370a91d4daa047533b818be1349a59" title=" " alt="" coords="335,385,453,412"/>
+<area shape="rect" href="utils_8c.html#a606aa6336a757ee6ad2f3b446252b486" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="1011,633,1160,674"/>
+<area shape="rect" href="sprite_8c.html#ac02af1c1968e3fd616ccf577a5f677f6" title=" " alt="" coords="557,208,703,235"/>
+<area shape="rect" href="spritedef_8c.html#abf9729efab439c1876f90ea162301839" title=" " alt="" coords="546,309,714,336"/>
+<area shape="rect" href="spritedef_8c.html#a1fad3f9e7b60d38d859247fed50a8282" title=" " alt="" coords="575,107,685,133"/>
+<area shape="rect" href="bitmaps_8c.html#a3d167a3f862e37179c73acca79022f56" title=" " alt="" coords="553,411,707,437"/>
+<area shape="rect" href="bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284" title=" " alt="" coords="527,461,733,488"/>
+<area shape="rect" href="error_8c.html#a02a6947e6c74d99d2a9d4cc03a122968" title=" " alt="" coords="563,665,697,692"/>
+<area shape="rect" href="bitmaps_8c.html#a08f9873e481adb7aa8d93000f7166b1d" title=" " alt="" coords="547,513,713,554"/>
+<area shape="rect" href="buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="781,411,952,437"/>
+<area shape="rect" href="buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="799,461,934,488"/>
+<area shape="rect" href="utils_8c.html#ae9960bce2205e56728ef713d34a40206" title="Changes the text colour." alt="" coords="819,691,914,717"/>
+<area shape="rect" href="buffers_8c.html#a49b72cc5962e1b043e656f531e1424e9" title=" " alt="" coords="785,563,948,589"/>
+<area shape="rect" href="sprite_8c.html#a194d321f88b5c9a8c830172d8caed89c" title=" " alt="" coords="329,655,459,681"/>
+<area shape="rect" href="sprite_8c.html#a3b3bdcc8ac3999715adbcf3203fac1f9" title=" " alt="" coords="309,705,479,732"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad5d3fc112316362c155d957861d0d023" name="ad5d3fc112316362c155d957861d0d023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5d3fc112316362c155d957861d0d023">&#9670;&nbsp;</a></span>sv</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile SYSVAR* sv</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

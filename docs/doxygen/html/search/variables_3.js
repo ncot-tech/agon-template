@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['font_5fname_0',['font_name',['../struct_font.html#ad382f9f597a08d047628a53899a67951',1,'Font']]]
+  ['draw_0',['draw',['../struct_screen.html#ae2c87d1a93d75a50fadd7d6da4aa85f3',1,'Screen']]],
+  ['duration_1',['duration',['../struct_sprite_frame.html#a5b14ef3e3e30242faa9bbef961493044',1,'SpriteFrame']]]
 ];

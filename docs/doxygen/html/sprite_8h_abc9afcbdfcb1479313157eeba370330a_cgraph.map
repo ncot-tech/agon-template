@@ -1,0 +1,8 @@
+<map id="sprite_instantiate" name="sprite_instantiate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,144,108"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#ac02af1c1968e3fd616ccf577a5f677f6" title=" " alt="" coords="203,5,349,32"/>
+<area shape="rect" id="node3" href="$debug_8c.html#a62c38c9caa26674373a77b2c8f53c68d" title=" " alt="" coords="408,81,515,108"/>
+<area shape="rect" id="node5" href="$spritedef_8c.html#abf9729efab439c1876f90ea162301839" title=" " alt="" coords="192,107,360,133"/>
+<area shape="rect" id="node6" href="$spritedef_8c.html#a1fad3f9e7b60d38d859247fed50a8282" title=" " alt="" coords="221,157,331,184"/>
+<area shape="rect" id="node4" href="$xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639" title="Converts an integer to another number base as a string." alt="" coords="563,81,617,108"/>
+</map>

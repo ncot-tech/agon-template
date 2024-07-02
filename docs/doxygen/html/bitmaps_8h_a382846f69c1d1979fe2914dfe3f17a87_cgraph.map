@@ -1,6 +1,7 @@
 <map id="load_bitmap_into_buffer" name="load_bitmap_into_buffer">
 <area shape="rect" id="node1" title="Loads a bitmap image into a VDP buffer." alt="" coords="5,31,191,57"/>
-<area shape="rect" id="node2" href="$buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="239,5,409,32"/>
-<area shape="rect" id="node4" href="$buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="257,56,391,83"/>
-<area shape="rect" id="node3" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="457,31,547,57"/>
+<area shape="rect" id="node2" href="$bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284" title=" " alt="" coords="239,31,445,57"/>
+<area shape="rect" id="node3" href="$buffers_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="493,5,664,32"/>
+<area shape="rect" id="node5" href="$buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="511,56,646,83"/>
+<area shape="rect" id="node4" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="712,31,801,57"/>
 </map>

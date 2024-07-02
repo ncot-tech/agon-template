@@ -2,8 +2,7 @@
 \label{utils_8c}\index{src/vdp/utils.c@{src/vdp/utils.c}}
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
-Include dependency graph for utils.\+c\+:
-\nopagebreak
+Include dependency graph for utils.\+c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -24,10 +23,44 @@ void \mbox{\hyperlink{utils_8c_a606aa6336a757ee6ad2f3b446252b486}{vdp\+\_\+enabl
 void \mbox{\hyperlink{utils_8c_a85a8b87e20d294c313faf5bc96496185}{vdp\+\_\+move\+\_\+origin}} (int16\+\_\+t x, int16\+\_\+t y)
 \begin{DoxyCompactList}\small\item\em Set graphics origin. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{utils_8c_ac67f9f9547089e2d20eb020272549f2a}{vdp\+\_\+gcol}} (uint8\+\_\+t colour)
-\begin{DoxyCompactList}\small\item\em Changes graphics colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Changes graphics colour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}{vdp\+\_\+clg}} ()
+\item 
+void \mbox{\hyperlink{utils_8c_ae9960bce2205e56728ef713d34a40206}{vdp\+\_\+colour}} (uint8\+\_\+t colour)
+\begin{DoxyCompactList}\small\item\em Changes the text colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}\label{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}} 
+\index{utils.c@{utils.c}!vdp\_clg@{vdp\_clg}}
+\index{vdp\_clg@{vdp\_clg}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{vdp\_clg()}{vdp\_clg()}}
+{\footnotesize\ttfamily void vdp\+\_\+clg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8c_ae9960bce2205e56728ef713d34a40206}\label{utils_8c_ae9960bce2205e56728ef713d34a40206}} 
+\index{utils.c@{utils.c}!vdp\_colour@{vdp\_colour}}
+\index{vdp\_colour@{vdp\_colour}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{vdp\_colour()}{vdp\_colour()}}
+{\footnotesize\ttfamily void vdp\+\_\+colour (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+
+
+
+Changes the text colour. 
+
+Colour numbers in the range 0-\/127 are interpreted as foreground colours, and numbers in the range 128-\/255 are interpreted as background colours.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & Colour number \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c_ae9960bce2205e56728ef713d34a40206_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{utils_8c_a606aa6336a757ee6ad2f3b446252b486}\label{utils_8c_a606aa6336a757ee6ad2f3b446252b486}} 
 \index{utils.c@{utils.c}!vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}}
 \index{vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}!utils.c@{utils.c}}
@@ -133,15 +166,7 @@ Here is the caller graph for this function\+:
 
 VDU 23,0,C3 -\/ Swap screen buffers. 
 
-Only does something with double buffered screen modes. See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}} Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{utils_8c_af71d49fed6cebb52fc826569e40c218a_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}\label{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}} 
+Only does something with double buffered screen modes. See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}} \mbox{\Hypertarget{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}\label{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}} 
 \index{utils.c@{utils.c}!write16bit@{write16bit}}
 \index{write16bit@{write16bit}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{write16bit()}{write16bit()}}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['num_5fscreens_0',['num_screens',['../screen_8c.html#a59ff745efdee354cf2bc3dd370fec282',1,'screen.c']]]
+  ['keymap_0',['keymap',['../keyboard_8c.html#a706dd1763017e2307cd4085b6a5a7189',1,'keymap():&#160;keyboard.c'],['../keyboard_8h.html#a706dd1763017e2307cd4085b6a5a7189',1,'keymap():&#160;keyboard.c']]]
 ];

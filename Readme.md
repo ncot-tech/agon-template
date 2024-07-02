@@ -1,5 +1,5 @@
 # Agon Light 2 C Template
-**Version: 0.1.0
+**Version: 0.2.0
 James Grimwood / james@ncot.uk / https://ncot.uk
 
 This is a very much work in progress collection of stuff to aid with the [Agon Light C Compiler](https://ncot.uk/agon-light-c-development/) that runs under Linux and so on. It is likely to get updated randomly as I do further development and decide things need to be in here.

@@ -1,0 +1,60 @@
+\hypertarget{error_8c}{}\doxysection{src/error.c File Reference}
+\label{error_8c}\index{src/error.c@{src/error.c}}
+{\ttfamily \#include \char`\"{}error.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$agon/vdp\+\_\+key.\+h$>$}\newline
+{\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vdp/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vdp/graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}screen/screen.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}sprites/spritedef.\+h\char`\"{}}\newline
+Include dependency graph for error.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{error_8c_a02a6947e6c74d99d2a9d4cc03a122968}{raise\+\_\+fatal\+\_\+error}} (char $\ast$title, char $\ast$details)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile SYSVAR $\ast$ \mbox{\hyperlink{error_8c_ad5d3fc112316362c155d957861d0d023}{sv}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{error_8c_a02a6947e6c74d99d2a9d4cc03a122968}\label{error_8c_a02a6947e6c74d99d2a9d4cc03a122968}} 
+\index{error.c@{error.c}!raise\_fatal\_error@{raise\_fatal\_error}}
+\index{raise\_fatal\_error@{raise\_fatal\_error}!error.c@{error.c}}
+\doxysubsubsection{\texorpdfstring{raise\_fatal\_error()}{raise\_fatal\_error()}}
+{\footnotesize\ttfamily void raise\+\_\+fatal\+\_\+error (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{char $\ast$}]{details }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8c_a02a6947e6c74d99d2a9d4cc03a122968_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8c_a02a6947e6c74d99d2a9d4cc03a122968_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{error_8c_ad5d3fc112316362c155d957861d0d023}\label{error_8c_ad5d3fc112316362c155d957861d0d023}} 
+\index{error.c@{error.c}!sv@{sv}}
+\index{sv@{sv}!error.c@{error.c}}
+\doxysubsubsection{\texorpdfstring{sv}{sv}}
+{\footnotesize\ttfamily volatile SYSVAR$\ast$ sv\hspace{0.3cm}{\ttfamily [extern]}}
+

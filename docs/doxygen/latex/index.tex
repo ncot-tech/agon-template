@@ -1,21 +1,32 @@
 \label{index_md_Readme}%
 \Hypertarget{index_md_Readme}%
-$\ast$$\ast$\+Version\+: 0.\+1.\+0
+$\ast$$\ast$\+Version\+: 0.\+2.\+0 James Grimwood / \href{mailto:james@ncot.uk}{\texttt{ james@ncot.\+uk}} / \href{https://ncot.uk}{\texttt{ https\+://ncot.\+uk}}
 
 This is a very much work in progress collection of stuff to aid with the \href{https://ncot.uk/agon-light-c-development/}{\texttt{ Agon Light C Compiler}} that runs under Linux and so on. It is likely to get updated randomly as I do further development and decide things need to be in here.
 
-You\textquotesingle{}ll need the \char`\"{}\+AGDev\char`\"{} C compiler already installed and working before this will be any use.
+It uses \href{https://semver.org/spec/v2.0.0.html}{\texttt{ Semantic Versioning}}\hypertarget{index_autotoc_md1}{}\doxysection{Requirements}\label{index_autotoc_md1}
 
-The \char`\"{}\+Tools\char`\"{} folder contains useful utilities, but they\textquotesingle{}re designed for me and come with no documentation!\hypertarget{index_autotoc_md1}{}\doxysection{What to do next}\label{index_autotoc_md1}
+\begin{DoxyItemize}
+\item You\textquotesingle{}ll need the \href{https://github.com/pcawte/AgDev}{\texttt{ AGDev}} C compiler already installed and working before this will be any use.
+\item The \href{https://github.com/tomm/fab-agon-emulator}{\texttt{ fab-\/agon}} emulator will also be useful.
+\item The \char`\"{}\+Tools\char`\"{} folder contains useful utilities.
+\item Doxygen generated documentation can be generated, and exists in the docs/doxygen folder.
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysection{What to do next}\label{index_autotoc_md2}
 
 \begin{DoxyEnumerate}
 \item Clone this repo and strip out all the Git stuff from it, you\textquotesingle{}ll want to make a new Git repo for whatever you\textquotesingle{}re working on.
 \item Look at the Makefile and edit as needed -\/ mostly to set paths and so on, and to see what it does
-\item Your code goes in \char`\"{}src/\char`\"{}, data can go in \char`\"{}data/\char`\"{}
-\item There is a symlink in data that needs to point to the SD card location of the Agon emulator
-\end{DoxyEnumerate}\hypertarget{index_autotoc_md2}{}\doxysection{When programming}\label{index_autotoc_md2}
+\item Your code goes in \char`\"{}src/main\+\_\+src\char`\"{}, data can go in \char`\"{}data/\char`\"{}
+\item You will need to edit \mbox{\hyperlink{main_8c}{main.\+c}}, see the comments in there
+\item Look at the documentation inside {\ttfamily docs/} if you point a browser at {\ttfamily docs/doxygen/html/index.\+html} you can read it all.
+\end{DoxyEnumerate}
+
+I am working on a wizard type tool to copy and set up a new project from this to reduce the amount of effort.\hypertarget{index_autotoc_md3}{}\doxysection{When programming}\label{index_autotoc_md3}
 
 \begin{DoxyItemize}
-\item Running \char`\"{}make\char`\"{} will compile things
-\item Running \char`\"{}make emulate\char`\"{} will also copy the relevant code into the fake SD card and start the emulator, you will need to copy any resources yourself. It will also edit/create an autoexe.\+txt file in the fake SD card folder so your code starts immediately. Copy the autoexec.\+txt first if you\textquotesingle{}ve customised it. 
+\item Running {\ttfamily make} will compile things, this should work out the box if you set it up correctly and is a good test.
+\item Running {\ttfamily make emulate} will also copy the relevant code into the fake SD card and start the emulator, you will need to copy any resources yourself. It will also edit/create an autoexe.\+txt file in the fake SD card folder so your code starts immediately. Copy the autoexec.\+txt first if you\textquotesingle{}ve customised it.
+\item Running {\ttfamily make inst\+\_\+sd} will copy everything onto the SD card if you mounted it properly.
 \end{DoxyItemize}
+
+If something doesn\textquotesingle{}t make sense, raise an issue. I hate poorly documented code and am putting in effort to make this code have better than average documentation! I\textquotesingle{}ve learnt that if I document it, I can also read the docs and don\textquotesingle{}t need to remember what everything does! Fancy that... documentation can be useful. Spread the word ;-\/) 

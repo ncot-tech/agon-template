@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bad_5ffile_0',['BAD_FILE',['../bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775aeac35144c1ba1a5778f9ebeef61e4d7baf',1,'bitmaps.h']]]
+  ['active_0',['ACTIVE',['../sprite_8h.html#a45a6ffa9a5d6174f37be78bb2f155552a33cf1d8ef1d06ee698a7fabf40eb3a7f',1,'sprite.h']]]
 ];

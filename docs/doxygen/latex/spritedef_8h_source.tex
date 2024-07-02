@@ -1,0 +1,37 @@
+\hypertarget{spritedef_8h_source}{}\doxysection{spritedef.\+h}
+\label{spritedef_8h_source}\index{src/sprites/spritedef.h@{src/sprites/spritedef.h}}
+\mbox{\hyperlink{spritedef_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_SPRITEDEF\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_SPRITEDEF\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../maths/point.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_sprite_frame}{SpriteFrame}} \{}
+\DoxyCodeLine{8     uint16\_t \mbox{\hyperlink{struct_sprite_frame_ac3c4ff2019f2e9afafb4f6689c0ec591}{frame}};}
+\DoxyCodeLine{9     uint16\_t \mbox{\hyperlink{struct_sprite_frame_a5b14ef3e3e30242faa9bbef961493044}{duration}};}
+\DoxyCodeLine{10 \} \mbox{\hyperlink{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}{SpriteFrame}};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_sprite_animation_def}{SpriteAnimationDef}} \{}
+\DoxyCodeLine{13     uint16\_t \mbox{\hyperlink{struct_sprite_animation_def_a1892eba2086d12ac2b09005aeb09ea3b}{length}};}
+\DoxyCodeLine{14     \mbox{\hyperlink{struct_sprite_frame}{SpriteFrame}} *\mbox{\hyperlink{struct_sprite_animation_def_aa6946679845fa3ca4dd23e8c1f319644}{frames}};}
+\DoxyCodeLine{15 \} \mbox{\hyperlink{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}{SpriteAnimationDef}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_sprite_def}{SpriteDef}} \{}
+\DoxyCodeLine{18     uint16\_t \mbox{\hyperlink{struct_sprite_def_aa5b8f6a1a415d49ae87862fc04f43ca9}{sprite\_width}};}
+\DoxyCodeLine{19     uint16\_t \mbox{\hyperlink{struct_sprite_def_a2c64e23b0daa800815a4b91ff0435d5f}{sprite\_height}};}
+\DoxyCodeLine{20     uint16\_t \mbox{\hyperlink{struct_sprite_def_aa493dd0cc067e60f9d13210d8981b983}{sprite\_count}};}
+\DoxyCodeLine{21     uint16\_t \mbox{\hyperlink{struct_sprite_def_ab7093f5cc4f0996575d0312058e6c6dd}{state\_count}};}
+\DoxyCodeLine{22     \mbox{\hyperlink{struct_sprite_animation_def}{SpriteAnimationDef}} *\mbox{\hyperlink{struct_sprite_def_a5e9dffa5eab2550f1a3a55d18195fe96}{state\_frames}};}
+\DoxyCodeLine{23 \} \mbox{\hyperlink{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}{SpriteDef}};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keywordtype}{void} \mbox{\hyperlink{spritedef_8h_abf9729efab439c1876f90ea162301839}{debug\_print\_spritedef}}(\mbox{\hyperlink{struct_sprite_def}{SpriteDef}} *sprite\_def);}
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649}{spritedef\_init}}(uint16\_t start\_bitmap\_id);}
+\DoxyCodeLine{27 uint16\_t \mbox{\hyperlink{spritedef_8h_a32370a91d4daa047533b818be1349a59}{spritedef\_load}}(\textcolor{keywordtype}{char} *sprite\_file);}
+\DoxyCodeLine{28 \mbox{\hyperlink{struct_sprite_def}{SpriteDef}} *\mbox{\hyperlink{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}{spritedef\_get}}(uint16\_t sprite\_def\_id);}
+\DoxyCodeLine{29 \textcolor{keywordtype}{void} \mbox{\hyperlink{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}{spritedef\_draw\_frame}}(\mbox{\hyperlink{struct_sprite_def}{SpriteDef}} *sprite\_def, uint16\_t state, uint16\_t frame, \mbox{\hyperlink{struct_point}{Point}} position);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

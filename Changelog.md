@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Moved Point into its own file
 - Moved bitmap loading into the correct file
+- Updated docs
 
 ### Removed
 

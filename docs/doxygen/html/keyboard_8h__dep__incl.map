@@ -1,5 +1,6 @@
 <map id="src/input/keyboard.h" name="src/input/keyboard.h">
-<area shape="rect" id="node1" title=" " alt="" coords="81,5,243,32"/>
-<area shape="rect" id="node2" href="$keyboard_8c.html" title=" " alt="" coords="5,80,167,107"/>
-<area shape="rect" id="node3" href="$main_8c.html" title=" " alt="" coords="191,80,285,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="157,5,319,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html" title=" " alt="" coords="5,87,167,114"/>
+<area shape="rect" id="node3" href="$main_8c.html" title=" " alt="" coords="191,87,285,114"/>
+<area shape="rect" id="node4" href="$colour__bars_8c.html" title=" " alt="" coords="309,80,465,121"/>
 </map>

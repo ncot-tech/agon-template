@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('md_docs_pages_notes.html',''); initRes
   <div class="headertitle"><div class="title">General Notes </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md14"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md20"></a>
 VIM Commands</h1>
 <ul>
 <li>Ctrl-w s, ctrl-w v - Split current window half horizontally or vertically with same file in it</li>
@@ -96,9 +96,18 @@ VIM Commands</h1>
 <li>Ctrl-w arrows - move between buffers</li>
 <li>:vs filename - open file in new vertical split</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Git</h1>
-<p >There is a git pre-commit hook that reminds me to update the changelog </p>
+<p >There is a git pre-commit hook that reminds me to update the changelog</p>
+<h1><a class="anchor" id="autotoc_md22"></a>
+Python venv</h1>
+<p >Use a venv to make the python scripts not pollute your own Python install with their junk.</p>
+<ol type="1">
+<li>Run <code>python -m venv venv</code> from inside the main source directory</li>
+<li>Activate the virtual env with <code>venv/bin/activate</code></li>
+<li>Install the dependences by typing <code>pip install -r tools/requirements.txt</code></li>
+<li>Deactivate it when you are done using <code>deactivate</code> </li>
+</ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

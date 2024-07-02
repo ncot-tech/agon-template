@@ -14,8 +14,8 @@ var bitmaps_8h =
       [ "NOT_IMAGE", "bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370", null ],
       [ "WRONG_BPP", "bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775aea8aaa6abcd401f38c98b99d5301346110", null ]
     ] ],
+    [ "debug_print_bitmap", "bitmaps_8h.html#a3d167a3f862e37179c73acca79022f56", null ],
     [ "load_bitmap_into_buffer", "bitmaps_8h.html#a382846f69c1d1979fe2914dfe3f17a87", null ],
-    [ "vdp_assign_buffer_to_bitmap", "bitmaps_8h.html#a08f9873e481adb7aa8d93000f7166b1d", null ],
-    [ "vdp_draw_current_bitmap", "bitmaps_8h.html#a42b639c4a10d566b61e7567c1fe2a662", null ],
-    [ "vdp_plot_bitmap", "bitmaps_8h.html#a6307714183c020f335ec89a052b74787", null ]
+    [ "load_bitmap_into_buffer_fp", "bitmaps_8h.html#a2524fe59bb1e40bdcd8b1bd65faf8284", null ],
+    [ "vdp_assign_buffer_to_bitmap", "bitmaps_8h.html#a08f9873e481adb7aa8d93000f7166b1d", null ]
 ];

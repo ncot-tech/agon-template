@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['previous_5fkeystates_0',['previous_keystates',['../keyboard_8c.html#a0c7174717a5b58fafc3e38ed466b7d0b',1,'previous_keystates():&#160;keyboard.c'],['../keyboard_8h.html#af72a27c0afd2db2c7bf510c71d26c209',1,'previous_keystates():&#160;keyboard.c']]]
+  ['length_0',['length',['../struct_sprite_animation_def.html#a1892eba2086d12ac2b09005aeb09ea3b',1,'SpriteAnimationDef']]],
+  ['logfile_1',['logfile',['../debug_8c.html#ad6414805d0985dabfc7acdd0637460d0',1,'debug.c']]]
 ];

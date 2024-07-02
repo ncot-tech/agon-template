@@ -5,6 +5,7 @@
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}buffers.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../debug/debug.\+h\char`\"{}}\newline
 Include dependency graph for bitmaps.\+c\+:
 \nopagebreak
 \begin{figure}[H]
@@ -16,15 +17,39 @@ Include dependency graph for bitmaps.\+c\+:
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284}{load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp}} (uint16\+\_\+t buffer\+\_\+id, uint8\+\_\+t file, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header\+\_\+data)
+\item 
 \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87}{load\+\_\+bitmap\+\_\+into\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id, char $\ast$filename, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header\+\_\+data)
 \begin{DoxyCompactList}\small\item\em Loads a bitmap image into a VDP buffer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{bitmaps_8c_a42b639c4a10d566b61e7567c1fe2a662}{vdp\+\_\+draw\+\_\+current\+\_\+bitmap}} (uint16\+\_\+t x, uint16\+\_\+t y)
 \item 
 void \mbox{\hyperlink{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d}{vdp\+\_\+assign\+\_\+buffer\+\_\+to\+\_\+bitmap}} (uint16\+\_\+t buffer\+\_\+id, \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}} bitmap\+\_\+format, uint16\+\_\+t width, uint16\+\_\+t height)
+\item 
+void \mbox{\hyperlink{bitmaps_8c_a3d167a3f862e37179c73acca79022f56}{debug\+\_\+print\+\_\+bitmap}} (\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bitmaps_8c_a3d167a3f862e37179c73acca79022f56}\label{bitmaps_8c_a3d167a3f862e37179c73acca79022f56}} 
+\index{bitmaps.c@{bitmaps.c}!debug\_print\_bitmap@{debug\_print\_bitmap}}
+\index{debug\_print\_bitmap@{debug\_print\_bitmap}!bitmaps.c@{bitmaps.c}}
+\doxysubsubsection{\texorpdfstring{debug\_print\_bitmap()}{debug\_print\_bitmap()}}
+{\footnotesize\ttfamily void debug\+\_\+print\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$}]{header }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmaps_8c_a3d167a3f862e37179c73acca79022f56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmaps_8c_a3d167a3f862e37179c73acca79022f56_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{bitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87}\label{bitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87}} 
 \index{bitmaps.c@{bitmaps.c}!load\_bitmap\_into\_buffer@{load\_bitmap\_into\_buffer}}
 \index{load\_bitmap\_into\_buffer@{load\_bitmap\_into\_buffer}!bitmaps.c@{bitmaps.c}}
@@ -49,7 +74,8 @@ The image must be converted into an RGBA2222 format image using the conversion t
 \begin{DoxyReturn}{Returns}
 BITMAP\+\_\+\+LOAD\+\_\+\+RESULT 
 \end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -61,6 +87,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=340pt]{bitmaps_8c_a382846f69c1d1979fe2914dfe3f17a87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284}\label{bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284}} 
+\index{bitmaps.c@{bitmaps.c}!load\_bitmap\_into\_buffer\_fp@{load\_bitmap\_into\_buffer\_fp}}
+\index{load\_bitmap\_into\_buffer\_fp@{load\_bitmap\_into\_buffer\_fp}!bitmaps.c@{bitmaps.c}}
+\doxysubsubsection{\texorpdfstring{load\_bitmap\_into\_buffer\_fp()}{load\_bitmap\_into\_buffer\_fp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{uint8\+\_\+t}]{file,  }\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$}]{header\+\_\+data }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bitmaps_8c_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d}\label{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d}} 
@@ -76,11 +122,12 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=325pt]{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph}
+\includegraphics[width=350pt]{bitmaps_8c_a08f9873e481adb7aa8d93000f7166b1d_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{bitmaps_8c_a42b639c4a10d566b61e7567c1fe2a662}\label{bitmaps_8c_a42b639c4a10d566b61e7567c1fe2a662}} 

@@ -26,25 +26,42 @@ var NAVTREE =
 [
   [ "Agon Template", "index.html", [
     [ "Agon Light 2 C Template", "index.html", [
-      [ "What to do next", "index.html#autotoc_md1", null ],
-      [ "When programming", "index.html#autotoc_md2", null ]
+      [ "Requirements", "index.html#autotoc_md1", null ],
+      [ "What to do next", "index.html#autotoc_md2", null ],
+      [ "When programming", "index.html#autotoc_md3", null ]
     ] ],
     [ "Changelog", "md__changelog.html", [
-      [ "[Unreleased]", "md__changelog.html#autotoc_md4", [
-        [ "Added", "md__changelog.html#autotoc_md5", null ],
-        [ "Changed", "md__changelog.html#autotoc_md6", null ],
-        [ "Removed", "md__changelog.html#autotoc_md7", null ]
+      [ "[refactoring/0.2.0] - 2 July 2024", "md__changelog.html#autotoc_md5", [
+        [ "Added", "md__changelog.html#autotoc_md6", null ],
+        [ "Changed", "md__changelog.html#autotoc_md7", null ],
+        [ "Removed", "md__changelog.html#autotoc_md8", null ]
+      ] ],
+      [ "[refactoring/0.1.0] - 15 June 2024", "md__changelog.html#autotoc_md9", [
+        [ "Added", "md__changelog.html#autotoc_md10", null ],
+        [ "Changed", "md__changelog.html#autotoc_md11", null ],
+        [ "Removed", "md__changelog.html#autotoc_md12", null ]
       ] ]
     ] ],
+    [ "Drawing Graphics", "md_docs_pages_drawing_graphics.html", null ],
     [ "File Formats", "md_docs_pages_file_format.html", [
-      [ "RGBA2222 format images", "md_docs_pages_file_format.html#autotoc_md9", null ],
-      [ "Fonts", "md_docs_pages_file_format.html#autotoc_md10", null ],
-      [ "Tilemaps", "md_docs_pages_file_format.html#autotoc_md11", null ]
+      [ "RGBA2222 format images", "md_docs_pages_file_format.html#autotoc_md15", null ],
+      [ "Fonts", "md_docs_pages_file_format.html#autotoc_md16", null ],
+      [ "Tilemaps", "md_docs_pages_file_format.html#autotoc_md17", null ]
     ] ],
     [ "The Makefile", "md_docs_pages_makefile.html", null ],
     [ "General Notes", "md_docs_pages_notes.html", [
-      [ "VIM Commands", "md_docs_pages_notes.html#autotoc_md14", null ],
-      [ "Git", "md_docs_pages_notes.html#autotoc_md15", null ]
+      [ "VIM Commands", "md_docs_pages_notes.html#autotoc_md20", null ],
+      [ "Git", "md_docs_pages_notes.html#autotoc_md21", null ],
+      [ "Python venv", "md_docs_pages_notes.html#autotoc_md22", null ]
+    ] ],
+    [ "The Screen State Machine System", "md_docs_pages_screens.html", [
+      [ "State Machine Overview", "md_docs_pages_screens.html#autotoc_md24", null ],
+      [ "Screen States", "md_docs_pages_screens.html#autotoc_md25", [
+        [ "Init", "md_docs_pages_screens.html#autotoc_md26", null ],
+        [ "Update", "md_docs_pages_screens.html#autotoc_md27", null ],
+        [ "Draw", "md_docs_pages_screens.html#autotoc_md28", null ]
+      ] ],
+      [ "Defining Screens", "md_docs_pages_screens.html#autotoc_md29", null ]
     ] ],
     [ "VDP Documentation", "md_docs_pages_vdp.html", null ],
     [ "Data Structures", "annotated.html", [
@@ -58,7 +75,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -73,7 +90,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"utils_8c.html#a85a8b87e20d294c313faf5bc96496185"
+"md_docs_pages_screens.html#autotoc_md26"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

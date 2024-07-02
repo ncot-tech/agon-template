@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -86,7 +86,7 @@ $(document).ready(function(){initNavTree('md_docs_pages_file_format.html',''); i
   <div class="headertitle"><div class="title">File Formats </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md9"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md15"></a>
 RGBA2222 format images</h1>
 <p >Save images inside the data/images directory</p>
 <p >If you run <code>make images</code> the <code>png2rgb.py</code> tool will turn them into RGBA2222 format image data. This data contains the following</p>
@@ -100,10 +100,10 @@ RGBA2222 format images</h1>
 <li>1 byte per pixel, RGBA 2 bits each</li>
 </ul>
 <p >To use this, read the first 10 bytes, check it starts with "NCOTB". Then use the width * height * bpp to know the size of the image data in bytes.</p>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Fonts</h1>
 <p >Fonts are made from image atlas files containing each character in ASCII order. Each character is turned into its own RGBA2222 format image, and a <code>.fon</code> definition file is created to go along with it.</p>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Tilemaps</h1>
 <p >These work with Tiled format tmx and tsx files. The conversion tool will read the Tiled tmx file and create a directory of relevant image data, map data and definition files. </p>
 </div></div><!-- contents -->

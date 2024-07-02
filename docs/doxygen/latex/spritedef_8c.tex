@@ -1,0 +1,168 @@
+\hypertarget{spritedef_8c}{}\doxysection{src/sprites/spritedef.c File Reference}
+\label{spritedef_8c}\index{src/sprites/spritedef.c@{src/sprites/spritedef.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}spritedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../vdp/bitmaps.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../debug/debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../vdp/graphics.\+h\char`\"{}}\newline
+Include dependency graph for spritedef.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{spritedef_8c_af48ee008ed2edaebefccdc8e00cec200}{MAX\+\_\+\+SPRITEDEFS}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{spritedef_8c_ae5ac18d8187e29efb8445b93aee0b649}{spritedef\+\_\+init}} (uint16\+\_\+t start\+\_\+bitmap\+\_\+id)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{spritedef_8c_a32370a91d4daa047533b818be1349a59}{spritedef\+\_\+load}} (char $\ast$sprite\+\_\+file)
+\item 
+\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$ \mbox{\hyperlink{spritedef_8c_a1fad3f9e7b60d38d859247fed50a8282}{spritedef\+\_\+get}} (uint16\+\_\+t sprite\+\_\+def\+\_\+id)
+\item 
+void \mbox{\hyperlink{spritedef_8c_abf9729efab439c1876f90ea162301839}{debug\+\_\+print\+\_\+spritedef}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$sprite\+\_\+def)
+\item 
+void \mbox{\hyperlink{spritedef_8c_a586ef020ca5ace67c370e4c2ffd2edba}{spritedef\+\_\+draw\+\_\+frame}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$sprite\+\_\+def, uint16\+\_\+t state, uint16\+\_\+t frame, \mbox{\hyperlink{struct_point}{Point}} position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \mbox{\hyperlink{spritedef_8c_a71820a804fe97bd63cd47a283ab6d56a}{sprite\+\_\+defs}} \mbox{[}\mbox{\hyperlink{spritedef_8c_af48ee008ed2edaebefccdc8e00cec200}{MAX\+\_\+\+SPRITEDEFS}}\mbox{]}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{spritedef_8c_a12d393b4b0270fda0b6ddaf7f4989fb9}{sprite\+\_\+def\+\_\+count}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{spritedef_8c_ae0382c963d3fcf79289fb53a7bf317e6}{current\+\_\+bitmap\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spritedef_8c_af48ee008ed2edaebefccdc8e00cec200}\label{spritedef_8c_af48ee008ed2edaebefccdc8e00cec200}} 
+\index{spritedef.c@{spritedef.c}!MAX\_SPRITEDEFS@{MAX\_SPRITEDEFS}}
+\index{MAX\_SPRITEDEFS@{MAX\_SPRITEDEFS}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_SPRITEDEFS}{MAX\_SPRITEDEFS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+SPRITEDEFS~100}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{spritedef_8c_abf9729efab439c1876f90ea162301839}\label{spritedef_8c_abf9729efab439c1876f90ea162301839}} 
+\index{spritedef.c@{spritedef.c}!debug\_print\_spritedef@{debug\_print\_spritedef}}
+\index{debug\_print\_spritedef@{debug\_print\_spritedef}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{debug\_print\_spritedef()}{debug\_print\_spritedef()}}
+{\footnotesize\ttfamily void debug\+\_\+print\+\_\+spritedef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$}]{sprite\+\_\+def }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_abf9729efab439c1876f90ea162301839_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_abf9729efab439c1876f90ea162301839_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{spritedef_8c_a586ef020ca5ace67c370e4c2ffd2edba}\label{spritedef_8c_a586ef020ca5ace67c370e4c2ffd2edba}} 
+\index{spritedef.c@{spritedef.c}!spritedef\_draw\_frame@{spritedef\_draw\_frame}}
+\index{spritedef\_draw\_frame@{spritedef\_draw\_frame}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{spritedef\_draw\_frame()}{spritedef\_draw\_frame()}}
+{\footnotesize\ttfamily void spritedef\+\_\+draw\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$}]{sprite\+\_\+def,  }\item[{uint16\+\_\+t}]{state,  }\item[{uint16\+\_\+t}]{frame,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{position }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a586ef020ca5ace67c370e4c2ffd2edba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a586ef020ca5ace67c370e4c2ffd2edba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{spritedef_8c_a1fad3f9e7b60d38d859247fed50a8282}\label{spritedef_8c_a1fad3f9e7b60d38d859247fed50a8282}} 
+\index{spritedef.c@{spritedef.c}!spritedef\_get@{spritedef\_get}}
+\index{spritedef\_get@{spritedef\_get}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{spritedef\_get()}{spritedef\_get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$ spritedef\+\_\+get (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+def\+\_\+id }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a1fad3f9e7b60d38d859247fed50a8282_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a1fad3f9e7b60d38d859247fed50a8282_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{spritedef_8c_ae5ac18d8187e29efb8445b93aee0b649}\label{spritedef_8c_ae5ac18d8187e29efb8445b93aee0b649}} 
+\index{spritedef.c@{spritedef.c}!spritedef\_init@{spritedef\_init}}
+\index{spritedef\_init@{spritedef\_init}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{spritedef\_init()}{spritedef\_init()}}
+{\footnotesize\ttfamily void spritedef\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{start\+\_\+bitmap\+\_\+id }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_ae5ac18d8187e29efb8445b93aee0b649_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{spritedef_8c_a32370a91d4daa047533b818be1349a59}\label{spritedef_8c_a32370a91d4daa047533b818be1349a59}} 
+\index{spritedef.c@{spritedef.c}!spritedef\_load@{spritedef\_load}}
+\index{spritedef\_load@{spritedef\_load}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{spritedef\_load()}{spritedef\_load()}}
+{\footnotesize\ttfamily uint16\+\_\+t spritedef\+\_\+load (\begin{DoxyParamCaption}\item[{char $\ast$}]{sprite\+\_\+file }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a32370a91d4daa047533b818be1349a59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{spritedef_8c_a32370a91d4daa047533b818be1349a59_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{spritedef_8c_ae0382c963d3fcf79289fb53a7bf317e6}\label{spritedef_8c_ae0382c963d3fcf79289fb53a7bf317e6}} 
+\index{spritedef.c@{spritedef.c}!current\_bitmap\_id@{current\_bitmap\_id}}
+\index{current\_bitmap\_id@{current\_bitmap\_id}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{current\_bitmap\_id}{current\_bitmap\_id}}
+{\footnotesize\ttfamily uint16\+\_\+t current\+\_\+bitmap\+\_\+id}
+
+\mbox{\Hypertarget{spritedef_8c_a12d393b4b0270fda0b6ddaf7f4989fb9}\label{spritedef_8c_a12d393b4b0270fda0b6ddaf7f4989fb9}} 
+\index{spritedef.c@{spritedef.c}!sprite\_def\_count@{sprite\_def\_count}}
+\index{sprite\_def\_count@{sprite\_def\_count}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_def\_count}{sprite\_def\_count}}
+{\footnotesize\ttfamily uint16\+\_\+t sprite\+\_\+def\+\_\+count}
+
+\mbox{\Hypertarget{spritedef_8c_a71820a804fe97bd63cd47a283ab6d56a}\label{spritedef_8c_a71820a804fe97bd63cd47a283ab6d56a}} 
+\index{spritedef.c@{spritedef.c}!sprite\_defs@{sprite\_defs}}
+\index{sprite\_defs@{sprite\_defs}!spritedef.c@{spritedef.c}}
+\doxysubsubsection{\texorpdfstring{sprite\_defs}{sprite\_defs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} sprite\+\_\+defs\mbox{[}\mbox{\hyperlink{spritedef_8c_af48ee008ed2edaebefccdc8e00cec200}{MAX\+\_\+\+SPRITEDEFS}}\mbox{]}}
+

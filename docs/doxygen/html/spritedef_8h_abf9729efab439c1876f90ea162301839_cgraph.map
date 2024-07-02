@@ -1,0 +1,5 @@
+<map id="debug_print_spritedef" name="debug_print_spritedef">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$debug_8c.html#a62c38c9caa26674373a77b2c8f53c68d" title=" " alt="" coords="221,5,328,32"/>
+<area shape="rect" id="node3" href="$xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639" title="Converts an integer to another number base as a string." alt="" coords="376,5,431,32"/>
+</map>

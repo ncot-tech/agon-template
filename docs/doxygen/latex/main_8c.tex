@@ -7,6 +7,9 @@
 {\ttfamily \#include \char`\"{}vdp/graphics.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}input/keyboard.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}main\+\_\+src/colour\+\_\+bars.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}main\+\_\+src/error\+\_\+screen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}debug/debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\newline
 Include dependency graph for main.\+c\+:
 \nopagebreak
 \begin{figure}[H]
@@ -15,44 +18,11 @@ Include dependency graph for main.\+c\+:
 \includegraphics[width=350pt]{main_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Macros}
-\begin{DoxyCompactItemize}
-\item 
-\#define \mbox{\hyperlink{main_8c_a6fd4eca6489c7a417e639fbedb4113ea}{DEBUG\+\_\+\+TEST}}~0
-\item 
-\#define \mbox{\hyperlink{main_8c_a7377cc956f5c81538f0fbf0a0492a539}{debug\+\_\+print}}(fmt, ...)
-\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-volatile SYSVAR $\ast$ \mbox{\hyperlink{main_8c_ad5d3fc112316362c155d957861d0d023}{sv}}
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{main_8c_a7377cc956f5c81538f0fbf0a0492a539}\label{main_8c_a7377cc956f5c81538f0fbf0a0492a539}} 
-\index{main.c@{main.c}!debug\_print@{debug\_print}}
-\index{debug\_print@{debug\_print}!main.c@{main.c}}
-\doxysubsubsection{\texorpdfstring{debug\_print}{debug\_print}}
-{\footnotesize\ttfamily \#define debug\+\_\+print(\begin{DoxyParamCaption}\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
-
-{\bfseries Value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{        \textcolor{keywordflow}{do} \{ \textcolor{keywordflow}{if} (\mbox{\hyperlink{main_8c_a6fd4eca6489c7a417e639fbedb4113ea}{DEBUG\_TEST}}) fprintf(stderr, \textcolor{stringliteral}{"{}\%s:\%d:\%s(): "{}} fmt, \_\_FILE\_\_, \(\backslash\)}
-\DoxyCodeLine{                                \_\_LINE\_\_, \_\_func\_\_, \_\_VA\_ARGS\_\_); \} \textcolor{keywordflow}{while} (0)}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{main_8c_a6fd4eca6489c7a417e639fbedb4113ea}\label{main_8c_a6fd4eca6489c7a417e639fbedb4113ea}} 
-\index{main.c@{main.c}!DEBUG\_TEST@{DEBUG\_TEST}}
-\index{DEBUG\_TEST@{DEBUG\_TEST}!main.c@{main.c}}
-\doxysubsubsection{\texorpdfstring{DEBUG\_TEST}{DEBUG\_TEST}}
-{\footnotesize\ttfamily \#define DEBUG\+\_\+\+TEST~0}
-
 
 
 \doxysubsection{Function Documentation}
@@ -70,12 +40,3 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
 \end{center}
 \end{figure}
-
-
-\doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{main_8c_ad5d3fc112316362c155d957861d0d023}\label{main_8c_ad5d3fc112316362c155d957861d0d023}} 
-\index{main.c@{main.c}!sv@{sv}}
-\index{sv@{sv}!main.c@{main.c}}
-\doxysubsubsection{\texorpdfstring{sv}{sv}}
-{\footnotesize\ttfamily volatile SYSVAR$\ast$ sv}
-

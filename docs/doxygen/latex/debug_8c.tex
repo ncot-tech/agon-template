@@ -1,0 +1,79 @@
+\hypertarget{debug_8c}{}\doxysection{src/debug/debug.c File Reference}
+\label{debug_8c}\index{src/debug/debug.c@{src/debug/debug.c}}
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../maths/xitoa.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for debug.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{debug_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{debug_8c_a40d9885a85bf94d787b850a7f34ab750}{log\+\_\+init}} (char $\ast$fname)
+\item 
+void \mbox{\hyperlink{debug_8c_a62c38c9caa26674373a77b2c8f53c68d}{debug\+\_\+printf}} (char $\ast$format,...)
+\item 
+void \mbox{\hyperlink{debug_8c_a65e456c190118e43907e0e30f6aa0b4c}{log\+\_\+message}} (const char $\ast$format,...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{debug_8c_ad6414805d0985dabfc7acdd0637460d0}{logfile}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{debug_8c_a62c38c9caa26674373a77b2c8f53c68d}\label{debug_8c_a62c38c9caa26674373a77b2c8f53c68d}} 
+\index{debug.c@{debug.c}!debug\_printf@{debug\_printf}}
+\index{debug\_printf@{debug\_printf}!debug.c@{debug.c}}
+\doxysubsubsection{\texorpdfstring{debug\_printf()}{debug\_printf()}}
+{\footnotesize\ttfamily void debug\+\_\+printf (\begin{DoxyParamCaption}\item[{char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{debug_8c_a62c38c9caa26674373a77b2c8f53c68d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{debug_8c_a62c38c9caa26674373a77b2c8f53c68d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{debug_8c_a40d9885a85bf94d787b850a7f34ab750}\label{debug_8c_a40d9885a85bf94d787b850a7f34ab750}} 
+\index{debug.c@{debug.c}!log\_init@{log\_init}}
+\index{log\_init@{log\_init}!debug.c@{debug.c}}
+\doxysubsubsection{\texorpdfstring{log\_init()}{log\_init()}}
+{\footnotesize\ttfamily void log\+\_\+init (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{debug_8c_a40d9885a85bf94d787b850a7f34ab750_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{debug_8c_a65e456c190118e43907e0e30f6aa0b4c}\label{debug_8c_a65e456c190118e43907e0e30f6aa0b4c}} 
+\index{debug.c@{debug.c}!log\_message@{log\_message}}
+\index{log\_message@{log\_message}!debug.c@{debug.c}}
+\doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
+{\footnotesize\ttfamily void log\+\_\+message (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{debug_8c_ad6414805d0985dabfc7acdd0637460d0}\label{debug_8c_ad6414805d0985dabfc7acdd0637460d0}} 
+\index{debug.c@{debug.c}!logfile@{logfile}}
+\index{logfile@{logfile}!debug.c@{debug.c}}
+\doxysubsubsection{\texorpdfstring{logfile}{logfile}}
+{\footnotesize\ttfamily uint8\+\_\+t logfile}
+

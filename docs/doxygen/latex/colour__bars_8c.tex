@@ -4,6 +4,12 @@
 {\ttfamily \#include \char`\"{}colour\+\_\+bars.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../vdp/utils.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../vdp/graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../vdp/bitmaps.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../debug/debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../input/keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../error.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sprites/spritedef.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sprites/sprite.\+h\char`\"{}}\newline
 Include dependency graph for colour\+\_\+bars.\+c\+:
 \nopagebreak
 \begin{figure}[H]
@@ -25,6 +31,11 @@ int \mbox{\hyperlink{colour__bars_8c_ab2afa57f6df3d6fad304695e2c6f9e63}{colour\+
 \item 
 void \mbox{\hyperlink{colour__bars_8c_a8c3915a46635ab2c06bab56e915d7c8e}{colour\+\_\+bars\+\_\+draw}} (void)
 \end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{colour__bars_8c_a4fc3a0c58dfbd1e68224521185cb9384}{id}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -42,8 +53,7 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{colour__bars_8c_a8c3915a46635ab2c06bab56e915d7c8e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -64,8 +74,7 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{colour__bars_8c_a9c0908d9b3b9927dffd249014fffdead_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -78,8 +87,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{colour\_bars\_update()}{colour\_bars\_update()}}
 {\footnotesize\ttfamily int colour\+\_\+bars\+\_\+update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{colour__bars_8c_ab2afa57f6df3d6fad304695e2c6f9e63_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -92,8 +107,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{draw\_colour\_bars()}{draw\_colour\_bars()}}
 {\footnotesize\ttfamily void draw\+\_\+colour\+\_\+bars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -105,7 +119,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{colour__bars_8c_a01913054a73767b81ad3ff857feb19c6_icgraph}
+\includegraphics[width=304pt]{colour__bars_8c_a01913054a73767b81ad3ff857feb19c6_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{colour__bars_8c_aba8b322ea12b4fe2899ab1df56c2e7c4}\label{colour__bars_8c_aba8b322ea12b4fe2899ab1df56c2e7c4}} 
@@ -114,19 +128,19 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{draw\_palette()}{draw\_palette()}}
 {\footnotesize\ttfamily void draw\+\_\+palette (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{colour__bars_8c_aba8b322ea12b4fe2899ab1df56c2e7c4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{colour__bars_8c_aba8b322ea12b4fe2899ab1df56c2e7c4_icgraph}
-\end{center}
-\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{colour__bars_8c_a4fc3a0c58dfbd1e68224521185cb9384}\label{colour__bars_8c_a4fc3a0c58dfbd1e68224521185cb9384}} 
+\index{colour\_bars.c@{colour\_bars.c}!id@{id}}
+\index{id@{id}!colour\_bars.c@{colour\_bars.c}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily uint16\+\_\+t id}
+

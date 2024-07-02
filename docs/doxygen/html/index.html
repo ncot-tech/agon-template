@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Agon Template<span id="projectnumber">&#160;0.2.0</span>
    </div>
    <div id="projectbrief">Template for Agon Light C Programming</div>
   </td>
@@ -86,24 +86,35 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Agon Light 2 C Template </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_Readme"></a>**Version: 0.1.0</p>
+<div class="textblock"><p ><a class="anchor" id="md_Readme"></a>**Version: 0.2.0 James Grimwood / <a href="#" onclick="location.href='mai'+'lto:'+'jam'+'es'+'@nc'+'ot'+'.uk'; return false;">james<span class="obfuscator">.nosp@m.</span>@nco<span class="obfuscator">.nosp@m.</span>t.uk</a> / <a href="https://ncot.uk">https://ncot.uk</a></p>
 <p >This is a very much work in progress collection of stuff to aid with the <a href="https://ncot.uk/agon-light-c-development/">Agon Light C Compiler</a> that runs under Linux and so on. It is likely to get updated randomly as I do further development and decide things need to be in here.</p>
-<p >You'll need the "AGDev" C compiler already installed and working before this will be any use.</p>
-<p >The "Tools" folder contains useful utilities, but they're designed for me and come with no documentation!</p>
+<p >It uses <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Requirements</h1>
+<ul>
+<li>You'll need the <a href="https://github.com/pcawte/AgDev">AGDev</a> C compiler already installed and working before this will be any use.</li>
+<li>The <a href="https://github.com/tomm/fab-agon-emulator">fab-agon</a> emulator will also be useful.</li>
+<li>The "Tools" folder contains useful utilities.</li>
+<li>Doxygen generated documentation can be generated, and exists in the docs/doxygen folder.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
 What to do next</h1>
 <ol type="1">
 <li>Clone this repo and strip out all the Git stuff from it, you'll want to make a new Git repo for whatever you're working on.</li>
 <li>Look at the Makefile and edit as needed - mostly to set paths and so on, and to see what it does</li>
-<li>Your code goes in "src/", data can go in "data/"</li>
-<li>There is a symlink in data that needs to point to the SD card location of the Agon emulator</li>
+<li>Your code goes in "src/main_src", data can go in "data/"</li>
+<li>You will need to edit <a class="el" href="main_8c.html">main.c</a>, see the comments in there</li>
+<li>Look at the documentation inside <code>docs/</code> if you point a browser at <code>docs/doxygen/html/index.html</code> you can read it all.</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<p >I am working on a wizard type tool to copy and set up a new project from this to reduce the amount of effort.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
 When programming</h1>
 <ul>
-<li>Running "make" will compile things</li>
-<li>Running "make emulate" will also copy the relevant code into the fake SD card and start the emulator, you will need to copy any resources yourself. It will also edit/create an autoexe.txt file in the fake SD card folder so your code starts immediately. Copy the autoexec.txt first if you've customised it. </li>
+<li>Running <code>make</code> will compile things, this should work out the box if you set it up correctly and is a good test.</li>
+<li>Running <code>make emulate</code> will also copy the relevant code into the fake SD card and start the emulator, you will need to copy any resources yourself. It will also edit/create an autoexe.txt file in the fake SD card folder so your code starts immediately. Copy the autoexec.txt first if you've customised it.</li>
+<li>Running <code>make inst_sd</code> will copy everything onto the SD card if you mounted it properly.</li>
 </ul>
+<p >If something doesn't make sense, raise an issue. I hate poorly documented code and am putting in effort to make this code have better than average documentation! I've learnt that if I document it, I can also read the docs and don't need to remember what everything does! Fancy that... documentation can be useful. Spread the word ;-) </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

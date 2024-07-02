@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['screen_0',['Screen',['../screen_8h.html#ad35431b46feca087e9b66ea33e039948',1,'screen.h']]]
+  ['globals_0',['Globals',['../global_8h.html#ae7f8aeecff9d1d8a6acd4b0361c94702',1,'global.h']]]
 ];

@@ -1,4 +1,4 @@
-\hypertarget{md_docs_pages_file_format_autotoc_md9}{}\doxysection{RGBA2222 format images}\label{md_docs_pages_file_format_autotoc_md9}
+\hypertarget{md_docs_pages_file_format_autotoc_md15}{}\doxysection{RGBA2222 format images}\label{md_docs_pages_file_format_autotoc_md15}
 Save images inside the data/images directory
 
 If you run {\ttfamily make images} the {\ttfamily png2rgb.\+py} tool will turn them into RGBA2222 format image data. This data contains the following
@@ -16,6 +16,6 @@ Pixel Data\+: Rest of file
 \item 1 byte per pixel, RGBA 2 bits each
 \end{DoxyItemize}
 
-To use this, read the first 10 bytes, check it starts with \char`\"{}\+NCOTB\char`\"{}. Then use the width $\ast$ height $\ast$ bpp to know the size of the image data in bytes.\hypertarget{md_docs_pages_file_format_autotoc_md10}{}\doxysection{Fonts}\label{md_docs_pages_file_format_autotoc_md10}
-Fonts are made from image atlas files containing each character in ASCII order. Each character is turned into its own RGBA2222 format image, and a {\ttfamily .fon} definition file is created to go along with it.\hypertarget{md_docs_pages_file_format_autotoc_md11}{}\doxysection{Tilemaps}\label{md_docs_pages_file_format_autotoc_md11}
+To use this, read the first 10 bytes, check it starts with \char`\"{}\+NCOTB\char`\"{}. Then use the width $\ast$ height $\ast$ bpp to know the size of the image data in bytes.\hypertarget{md_docs_pages_file_format_autotoc_md16}{}\doxysection{Fonts}\label{md_docs_pages_file_format_autotoc_md16}
+Fonts are made from image atlas files containing each character in ASCII order. Each character is turned into its own RGBA2222 format image, and a {\ttfamily .fon} definition file is created to go along with it.\hypertarget{md_docs_pages_file_format_autotoc_md17}{}\doxysection{Tilemaps}\label{md_docs_pages_file_format_autotoc_md17}
 These work with Tiled format tmx and tsx files. The conversion tool will read the Tiled tmx file and create a directory of relevant image data, map data and definition files. 

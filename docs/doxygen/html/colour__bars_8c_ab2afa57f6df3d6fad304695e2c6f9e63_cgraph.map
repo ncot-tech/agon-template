@@ -1,0 +1,10 @@
+<map id="colour_bars_update" name="colour_bars_update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,118,159,145"/>
+<area shape="rect" id="node2" href="$error_8c.html#a02a6947e6c74d99d2a9d4cc03a122968" title=" " alt="" coords="224,67,359,94"/>
+<area shape="rect" id="node7" href="$sprite_8c.html#a194d321f88b5c9a8c830172d8caed89c" title=" " alt="" coords="227,118,356,145"/>
+<area shape="rect" id="node8" href="$sprite_8c.html#a3b3bdcc8ac3999715adbcf3203fac1f9" title=" " alt="" coords="207,169,376,195"/>
+<area shape="rect" id="node3" href="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b" title=" " alt="" coords="424,42,591,69"/>
+<area shape="rect" id="node6" href="$utils_8c.html#ae9960bce2205e56728ef713d34a40206" title="Changes the text colour." alt="" coords="460,93,555,119"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a606aa6336a757ee6ad2f3b446252b486" title="Turn logical screen scaling on and off, where 1=on and 0=off." alt="" coords="649,5,799,47"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0" title="Changes the current screen mode." alt="" coords="639,71,809,98"/>
+</map>

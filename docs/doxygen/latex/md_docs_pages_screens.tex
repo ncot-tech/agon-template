@@ -1,0 +1,34 @@
+There is a state machine you can use for managing separate screens. It is defined in the screen/ folder and consists of two files -\/ \mbox{\hyperlink{screen_8c}{screen.\+c}} and \mbox{\hyperlink{screen_8h}{screen.\+h}}
+
+An example of how they work is provided inside \mbox{\hyperlink{colour__bars_8c}{main\+\_\+src/colour\+\_\+bars.\+c}}\hypertarget{md_docs_pages_screens_autotoc_md24}{}\doxysection{State Machine Overview}\label{md_docs_pages_screens_autotoc_md24}
+The state machine contains an array called {\ttfamily screens} that consists of individual {\ttfamily \mbox{\hyperlink{struct_screen}{Screen}}} structs.
+
+Each struct has three function pointers
+
+
+\begin{DoxyItemize}
+\item init
+\item update
+\item draw
+\end{DoxyItemize}
+
+They are called appropriately by the state machine to make the current screen work properly.\hypertarget{md_docs_pages_screens_autotoc_md25}{}\doxysection{Screen States}\label{md_docs_pages_screens_autotoc_md25}
+\hypertarget{md_docs_pages_screens_autotoc_md26}{}\doxysubsection{Init}\label{md_docs_pages_screens_autotoc_md26}
+This is called once, and only once, when the screen is first instantiated. Put inside it any code you need to call once.
+
+This is a good place to set up the screen resolution using \mbox{\hyperlink{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}{change\+\_\+screen\+\_\+mode()}}.\hypertarget{md_docs_pages_screens_autotoc_md27}{}\doxysubsection{Update}\label{md_docs_pages_screens_autotoc_md27}
+This is your main update function. It gets called once a frame before the screen is drawn. Put your game logic in here.
+
+If the screen returns -\/1, the screen will be run again next frame. If you return any other integer, it will be used as an ID to switch to next frame. Make sure the ID exists!\hypertarget{md_docs_pages_screens_autotoc_md28}{}\doxysubsection{Draw}\label{md_docs_pages_screens_autotoc_md28}
+Put any actual drawing code in here. This is where you might clear the screen, wait for vblank, swap buffers etc. None of that is done for you as it depends on the screen resolution and what you want to do.
+
+You can put logic in here too, there is no real internal difference between update() and draw().\hypertarget{md_docs_pages_screens_autotoc_md29}{}\doxysection{Defining Screens}\label{md_docs_pages_screens_autotoc_md29}
+To define a screen you need to make a new C source and header file in the main\+\_\+src/ directory. As a bare minimum it needs three functions that can be mapped to the init, update and draw functions above.
+
+Then go into {\ttfamily \mbox{\hyperlink{main_8c}{main.\+c}}} and create a call to \mbox{\hyperlink{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}{define\+\_\+screen()}}, passing in the names of your three functions like this
+
+{\ttfamily define\+\_\+screen(colour\+\_\+bars\+\_\+init, colour\+\_\+bars\+\_\+update, colour\+\_\+bars\+\_\+draw);}
+
+Don\textquotesingle{}t forget to \#include your screen\textquotesingle{}s header file.
+
+Screens are inserted into the state machine in the order they are defined, the first is screen ID zero and will run first. 

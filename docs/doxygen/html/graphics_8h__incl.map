@@ -1,4 +1,5 @@
 <map id="src/vdp/graphics.h" name="src/vdp/graphics.h">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,152,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="43,80,115,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="43,155,115,181"/>
+<area shape="rect" id="node3" href="$point_8h.html" title=" " alt="" coords="65,80,196,107"/>
 </map>

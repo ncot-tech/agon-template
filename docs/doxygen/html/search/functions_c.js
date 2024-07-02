@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xitoa_0',['xitoa',['../xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639',1,'xitoa(int value, char *result, int base):&#160;xitoa.c'],['../xitoa_8h.html#a07f48abaff3d03e301b7cba644a97639',1,'xitoa(int value, char *result, int base):&#160;xitoa.c']]]
+  ['write16bit_0',['write16bit',['../utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10',1,'write16bit(int16_t w):&#160;utils.c'],['../utils_8h.html#ad1c403a5b0d221c03e8563f389d74b10',1,'write16bit(int16_t w):&#160;utils.c']]]
 ];
