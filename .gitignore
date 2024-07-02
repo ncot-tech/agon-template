@@ -1,2 +1,6 @@
 obj/
 bin/
+*/__pycache__
+.222
+dist/
+venv/

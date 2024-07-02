@@ -1,0 +1,9 @@
+<map id="vdp_plot_bitmap" name="vdp_plot_bitmap">
+<area shape="rect" id="node1" title="Plots a VDP bitmap to the screen." alt="" coords="307,132,440,159"/>
+<area shape="rect" id="node2" href="$bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="143,5,256,32"/>
+<area shape="rect" id="node3" href="$bmprint_8c.html#aa36ee98d8335d26bbcdd7238a1e663b3" title="An implementation of printf() style text printing." alt="" coords="5,107,92,133"/>
+<area shape="rect" id="node4" href="$bmprint_8c.html#a36c02cc37ebf25cf04b23fdc54d95311" title="Prints a single character on the screen using the supplied font." alt="" coords="145,107,254,133"/>
+<area shape="rect" id="node5" href="$bmprint_8c.html#a28232fb3c61fb6079f6189bad4c90116" title="Draws a string of characters on the screen, spaced apart an appropriate amount." alt="" coords="140,157,259,184"/>
+<area shape="rect" id="node6" href="$tilemap_8c.html#a4e0fe092b151b776e535f811ee1c937c" title="Draws a tilemap on the screen." alt="" coords="143,208,256,235"/>
+<area shape="rect" id="node7" href="$tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="145,259,253,285"/>
+</map>

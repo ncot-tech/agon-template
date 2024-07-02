@@ -1,0 +1,21 @@
+\label{index_md_Readme}%
+\Hypertarget{index_md_Readme}%
+$\ast$$\ast$\+Version\+: 0.\+1.\+0
+
+This is a very much work in progress collection of stuff to aid with the \href{https://ncot.uk/agon-light-c-development/}{\texttt{ Agon Light C Compiler}} that runs under Linux and so on. It is likely to get updated randomly as I do further development and decide things need to be in here.
+
+You\textquotesingle{}ll need the \char`\"{}\+AGDev\char`\"{} C compiler already installed and working before this will be any use.
+
+The \char`\"{}\+Tools\char`\"{} folder contains useful utilities, but they\textquotesingle{}re designed for me and come with no documentation!\hypertarget{index_autotoc_md1}{}\doxysection{What to do next}\label{index_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item Clone this repo and strip out all the Git stuff from it, you\textquotesingle{}ll want to make a new Git repo for whatever you\textquotesingle{}re working on.
+\item Look at the Makefile and edit as needed -\/ mostly to set paths and so on, and to see what it does
+\item Your code goes in \char`\"{}src/\char`\"{}, data can go in \char`\"{}data/\char`\"{}
+\item There is a symlink in data that needs to point to the SD card location of the Agon emulator
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md2}{}\doxysection{When programming}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Running \char`\"{}make\char`\"{} will compile things
+\item Running \char`\"{}make emulate\char`\"{} will also copy the relevant code into the fake SD card and start the emulator, you will need to copy any resources yourself. It will also edit/create an autoexe.\+txt file in the fake SD card folder so your code starts immediately. Copy the autoexec.\+txt first if you\textquotesingle{}ve customised it. 
+\end{DoxyItemize}

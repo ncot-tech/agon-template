@@ -1,0 +1,4 @@
+<map id="keyboard_init" name="keyboard_init">
+<area shape="rect" id="node1" title="Updates the pointer to the MOS keyboard map." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a6bcd625c19ec94a2ea79cd6fe4f4d673" title="Sets up the keystates arrays." alt="" coords="167,5,304,32"/>
+</map>

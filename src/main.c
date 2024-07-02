@@ -1,45 +1,48 @@
-#include <agon/vdp_vdu.h>
 #include <agon/vdp_key.h>
-#include <stdio.h>
 #include <mos_api.h>
-#include "graphics.h"
-#include <math.h>
+#include <stdio.h>
+#include "vdp/utils.h"
+#include "vdp/graphics.h"
+#include "input/keyboard.h"
+#include "main_src/colour_bars.h"
+#include "main_src/error_screen.h"
+#include "debug/debug.h"
+#include "global.h"
 
-// https://github.com/AgonConsole8/agon-docs/blob/main/VDP---Screen-Modes.md
-#define SC_MODE 136
-#define SC_WIDTH 1280
-#define SC_HEIGHT 1024
 
-
-static volatile SYSVAR *sv;
-
-void draw_colour_bars()
-{
-    uint8_t c = 0;
-    for (int y = 0; y < SC_HEIGHT; y+= 16) {
-        vdp_plot_rect(c, 0, y, SC_WIDTH, 16);
-        c++;
-    }
-}
 
 int main(void)
 {
-	
-	sv = vdp_vdu_init();
+    // Initialise various parts of the system
+	globals.sysvars = vdp_vdu_init();
     if ( vdp_key_init() == -1 ) return 1;
+    keyboard_init();
 
-    set_video_mode(SC_MODE);
-    vdp_clear_screen();
-    vdp_logical_scr_dims( true );
-    vdp_cursor_enable( false );
+    log_init("debug.txt");
+    debug_printf("I am a line of text\n");
+    debug_printf("I am more text\n");
 
-	while (1) {
-        draw_colour_bars();
-        waitvblank();
-        flip_buffer();
+    // You need to do this for every screen in your program
+    // See the docs for the screen state machine for more info
+    define_screen(colour_bars_init, colour_bars_update, colour_bars_draw);
+
+    // Main loop that quits when ESC is pressed, you can make it not quit if you like
+    while (1) {
+        keyboard_update();
+        if (IS_KEY_PRESSED(KEY_ESC))
+            break;
+
+        run_screens();  // You must call this to keep the state machine ticking along
     }
 
-	return 0;
+    // This happens when the program has quit
+    vdp_set_screen_mode(0);
+    vdp_clear_screen();
+    vdp_logical_scr_dims( true );
+    vdp_cursor_enable( true );
+    printf ("Quitting, bye!\n");
+    
+    return 0;
 }
 
 // # vim: set expandtab tabstop=4:

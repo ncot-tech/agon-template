@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"buffers.h": "c",
+			"mos_api.h": "c",
+			"vdp_vdu.h": "c",
+			"vdp_key.h": "c",
+			"compare": "c",
+			"stdio.h": "c",
+			"graphics.h": "c"
+		}
+	}
+}

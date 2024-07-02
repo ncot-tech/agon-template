@@ -1,0 +1,8 @@
+<map id="colour_bars_draw" name="colour_bars_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,147,57"/>
+<area shape="rect" id="node2" href="$colour__bars_8c.html#aba8b322ea12b4fe2899ab1df56c2e7c4" title=" " alt="" coords="234,5,343,32"/>
+<area shape="rect" id="node6" href="$utils_8c.html#af71d49fed6cebb52fc826569e40c218a" title="VDU 23,0,C3 &#45; Swap screen buffers." alt="" coords="195,56,383,83"/>
+<area shape="rect" id="node3" href="$colour__bars_8c.html#a01913054a73767b81ad3ff857feb19c6" title=" " alt="" coords="431,5,572,32"/>
+<area shape="rect" id="node4" href="$graphics_8c.html#a4f96120c506f2b22cc3f4c7792e0d86a" title=" " alt="" coords="620,5,733,32"/>
+<area shape="rect" id="node5" href="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="781,5,871,32"/>
+</map>

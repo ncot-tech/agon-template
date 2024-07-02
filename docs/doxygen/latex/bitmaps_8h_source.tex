@@ -1,0 +1,42 @@
+\hypertarget{bitmaps_8h_source}{}\doxysection{bitmaps.\+h}
+\label{bitmaps_8h_source}\index{src/vdp/bitmaps.h@{src/vdp/bitmaps.h}}
+\mbox{\hyperlink{bitmaps_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_VDP\_BITMAPS\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_VDP\_BITMAPS\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <mos\_api.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_bitmap__header}{Bitmap\_header}} \{}
+\DoxyCodeLine{8     \textcolor{keywordtype}{char} \textcolor{keywordtype}{id}[5];}
+\DoxyCodeLine{9     uint16\_t \mbox{\hyperlink{struct_bitmap__header_ad0eab1042455a2067c812ab8071d5376}{width}};}
+\DoxyCodeLine{10     uint16\_t \mbox{\hyperlink{struct_bitmap__header_a81c9f8d0b8c3b49d770be14dbe9f0d37}{height}};}
+\DoxyCodeLine{11     uint8\_t \mbox{\hyperlink{struct_bitmap__header_a496818f626ceb32365ca6cf57c991979}{bpp}};}
+\DoxyCodeLine{12 \} \mbox{\hyperlink{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}{Bitmap\_header}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{15     \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac7f69f7c9e5aea9b8f54cf02870e2bf8}{SUCCESS}},}
+\DoxyCodeLine{16     \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac35144c1ba1a5778f9ebeef61e4d7baf}{BAD\_FILE}},}
+\DoxyCodeLine{17     \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea89a164ff453c45893033cf318906c2d7}{MALLOC\_FAIL}},}
+\DoxyCodeLine{18     \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370}{NOT\_IMAGE}},}
+\DoxyCodeLine{19     \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea8aaa6abcd401f38c98b99d5301346110}{WRONG\_BPP}}}
+\DoxyCodeLine{20 \} \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\_LOAD\_RESULT}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{23     \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0aa7c8962521c58548a2b8aed16d397d01}{RGBA8888}},}
+\DoxyCodeLine{24     \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0a6fddcb6a1db9c9d4b9c4a1a9ee27f409}{RGBA2222}},}
+\DoxyCodeLine{25     \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0a3828195437a1112429b5c7a3e8780570}{MONO}}}
+\DoxyCodeLine{26 \} \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\_FORMAT}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d}{vdp\_assign\_buffer\_to\_bitmap}}(uint16\_t buffer\_id, \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\_FORMAT}} bitmap\_format, uint16\_t width, uint16\_t height);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{41 \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\_LOAD\_RESULT}} \mbox{\hyperlink{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}{load\_bitmap\_into\_buffer}}(uint16\_t buffer\_id, \textcolor{keywordtype}{char} *filename, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\_header}} *header\_data);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keywordtype}{void} \mbox{\hyperlink{bitmaps_8h_a42b639c4a10d566b61e7567c1fe2a662}{vdp\_draw\_current\_bitmap}}(uint16\_t x, uint16\_t y);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{52 \textcolor{keywordtype}{void} \mbox{\hyperlink{bitmaps_8h_a6307714183c020f335ec89a052b74787}{vdp\_plot\_bitmap}}(uint16\_t buffer\_id, int16\_t x, int16\_t y);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

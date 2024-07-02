@@ -1,0 +1,4 @@
+<map id="vdp_move_origin" name="vdp_move_origin">
+<area shape="rect" id="node1" title="Set graphics origin." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#ad1c403a5b0d221c03e8563f389d74b10" title="Writes a 16 bit value to the VDP." alt="" coords="191,5,280,32"/>
+</map>

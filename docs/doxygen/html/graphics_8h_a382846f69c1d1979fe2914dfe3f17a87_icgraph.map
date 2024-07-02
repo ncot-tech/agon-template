@@ -1,0 +1,5 @@
+<map id="load_bitmap_into_buffer" name="load_bitmap_into_buffer">
+<area shape="rect" id="node1" title="Loads a bitmap image into a VDP buffer." alt="" coords="167,31,352,57"/>
+<area shape="rect" id="node2" href="$bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node3" href="$tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="8,56,116,83"/>
+</map>

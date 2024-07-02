@@ -1,0 +1,27 @@
+<map id="write16bit" name="write16bit">
+<area shape="rect" id="node1" title="Writes a 16 bit value to the VDP." alt="" coords="785,385,875,412"/>
+<area shape="rect" id="node2" href="$graphics_8c.html#a47b28a2c359716782ca4299f96b83a28" title="Writes data to a buffer." alt="" coords="553,5,724,32"/>
+<area shape="rect" id="node6" href="$graphics_8c.html#a08f9873e481adb7aa8d93000f7166b1d" title=" " alt="" coords="317,106,482,147"/>
+<area shape="rect" id="node7" href="$graphics_8c.html#a2b6d1a72527a28e9a3689130b852ddad" title="Clear the buffer with the given ID." alt="" coords="571,56,706,83"/>
+<area shape="rect" id="node8" href="$graphics_8c.html#addc73cb16c5076d2f49fdba2e1a1382e" title=" " alt="" coords="550,259,727,285"/>
+<area shape="rect" id="node9" href="$graphics_8c.html#a42b639c4a10d566b61e7567c1fe2a662" title=" " alt="" coords="540,309,737,336"/>
+<area shape="rect" id="node10" href="$graphics_8c.html#aa73e15c3a69b169da85c45f234234222" title="Draws a line between two points using the VDP." alt="" coords="579,360,698,387"/>
+<area shape="rect" id="node11" href="$graphics_8c.html#a28a88ee103c8e7796c591ab84eac7dc2" title=" " alt="" coords="565,411,712,437"/>
+<area shape="rect" id="node12" href="$graphics_8c.html#a49b72cc5962e1b043e656f531e1424e9" title=" " alt="" coords="557,157,720,184"/>
+<area shape="rect" id="node13" href="$graphics_8c.html#a85a8b87e20d294c313faf5bc96496185" title="Set graphics origin." alt="" coords="570,461,707,488"/>
+<area shape="rect" id="node14" href="$graphics_8c.html#a6307714183c020f335ec89a052b74787" title="Plots a VDP bitmap to the screen." alt="" coords="333,208,466,235"/>
+<area shape="rect" id="node19" href="$graphics_8c.html#a98c2cbc83d0c9cf100abd0d3a589feee" title=" " alt="" coords="577,512,700,539"/>
+<area shape="rect" id="node20" href="$graphics_8c.html#ac823b71fd030bda38204a77602f95d41" title="Plots a point on the screen using the VDP." alt="" coords="579,563,699,589"/>
+<area shape="rect" id="node21" href="$graphics_8c.html#a4f96120c506f2b22cc3f4c7792e0d86a" title=" " alt="" coords="582,613,695,640"/>
+<area shape="rect" id="node23" href="$graphics_8c.html#ac7354663885fb2b809128aff130c486b" title="Select bitmap using a 16&#45;bit buffer ID." alt="" coords="568,664,709,691"/>
+<area shape="rect" id="node24" href="$graphics_8c.html#ab34179b00c1af8145284d4baf0eea749" title=" " alt="" coords="544,715,733,741"/>
+<area shape="rect" id="node25" href="$graphics_8c.html#a1424e00881180488719e3ffe6ac87bf3" title=" " alt="" coords="561,765,716,792"/>
+<area shape="rect" id="node3" href="$graphics_8c.html#a382846f69c1d1979fe2914dfe3f17a87" title="Loads a bitmap image into a VDP buffer." alt="" coords="307,55,492,81"/>
+<area shape="rect" id="node4" href="$bmprint_8c.html#a867b981d550b09df515a4959bccbfea0" title="Loads a font definition off the SD card and turns it into a font structure used by the print routines..." alt="" coords="143,60,256,87"/>
+<area shape="rect" id="node5" href="$tilemap_8c.html#a6ac5278adadaa68cea98b8ca74ae35c1" title="Loads a tilemap into memory." alt="" coords="145,111,253,137"/>
+<area shape="rect" id="node15" href="$bmprint_8c.html#aa36ee98d8335d26bbcdd7238a1e663b3" title="An implementation of printf() style text printing." alt="" coords="5,288,92,315"/>
+<area shape="rect" id="node16" href="$bmprint_8c.html#a36c02cc37ebf25cf04b23fdc54d95311" title="Prints a single character on the screen using the supplied font." alt="" coords="145,161,254,188"/>
+<area shape="rect" id="node17" href="$bmprint_8c.html#a28232fb3c61fb6079f6189bad4c90116" title="Draws a string of characters on the screen, spaced apart an appropriate amount." alt="" coords="140,313,259,340"/>
+<area shape="rect" id="node18" href="$tilemap_8c.html#a4e0fe092b151b776e535f811ee1c937c" title="Draws a tilemap on the screen." alt="" coords="143,212,256,239"/>
+<area shape="rect" id="node22" href="$main_8c.html#a01913054a73767b81ad3ff857feb19c6" title=" " alt="" coords="329,613,470,640"/>
+</map>

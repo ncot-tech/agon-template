@@ -1,0 +1,27 @@
+\hypertarget{bmprint_8h_source}{}\doxysection{bmprint.\+h}
+\label{bmprint_8h_source}\index{src/graphics/bmprint.h@{src/graphics/bmprint.h}}
+\mbox{\hyperlink{bmprint_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_BMPRINT\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_BMPRINT\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdint.h>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_font}{Font}} \{}
+\DoxyCodeLine{10     \textcolor{keywordtype}{char} *\mbox{\hyperlink{struct_font_ad382f9f597a08d047628a53899a67951}{font\_name}};        }
+\DoxyCodeLine{11     uint8\_t \mbox{\hyperlink{struct_font_abd03aa4f3684e3f22b3775f9ba591662}{char\_count}};     }
+\DoxyCodeLine{12     uint8\_t \mbox{\hyperlink{struct_font_a218e3b7f63901451c5819b75eb18b05a}{char\_width}};     }
+\DoxyCodeLine{13     uint8\_t \mbox{\hyperlink{struct_font_ab331e5ec95ec3641561224b9abf3033e}{char\_height}};    }
+\DoxyCodeLine{14     uint16\_t \mbox{\hyperlink{struct_font_a892710e59e383d1cfcf75bcab5586981}{start\_bitmap\_id}};   }
+\DoxyCodeLine{15 \} \mbox{\hyperlink{bmprint_8h_a6793c760667fe6bf1481f61567954c12}{Font}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{27 \textcolor{keywordtype}{void} \mbox{\hyperlink{bmprint_8h_a36c02cc37ebf25cf04b23fdc54d95311}{bm\_put\_char}}(\mbox{\hyperlink{struct_font}{Font}} *font, int16\_t screenx, int16\_t screeny, \textcolor{keywordtype}{char} c);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{44 uint8\_t \mbox{\hyperlink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\_load\_font}}(\textcolor{keywordtype}{char} *font\_def, \mbox{\hyperlink{struct_font}{Font}} *font);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{58 \textcolor{keywordtype}{void} \mbox{\hyperlink{bmprint_8h_a28232fb3c61fb6079f6189bad4c90116}{bm\_put\_string}}(\mbox{\hyperlink{struct_font}{Font}} *font, int16\_t screenx, int16\_t screeny, \textcolor{keywordtype}{char} *s);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{78 \textcolor{keywordtype}{void} \mbox{\hyperlink{bmprint_8h_aa36ee98d8335d26bbcdd7238a1e663b3}{bm\_printf}}(\mbox{\hyperlink{struct_font}{Font}} *font, int16\_t screenx, int16\_t screeny, \textcolor{keywordtype}{char} *format, ...);}
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,91 @@
+\hypertarget{tilemap_8c}{}\doxysection{src/tilemap/tilemap.c File Reference}
+\label{tilemap_8c}\index{src/tilemap/tilemap.c@{src/tilemap/tilemap.c}}
+{\ttfamily \#include \char`\"{}tilemap.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../maths/xitoa.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../vdp/bitmaps.\+h\char`\"{}}\newline
+Include dependency graph for tilemap.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tilemap_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tilemap_8c_a6ac5278adadaa68cea98b8ca74ae35c1}{tilemap\+\_\+load}} (char $\ast$map\+\_\+def, \mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$\mbox{\hyperlink{maths__utils_8h_a82ef8eaa5cae46667d35ff40383dab03}{map}})
+\begin{DoxyCompactList}\small\item\em Loads a tilemap into memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tilemap_8c_a4e0fe092b151b776e535f811ee1c937c}{tilemap\+\_\+draw}} (\mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$\mbox{\hyperlink{maths__utils_8h_a82ef8eaa5cae46667d35ff40383dab03}{map}}, uint16\+\_\+t x\+\_\+start)
+\begin{DoxyCompactList}\small\item\em Draws a tilemap on the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{tilemap_8c_ad7e13828452b4c7bdef66455b9c188e8}{tilemap\+\_\+get\+\_\+tileid}} (\mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$\mbox{\hyperlink{maths__utils_8h_a82ef8eaa5cae46667d35ff40383dab03}{map}}, uint16\+\_\+t screen\+\_\+x, uint16\+\_\+t screen\+\_\+y, uint8\+\_\+t scroll\+\_\+amount, uint16\+\_\+t x\+\_\+start)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tilemap_8c_a4e0fe092b151b776e535f811ee1c937c}\label{tilemap_8c_a4e0fe092b151b776e535f811ee1c937c}} 
+\index{tilemap.c@{tilemap.c}!tilemap\_draw@{tilemap\_draw}}
+\index{tilemap\_draw@{tilemap\_draw}!tilemap.c@{tilemap.c}}
+\doxysubsubsection{\texorpdfstring{tilemap\_draw()}{tilemap\_draw()}}
+{\footnotesize\ttfamily void tilemap\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$}]{map,  }\item[{uint16\+\_\+t}]{x\+\_\+start }\end{DoxyParamCaption})}
+
+
+
+Draws a tilemap on the screen. 
+
+For now it assumes all tilemaps are one screen tall. They can be wider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map} & The tilemap data to use \\
+\hline
+\mbox{\texttt{ in}}  & {\em x\+\_\+start} & The starting tile column \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tilemap_8c_a4e0fe092b151b776e535f811ee1c937c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tilemap_8c_ad7e13828452b4c7bdef66455b9c188e8}\label{tilemap_8c_ad7e13828452b4c7bdef66455b9c188e8}} 
+\index{tilemap.c@{tilemap.c}!tilemap\_get\_tileid@{tilemap\_get\_tileid}}
+\index{tilemap\_get\_tileid@{tilemap\_get\_tileid}!tilemap.c@{tilemap.c}}
+\doxysubsubsection{\texorpdfstring{tilemap\_get\_tileid()}{tilemap\_get\_tileid()}}
+{\footnotesize\ttfamily uint16\+\_\+t tilemap\+\_\+get\+\_\+tileid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$}]{map,  }\item[{uint16\+\_\+t}]{screen\+\_\+x,  }\item[{uint16\+\_\+t}]{screen\+\_\+y,  }\item[{uint8\+\_\+t}]{scroll\+\_\+amount,  }\item[{uint16\+\_\+t}]{x\+\_\+start }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{tilemap_8c_ad7e13828452b4c7bdef66455b9c188e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{tilemap_8c_a6ac5278adadaa68cea98b8ca74ae35c1}\label{tilemap_8c_a6ac5278adadaa68cea98b8ca74ae35c1}} 
+\index{tilemap.c@{tilemap.c}!tilemap\_load@{tilemap\_load}}
+\index{tilemap\_load@{tilemap\_load}!tilemap.c@{tilemap.c}}
+\doxysubsubsection{\texorpdfstring{tilemap\_load()}{tilemap\_load()}}
+{\footnotesize\ttfamily void tilemap\+\_\+load (\begin{DoxyParamCaption}\item[{char $\ast$}]{map\+\_\+def,  }\item[{\mbox{\hyperlink{struct_tilemap}{Tilemap}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+Loads a tilemap into memory. 
+
+Tilemaps must be created using Tiled and converted with the {\ttfamily make\+\_\+tilemap.\+py} tool first.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em map\+\_\+def} & The filename of the map to load. Must be an NCOTM format file. \\
+\hline
+\mbox{\texttt{ in}}  & {\em map} & The \mbox{\hyperlink{struct_tilemap}{Tilemap}} struct to store the loaded map. Declare it yourself. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tilemap_8c_a6ac5278adadaa68cea98b8ca74ae35c1_cgraph}
+\end{center}
+\end{figure}

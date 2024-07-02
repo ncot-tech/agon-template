@@ -1,0 +1,24 @@
+\hypertarget{buffers_8h_source}{}\doxysection{buffers.\+h}
+\label{buffers_8h_source}\index{src/vdp/buffers.h@{src/vdp/buffers.h}}
+\mbox{\hyperlink{buffers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_BUFFERS\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_BUFFERS\_H\_}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <mos\_api.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{22 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_a2b6d1a72527a28e9a3689130b852ddad}{vdp\_clear\_buffer}}(uint16\_t buffer\_id);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{34 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_ac7354663885fb2b809128aff130c486b}{vdp\_select\_buffer}}(uint16\_t buffer\_id);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_a47b28a2c359716782ca4299f96b83a28}{add\_stream\_to\_buffer}}(uint16\_t buffer\_id, \textcolor{keywordtype}{char} *buffer\_content, uint16\_t buffer\_size);}
+\DoxyCodeLine{46 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_a49b72cc5962e1b043e656f531e1424e9}{vdp\_extended\_select}}(uint16\_t buffer\_id);}
+\DoxyCodeLine{47 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_addc73cb16c5076d2f49fdba2e1a1382e}{vdp\_consolidate\_buffer}}(uint16\_t buffer\_id);}
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_a1424e00881180488719e3ffe6ac87bf3}{vdp\_split\_into\_from}}(uint16\_t buffer\_id, uint16\_t into, uint16\_t from);}
+\DoxyCodeLine{49 \textcolor{keywordtype}{void} \mbox{\hyperlink{buffers_8h_ab34179b00c1af8145284d4baf0eea749}{vdp\_split\_into\_cols\_from}}(uint16\_t buffer\_id, uint16\_t width, uint16\_t cols, uint16\_t from);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
