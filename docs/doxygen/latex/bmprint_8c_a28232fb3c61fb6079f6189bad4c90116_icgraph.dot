@@ -1,0 +1,11 @@
+digraph "bm_put_string"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="bm_put_string",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Draws a string of characters on the screen, spaced apart an appropriate amount."];
+  Node1 -> Node2 [id="edge2_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="bm_printf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bmprint_8c.html#aa36ee98d8335d26bbcdd7238a1e663b3",tooltip="An implementation of printf() style text printing."];
+}

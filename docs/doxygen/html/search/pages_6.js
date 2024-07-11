@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vdp_20documentation_0',['VDP Documentation',['../md_docs_pages_vdp.html',1,'']]]
+  ['light_202_20c_20template_0',['Agon Light 2 C Template',['../index.html',1,'']]]
 ];

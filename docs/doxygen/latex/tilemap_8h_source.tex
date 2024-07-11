@@ -1,29 +1,29 @@
-\hypertarget{tilemap_8h_source}{}\doxysection{tilemap.\+h}
-\label{tilemap_8h_source}\index{src/tilemap/tilemap.h@{src/tilemap/tilemap.h}}
+\doxysection{tilemap.\+h}
+\hypertarget{tilemap_8h_source}{}\label{tilemap_8h_source}\index{src/tilemap/tilemap.h@{src/tilemap/tilemap.h}}
 \mbox{\hyperlink{tilemap_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_Tilemap\_H\_}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_Tilemap\_H\_}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mos\_api.h>}}
-\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdio.h>}}
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdlib.h>}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string.h>}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{12 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_tilemap}{Tilemap}} \{}
-\DoxyCodeLine{13     uint16\_t \mbox{\hyperlink{struct_tilemap_a593fe8dd35c800311875fec087d8e032}{map\_width}};         }
-\DoxyCodeLine{14     uint16\_t \mbox{\hyperlink{struct_tilemap_a37112b6f5118b4537c39bf1eb73697b6}{map\_height}};        }
-\DoxyCodeLine{15     uint8\_t \mbox{\hyperlink{struct_tilemap_afef8ed5cfcb83379c51f848210095396}{tile\_width}};         }
-\DoxyCodeLine{16     uint8\_t \mbox{\hyperlink{struct_tilemap_a3cdc0c93d97a2f84457361a61d2e0ae5}{tile\_height}};        }
-\DoxyCodeLine{17     uint16\_t \mbox{\hyperlink{struct_tilemap_aa7abae12666b8ef8146d22c9f3987c16}{bitmap\_start\_id}};   }
-\DoxyCodeLine{18     uint16\_t \mbox{\hyperlink{struct_tilemap_a0871386a857dcf4e6411c39ffd07431e}{tile\_count}};        }
-\DoxyCodeLine{19     uint16\_t *\mbox{\hyperlink{struct_tilemap_ada13df0df1c77fa555a05e58da0e2dd9}{map\_data}};         }
-\DoxyCodeLine{20 \} \mbox{\hyperlink{tilemap_8h_ab1b77d2fd54564f19d94fc480d59261a}{Tilemap}};}
-\DoxyCodeLine{21 }
-\DoxyCodeLine{30 \textcolor{keywordtype}{void} \mbox{\hyperlink{tilemap_8h_a6ac5278adadaa68cea98b8ca74ae35c1}{tilemap\_load}}(\textcolor{keywordtype}{char} *map\_def, \mbox{\hyperlink{struct_tilemap}{Tilemap}} *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}});}
-\DoxyCodeLine{39 \textcolor{keywordtype}{void} \mbox{\hyperlink{tilemap_8h_a4e0fe092b151b776e535f811ee1c937c}{tilemap\_draw}}(\mbox{\hyperlink{struct_tilemap}{Tilemap}} *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}}, uint16\_t x\_start);}
-\DoxyCodeLine{40 }
-\DoxyCodeLine{41 uint16\_t \mbox{\hyperlink{tilemap_8h_ad7e13828452b4c7bdef66455b9c188e8}{tilemap\_get\_tileid}}(\mbox{\hyperlink{struct_tilemap}{Tilemap}} *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}}, uint16\_t screen\_x, uint16\_t screen\_y, uint8\_t scroll\_amount, uint16\_t x\_start);}
-\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_Tilemap\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_Tilemap\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <mos\_api.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_tilemap}{Tilemap}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_tilemap_a593fe8dd35c800311875fec087d8e032}{map\_width}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_tilemap_a37112b6f5118b4537c39bf1eb73697b6}{map\_height}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_tilemap_afef8ed5cfcb83379c51f848210095396}{tile\_width}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{struct_tilemap_a3cdc0c93d97a2f84457361a61d2e0ae5}{tile\_height}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_tilemap_aa7abae12666b8ef8146d22c9f3987c16}{bitmap\_start\_id}};\ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{struct_tilemap_a0871386a857dcf4e6411c39ffd07431e}{tile\_count}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ uint16\_t\ *\mbox{\hyperlink{struct_tilemap_ada13df0df1c77fa555a05e58da0e2dd9}{map\_data}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \}\ \mbox{\hyperlink{tilemap_8h_ab1b77d2fd54564f19d94fc480d59261a}{Tilemap}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tilemap_8h_a6ac5278adadaa68cea98b8ca74ae35c1}{tilemap\_load}}(\textcolor{keywordtype}{char}\ *map\_def,\ \mbox{\hyperlink{struct_tilemap}{Tilemap}}\ *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}});}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tilemap_8h_a4e0fe092b151b776e535f811ee1c937c}{tilemap\_draw}}(\mbox{\hyperlink{struct_tilemap}{Tilemap}}\ *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}},\ uint16\_t\ x\_start);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ uint16\_t\ \mbox{\hyperlink{tilemap_8h_ad7e13828452b4c7bdef66455b9c188e8}{tilemap\_get\_tileid}}(\mbox{\hyperlink{struct_tilemap}{Tilemap}}\ *\mbox{\hyperlink{maths__utils_8c_a82ef8eaa5cae46667d35ff40383dab03}{map}},\ uint16\_t\ screen\_x,\ uint16\_t\ screen\_y,\ uint8\_t\ scroll\_amount,\ uint16\_t\ x\_start);}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

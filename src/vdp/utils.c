@@ -29,7 +29,7 @@ void vdp_move_origin(int16_t x, int16_t y)
     putch(29); write16bit(x); write16bit(y);
 }
 
-void vdp_gcol(uint8_t colour)
+void vdp_set_gcol(uint8_t colour)
 {
     putch(18);
     putch(0);

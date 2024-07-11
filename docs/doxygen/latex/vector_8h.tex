@@ -1,58 +1,60 @@
-\hypertarget{vector_8h}{}\doxysection{src/maths/vector.h File Reference}
-\label{vector_8h}\index{src/maths/vector.h@{src/maths/vector.h}}
+\doxysection{src/maths/vector.h File Reference}
+\hypertarget{vector_8h}{}\label{vector_8h}\index{src/maths/vector.h@{src/maths/vector.h}}
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
-Include dependency graph for vector.\+h\+:\nopagebreak
+Include dependency graph for vector.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=204pt]{vector_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=191pt]{vector_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Data Structures}
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_vector2}{Vector2}}
 \begin{DoxyCompactList}\small\item\em A structure to hold a 2D vector. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_vector3}{Vector3}}
 \begin{DoxyCompactList}\small\item\em A structure to hold a 3D vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{vector_8h_a682e0907769244e5f75f92e91460878f}{Vector2}}
+typedef struct Vector2 \mbox{\hyperlink{vector_8h_a682e0907769244e5f75f92e91460878f}{Vector2}}
 \begin{DoxyCompactList}\small\item\em A structure to hold a 2D vector. \end{DoxyCompactList}\item 
-typedef struct \mbox{\hyperlink{struct_vector3}{Vector3}} \mbox{\hyperlink{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804}{Vector3}}
+typedef struct Vector3 \mbox{\hyperlink{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804}{Vector3}}
 \begin{DoxyCompactList}\small\item\em A structure to hold a 3D vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{vector_8h_a53c84e7f192881ea1ab76e18f6120e74}{vector2\+\_\+normalise}} (\mbox{\hyperlink{struct_vector2}{Vector2}} $\ast$v)
+void \mbox{\hyperlink{vector_8h_a53c84e7f192881ea1ab76e18f6120e74}{vector2\+\_\+normalise}} (\mbox{\hyperlink{struct_vector2}{Vector2}} \texorpdfstring{$\ast$}{*}v)
 \begin{DoxyCompactList}\small\item\em Normalises a 2D vector, modifying the vector directly. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{vector_8h_a682e0907769244e5f75f92e91460878f}\label{vector_8h_a682e0907769244e5f75f92e91460878f}} 
-\index{vector.h@{vector.h}!Vector2@{Vector2}}
+\Hypertarget{vector_8h_a682e0907769244e5f75f92e91460878f}\index{vector.h@{vector.h}!Vector2@{Vector2}}
 \index{Vector2@{Vector2}!vector.h@{vector.h}}
 \doxysubsubsection{\texorpdfstring{Vector2}{Vector2}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_vector2}{Vector2}} \mbox{\hyperlink{struct_vector2}{Vector2}}}
+{\footnotesize\ttfamily \label{vector_8h_a682e0907769244e5f75f92e91460878f} 
+typedef struct Vector2 Vector2}
 
 
 
 A structure to hold a 2D vector. 
 
-This uses floating point variables, so will not be very optimal on anything without an FPU. \mbox{\Hypertarget{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804}\label{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804}} 
-\index{vector.h@{vector.h}!Vector3@{Vector3}}
+This uses floating point variables, so will not be very optimal on anything without an FPU. \Hypertarget{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804}\index{vector.h@{vector.h}!Vector3@{Vector3}}
 \index{Vector3@{Vector3}!vector.h@{vector.h}}
 \doxysubsubsection{\texorpdfstring{Vector3}{Vector3}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_vector3}{Vector3}} \mbox{\hyperlink{struct_vector3}{Vector3}}}
+{\footnotesize\ttfamily \label{vector_8h_a3b29ec21f9ba832999ff4fdff39dd804} 
+typedef struct Vector3 Vector3}
 
 
 
@@ -61,11 +63,11 @@ A structure to hold a 3D vector.
 This uses floating point variables, so will not be very optimal on anything without an FPU. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{vector_8h_a53c84e7f192881ea1ab76e18f6120e74}\label{vector_8h_a53c84e7f192881ea1ab76e18f6120e74}} 
-\index{vector.h@{vector.h}!vector2\_normalise@{vector2\_normalise}}
+\Hypertarget{vector_8h_a53c84e7f192881ea1ab76e18f6120e74}\index{vector.h@{vector.h}!vector2\_normalise@{vector2\_normalise}}
 \index{vector2\_normalise@{vector2\_normalise}!vector.h@{vector.h}}
 \doxysubsubsection{\texorpdfstring{vector2\_normalise()}{vector2\_normalise()}}
-{\footnotesize\ttfamily void vector2\+\_\+normalise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} $\ast$}]{v }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{vector_8h_a53c84e7f192881ea1ab76e18f6120e74} 
+void vector2\+\_\+normalise (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2}{Vector2}} \texorpdfstring{$\ast$}{*}}]{v}{}\end{DoxyParamCaption})}
 
 
 

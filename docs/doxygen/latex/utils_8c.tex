@@ -1,15 +1,16 @@
-\hypertarget{utils_8c}{}\doxysection{src/vdp/utils.c File Reference}
-\label{utils_8c}\index{src/vdp/utils.c@{src/vdp/utils.c}}
-{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+\doxysection{src/vdp/utils.c File Reference}
+\hypertarget{utils_8c}{}\label{utils_8c}\index{src/vdp/utils.c@{src/vdp/utils.c}}
+{\ttfamily \#include "{}utils.\+h"{}}\newline
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
-Include dependency graph for utils.\+c\+:\nopagebreak
+Include dependency graph for utils.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=336pt]{utils_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}{write16bit}} (int16\+\_\+t w)
@@ -22,7 +23,7 @@ void \mbox{\hyperlink{utils_8c_a606aa6336a757ee6ad2f3b446252b486}{vdp\+\_\+enabl
 \begin{DoxyCompactList}\small\item\em Turn logical screen scaling on and off, where 1=on and 0=off. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{utils_8c_a85a8b87e20d294c313faf5bc96496185}{vdp\+\_\+move\+\_\+origin}} (int16\+\_\+t x, int16\+\_\+t y)
 \begin{DoxyCompactList}\small\item\em Set graphics origin. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{utils_8c_ac67f9f9547089e2d20eb020272549f2a}{vdp\+\_\+gcol}} (uint8\+\_\+t colour)
+void \mbox{\hyperlink{utils_8c_a95c1932f3d05c784b30e16659b3725fd}{vdp\+\_\+set\+\_\+gcol}} (uint8\+\_\+t colour)
 \begin{DoxyCompactList}\small\item\em Changes graphics colour. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}{vdp\+\_\+clg}} ()
 \item 
@@ -31,17 +32,17 @@ void \mbox{\hyperlink{utils_8c_ae9960bce2205e56728ef713d34a40206}{vdp\+\_\+colou
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}\label{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}} 
-\index{utils.c@{utils.c}!vdp\_clg@{vdp\_clg}}
+\Hypertarget{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb}\index{utils.c@{utils.c}!vdp\_clg@{vdp\_clg}}
 \index{vdp\_clg@{vdp\_clg}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_clg()}{vdp\_clg()}}
-{\footnotesize\ttfamily void vdp\+\_\+clg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_ae79ea82bf91425ec1d26b2c3d8e624fb} 
+void vdp\+\_\+clg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{utils_8c_ae9960bce2205e56728ef713d34a40206}\label{utils_8c_ae9960bce2205e56728ef713d34a40206}} 
-\index{utils.c@{utils.c}!vdp\_colour@{vdp\_colour}}
+\Hypertarget{utils_8c_ae9960bce2205e56728ef713d34a40206}\index{utils.c@{utils.c}!vdp\_colour@{vdp\_colour}}
 \index{vdp\_colour@{vdp\_colour}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_colour()}{vdp\_colour()}}
-{\footnotesize\ttfamily void vdp\+\_\+colour (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_ae9960bce2205e56728ef713d34a40206} 
+void vdp\+\_\+colour (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
 
 
@@ -54,18 +55,19 @@ Colour numbers in the range 0-\/127 are interpreted as foreground colours, and n
 {\em colour} & Colour number \\
 \hline
 \end{DoxyParams}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{utils_8c_ae9960bce2205e56728ef713d34a40206_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{utils_8c_a606aa6336a757ee6ad2f3b446252b486}\label{utils_8c_a606aa6336a757ee6ad2f3b446252b486}} 
-\index{utils.c@{utils.c}!vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}}
+\Hypertarget{utils_8c_a606aa6336a757ee6ad2f3b446252b486}\index{utils.c@{utils.c}!vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}}
 \index{vdp\_enable\_logical\_screen\_scaling@{vdp\_enable\_logical\_screen\_scaling}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_enable\_logical\_screen\_scaling()}{vdp\_enable\_logical\_screen\_scaling()}}
-{\footnotesize\ttfamily void vdp\+\_\+enable\+\_\+logical\+\_\+screen\+\_\+scaling (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{on }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_a606aa6336a757ee6ad2f3b446252b486} 
+void vdp\+\_\+enable\+\_\+logical\+\_\+screen\+\_\+scaling (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{on}{}\end{DoxyParamCaption})}
 
 
 
@@ -88,28 +90,11 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{utils_8c_a606aa6336a757ee6ad2f3b446252b486_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{utils_8c_ac67f9f9547089e2d20eb020272549f2a}\label{utils_8c_ac67f9f9547089e2d20eb020272549f2a}} 
-\index{utils.c@{utils.c}!vdp\_gcol@{vdp\_gcol}}
-\index{vdp\_gcol@{vdp\_gcol}!utils.c@{utils.c}}
-\doxysubsubsection{\texorpdfstring{vdp\_gcol()}{vdp\_gcol()}}
-{\footnotesize\ttfamily void vdp\+\_\+gcol (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
-
-
-
-Changes graphics colour. 
-
-This is just here for completeness, most drawing commands have a colour parameter and will do this for you.
-
-
-\begin{DoxyParams}{Parameters}
-{\em colour} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{utils_8c_a85a8b87e20d294c313faf5bc96496185}\label{utils_8c_a85a8b87e20d294c313faf5bc96496185}} 
-\index{utils.c@{utils.c}!vdp\_move\_origin@{vdp\_move\_origin}}
+\Hypertarget{utils_8c_a85a8b87e20d294c313faf5bc96496185}\index{utils.c@{utils.c}!vdp\_move\_origin@{vdp\_move\_origin}}
 \index{vdp\_move\_origin@{vdp\_move\_origin}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_move\_origin()}{vdp\_move\_origin()}}
-{\footnotesize\ttfamily void vdp\+\_\+move\+\_\+origin (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_a85a8b87e20d294c313faf5bc96496185} 
+void vdp\+\_\+move\+\_\+origin (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x}{, }\item[{int16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
 
 
 
@@ -124,18 +109,36 @@ VDU 29, x; y;
 {\em y} & Y Coordinate of new origin \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=286pt]{utils_8c_a85a8b87e20d294c313faf5bc96496185_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{utils_8c_a2468052f8acab5e72b4b28e161cee0d0}\label{utils_8c_a2468052f8acab5e72b4b28e161cee0d0}} 
-\index{utils.c@{utils.c}!vdp\_set\_screen\_mode@{vdp\_set\_screen\_mode}}
+\Hypertarget{utils_8c_a95c1932f3d05c784b30e16659b3725fd}\index{utils.c@{utils.c}!vdp\_set\_gcol@{vdp\_set\_gcol}}
+\index{vdp\_set\_gcol@{vdp\_set\_gcol}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{vdp\_set\_gcol()}{vdp\_set\_gcol()}}
+{\footnotesize\ttfamily \label{utils_8c_a95c1932f3d05c784b30e16659b3725fd} 
+void vdp\+\_\+set\+\_\+gcol (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
+
+
+
+Changes graphics colour. 
+
+This is just here for completeness, most drawing commands have a colour parameter and will do this for you.
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utils_8c_a2468052f8acab5e72b4b28e161cee0d0}\index{utils.c@{utils.c}!vdp\_set\_screen\_mode@{vdp\_set\_screen\_mode}}
 \index{vdp\_set\_screen\_mode@{vdp\_set\_screen\_mode}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_set\_screen\_mode()}{vdp\_set\_screen\_mode()}}
-{\footnotesize\ttfamily void vdp\+\_\+set\+\_\+screen\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_a2468052f8acab5e72b4b28e161cee0d0} 
+void vdp\+\_\+set\+\_\+screen\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
 
 
 
@@ -156,21 +159,21 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{utils_8c_a2468052f8acab5e72b4b28e161cee0d0_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{utils_8c_af71d49fed6cebb52fc826569e40c218a}\label{utils_8c_af71d49fed6cebb52fc826569e40c218a}} 
-\index{utils.c@{utils.c}!vdp\_swap\_screen\_buffer@{vdp\_swap\_screen\_buffer}}
+\Hypertarget{utils_8c_af71d49fed6cebb52fc826569e40c218a}\index{utils.c@{utils.c}!vdp\_swap\_screen\_buffer@{vdp\_swap\_screen\_buffer}}
 \index{vdp\_swap\_screen\_buffer@{vdp\_swap\_screen\_buffer}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_swap\_screen\_buffer()}{vdp\_swap\_screen\_buffer()}}
-{\footnotesize\ttfamily void vdp\+\_\+swap\+\_\+screen\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_af71d49fed6cebb52fc826569e40c218a} 
+void vdp\+\_\+swap\+\_\+screen\+\_\+buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 VDU 23,0,C3 -\/ Swap screen buffers. 
 
-Only does something with double buffered screen modes. See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}} \mbox{\Hypertarget{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}\label{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}} 
-\index{utils.c@{utils.c}!write16bit@{write16bit}}
+Only does something with double buffered screen modes. See \href{https://agonconsole8.github.io/agon-docs/vdp/Screen-Modes/}{\texttt{ https\+://agonconsole8.\+github.\+io/agon-\/docs/vdp/\+Screen-\/\+Modes/}} \Hypertarget{utils_8c_ad1c403a5b0d221c03e8563f389d74b10}\index{utils.c@{utils.c}!write16bit@{write16bit}}
 \index{write16bit@{write16bit}!utils.c@{utils.c}}
 \doxysubsubsection{\texorpdfstring{write16bit()}{write16bit()}}
-{\footnotesize\ttfamily void write16bit (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{w }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{utils_8c_ad1c403a5b0d221c03e8563f389d74b10} 
+void write16bit (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{w}{}\end{DoxyParamCaption})}
 
 
 

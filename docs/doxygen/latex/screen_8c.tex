@@ -1,26 +1,27 @@
-\hypertarget{screen_8c}{}\doxysection{src/screen/screen.c File Reference}
-\label{screen_8c}\index{src/screen/screen.c@{src/screen/screen.c}}
-{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\newline
+\doxysection{src/screen/screen.c File Reference}
+\hypertarget{screen_8c}{}\label{screen_8c}\index{src/screen/screen.c@{src/screen/screen.c}}
+{\ttfamily \#include "{}screen.\+h"{}}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}vdp/utils.\+h\char`\"{}}\newline
-Include dependency graph for screen.\+c\+:\nopagebreak
+{\ttfamily \#include "{}vdp/utils.\+h"{}}\newline
+Include dependency graph for screen.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{screen_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Data Structures}
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_screen}{Screen}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}{define\+\_\+screen}} (void($\ast$init)(void), int($\ast$update)(void), void($\ast$draw)(void))
+void \mbox{\hyperlink{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}{define\+\_\+screen}} (void(\texorpdfstring{$\ast$}{*}init)(void), int(\texorpdfstring{$\ast$}{*}update)(void), void(\texorpdfstring{$\ast$}{*}draw)(void))
 \item 
 void \mbox{\hyperlink{screen_8c_a1cc9198a8da350baefe1506d81bdc59e}{set\+\_\+current\+\_\+screen}} (int screen\+\_\+id)
 \item 
@@ -28,10 +29,10 @@ void \mbox{\hyperlink{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4}{run\+\_\+scre
 \item 
 void \mbox{\hyperlink{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}{change\+\_\+screen\+\_\+mode}} (uint8\+\_\+t mode, uint8\+\_\+t enable\+\_\+cursor, uint8\+\_\+t logical\+\_\+screen)
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{struct_screen}{Screen}} $\ast$ \mbox{\hyperlink{screen_8c_ad978b7d3dc63046841b08137dd217ea8}{screens}} \mbox{[}\mbox{\hyperlink{screen_8h_a6b13048abea3e26fe1d797134affb650}{MAX\+\_\+\+SCREENS}}\mbox{]}
+\mbox{\hyperlink{struct_screen}{Screen}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{screen_8c_ad978b7d3dc63046841b08137dd217ea8}{screens}} \mbox{[}\mbox{\hyperlink{screen_8h_a6b13048abea3e26fe1d797134affb650}{MAX\+\_\+\+SCREENS}}\mbox{]}
 \item 
 int \mbox{\hyperlink{screen_8c_a59ff745efdee354cf2bc3dd370fec282}{num\+\_\+screens}} = 0
 \item 
@@ -40,13 +41,14 @@ int \mbox{\hyperlink{screen_8c_a39a918bbb2c8ddf0bcf382b6d93f5516}{current\+\_\+s
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}\label{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}} 
-\index{screen.c@{screen.c}!change\_screen\_mode@{change\_screen\_mode}}
+\Hypertarget{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}\index{screen.c@{screen.c}!change\_screen\_mode@{change\_screen\_mode}}
 \index{change\_screen\_mode@{change\_screen\_mode}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{change\_screen\_mode()}{change\_screen\_mode()}}
-{\footnotesize\ttfamily void change\+\_\+screen\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode,  }\item[{uint8\+\_\+t}]{enable\+\_\+cursor,  }\item[{uint8\+\_\+t}]{logical\+\_\+screen }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b} 
+void change\+\_\+screen\+\_\+mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{mode}{, }\item[{uint8\+\_\+t}]{enable\+\_\+cursor}{, }\item[{uint8\+\_\+t}]{logical\+\_\+screen}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -61,56 +63,58 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{screen_8c_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}\label{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}} 
-\index{screen.c@{screen.c}!define\_screen@{define\_screen}}
+\Hypertarget{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8}\index{screen.c@{screen.c}!define\_screen@{define\_screen}}
 \index{define\_screen@{define\_screen}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{define\_screen()}{define\_screen()}}
-{\footnotesize\ttfamily void define\+\_\+screen (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{init,  }\item[{int($\ast$)(void)}]{update,  }\item[{void($\ast$)(void)}]{draw }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8} 
+void define\+\_\+screen (\begin{DoxyParamCaption}\item[{void(\texorpdfstring{$\ast$}{*}}]{init~}{)(void), }\item[{int(\texorpdfstring{$\ast$}{*}}]{update~}{)(void), }\item[{void(\texorpdfstring{$\ast$}{*}}]{draw~}{)(void)}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=243pt]{screen_8c_a3e60acd7192fba1d2dcf0dd167afd8b8_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4}\label{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4}} 
-\index{screen.c@{screen.c}!run\_screens@{run\_screens}}
+\Hypertarget{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4}\index{screen.c@{screen.c}!run\_screens@{run\_screens}}
 \index{run\_screens@{run\_screens}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{run\_screens()}{run\_screens()}}
-{\footnotesize\ttfamily void run\+\_\+screens (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4} 
+void run\+\_\+screens (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=234pt]{screen_8c_ad0a0d65fe13242143deb13586e5bc7f4_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{screen_8c_a1cc9198a8da350baefe1506d81bdc59e}\label{screen_8c_a1cc9198a8da350baefe1506d81bdc59e}} 
-\index{screen.c@{screen.c}!set\_current\_screen@{set\_current\_screen}}
+\Hypertarget{screen_8c_a1cc9198a8da350baefe1506d81bdc59e}\index{screen.c@{screen.c}!set\_current\_screen@{set\_current\_screen}}
 \index{set\_current\_screen@{set\_current\_screen}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{set\_current\_screen()}{set\_current\_screen()}}
-{\footnotesize\ttfamily void set\+\_\+current\+\_\+screen (\begin{DoxyParamCaption}\item[{int}]{screen\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{screen_8c_a1cc9198a8da350baefe1506d81bdc59e} 
+void set\+\_\+current\+\_\+screen (\begin{DoxyParamCaption}\item[{int}]{screen\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{screen_8c_a39a918bbb2c8ddf0bcf382b6d93f5516}\label{screen_8c_a39a918bbb2c8ddf0bcf382b6d93f5516}} 
-\index{screen.c@{screen.c}!current\_screen\_index@{current\_screen\_index}}
+\Hypertarget{screen_8c_a39a918bbb2c8ddf0bcf382b6d93f5516}\index{screen.c@{screen.c}!current\_screen\_index@{current\_screen\_index}}
 \index{current\_screen\_index@{current\_screen\_index}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{current\_screen\_index}{current\_screen\_index}}
-{\footnotesize\ttfamily int current\+\_\+screen\+\_\+index = 0}
+{\footnotesize\ttfamily \label{screen_8c_a39a918bbb2c8ddf0bcf382b6d93f5516} 
+int current\+\_\+screen\+\_\+index = 0}
 
-\mbox{\Hypertarget{screen_8c_a59ff745efdee354cf2bc3dd370fec282}\label{screen_8c_a59ff745efdee354cf2bc3dd370fec282}} 
-\index{screen.c@{screen.c}!num\_screens@{num\_screens}}
+\Hypertarget{screen_8c_a59ff745efdee354cf2bc3dd370fec282}\index{screen.c@{screen.c}!num\_screens@{num\_screens}}
 \index{num\_screens@{num\_screens}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{num\_screens}{num\_screens}}
-{\footnotesize\ttfamily int num\+\_\+screens = 0}
+{\footnotesize\ttfamily \label{screen_8c_a59ff745efdee354cf2bc3dd370fec282} 
+int num\+\_\+screens = 0}
 
-\mbox{\Hypertarget{screen_8c_ad978b7d3dc63046841b08137dd217ea8}\label{screen_8c_ad978b7d3dc63046841b08137dd217ea8}} 
-\index{screen.c@{screen.c}!screens@{screens}}
+\Hypertarget{screen_8c_ad978b7d3dc63046841b08137dd217ea8}\index{screen.c@{screen.c}!screens@{screens}}
 \index{screens@{screens}!screen.c@{screen.c}}
 \doxysubsubsection{\texorpdfstring{screens}{screens}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_screen}{Screen}}$\ast$ screens\mbox{[}\mbox{\hyperlink{screen_8h_a6b13048abea3e26fe1d797134affb650}{MAX\+\_\+\+SCREENS}}\mbox{]}}
+{\footnotesize\ttfamily \label{screen_8c_ad978b7d3dc63046841b08137dd217ea8} 
+\mbox{\hyperlink{struct_screen}{Screen}}\texorpdfstring{$\ast$}{*} screens\mbox{[}\mbox{\hyperlink{screen_8h_a6b13048abea3e26fe1d797134affb650}{MAX\+\_\+\+SCREENS}}\mbox{]}}
 

@@ -1,24 +1,25 @@
-\hypertarget{sprite_8c}{}\doxysection{src/sprites/sprite.c File Reference}
-\label{sprite_8c}\index{src/sprites/sprite.c@{src/sprites/sprite.c}}
-{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}spritedef.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../vdp/bitmaps.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../debug/debug.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../vdp/graphics.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../global.\+h\char`\"{}}\newline
-Include dependency graph for sprite.\+c\+:\nopagebreak
+\doxysection{src/sprites/sprite.c File Reference}
+\hypertarget{sprite_8c}{}\label{sprite_8c}\index{src/sprites/sprite.c@{src/sprites/sprite.c}}
+{\ttfamily \#include "{}sprite.\+h"{}}\newline
+{\ttfamily \#include "{}spritedef.\+h"{}}\newline
+{\ttfamily \#include "{}../vdp/bitmaps.\+h"{}}\newline
+{\ttfamily \#include "{}../debug/debug.\+h"{}}\newline
+{\ttfamily \#include "{}../vdp/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}../global.\+h"{}}\newline
+Include dependency graph for sprite.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Macros}
+\doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}{MAX\+\_\+\+SPRITES}}~100
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab}{sprite\+\_\+system\+\_\+init}} ()
@@ -33,13 +34,13 @@ void \mbox{\hyperlink{sprite_8c_a194d321f88b5c9a8c830172d8caed89c}{sprite\+\_\+s
 \item 
 uint16\+\_\+t \mbox{\hyperlink{sprite_8c_abc9afcbdfcb1479313157eeba370330a}{sprite\+\_\+instantiate}} (uint16\+\_\+t sprite\+\_\+def\+\_\+id, \mbox{\hyperlink{struct_point}{Point}} position)
 \item 
-void \mbox{\hyperlink{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6}{debug\+\_\+print\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sprite)
+void \mbox{\hyperlink{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6}{debug\+\_\+print\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
 \item 
 void \mbox{\hyperlink{sprite_8c_a3b3bdcc8ac3999715adbcf3203fac1f9}{sprite\+\_\+system\+\_\+update}} ()
 \item 
 void \mbox{\hyperlink{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6}{sprite\+\_\+system\+\_\+draw}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\hyperlink{sprite_8c_a73483cd2f7f2f594eb95acbe9b3f4f9f}{sprites}} \mbox{[}\mbox{\hyperlink{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}{MAX\+\_\+\+SPRITES}}\mbox{]}
@@ -47,133 +48,143 @@ void \mbox{\hyperlink{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6}{sprite\+\_\+s
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}\label{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}} 
-\index{sprite.c@{sprite.c}!MAX\_SPRITES@{MAX\_SPRITES}}
+\Hypertarget{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}\index{sprite.c@{sprite.c}!MAX\_SPRITES@{MAX\_SPRITES}}
 \index{MAX\_SPRITES@{MAX\_SPRITES}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{MAX\_SPRITES}{MAX\_SPRITES}}
-{\footnotesize\ttfamily \#define MAX\+\_\+\+SPRITES~100}
+{\footnotesize\ttfamily \label{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4} 
+\#define MAX\+\_\+\+SPRITES~100}
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6}\label{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6}} 
-\index{sprite.c@{sprite.c}!debug\_print\_sprite@{debug\_print\_sprite}}
+\Hypertarget{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6}\index{sprite.c@{sprite.c}!debug\_print\_sprite@{debug\_print\_sprite}}
 \index{debug\_print\_sprite@{debug\_print\_sprite}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{debug\_print\_sprite()}{debug\_print\_sprite()}}
-{\footnotesize\ttfamily void debug\+\_\+print\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sprite }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6} 
+void debug\+\_\+print\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_ac02af1c1968e3fd616ccf577a5f677f6_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_aab437ed7dd4845fa259c9f0a52a8c693}\label{sprite_8c_aab437ed7dd4845fa259c9f0a52a8c693}} 
-\index{sprite.c@{sprite.c}!sprite\_activate@{sprite\_activate}}
+\Hypertarget{sprite_8c_aab437ed7dd4845fa259c9f0a52a8c693}\index{sprite.c@{sprite.c}!sprite\_activate@{sprite\_activate}}
 \index{sprite\_activate@{sprite\_activate}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_activate()}{sprite\_activate()}}
-{\footnotesize\ttfamily void sprite\+\_\+activate (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id,  }\item[{\mbox{\hyperlink{sprite_8h_a45a6ffa9a5d6174f37be78bb2f155552}{SPRITE\+\_\+\+ACTIVE\+\_\+\+STATE}}}]{active\+\_\+state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_aab437ed7dd4845fa259c9f0a52a8c693} 
+void sprite\+\_\+activate (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id}{, }\item[{\mbox{\hyperlink{sprite_8h_a45a6ffa9a5d6174f37be78bb2f155552}{SPRITE\+\_\+\+ACTIVE\+\_\+\+STATE}}}]{active\+\_\+state}{}\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{sprite_8c_abc9afcbdfcb1479313157eeba370330a}\label{sprite_8c_abc9afcbdfcb1479313157eeba370330a}} 
-\index{sprite.c@{sprite.c}!sprite\_instantiate@{sprite\_instantiate}}
+\Hypertarget{sprite_8c_abc9afcbdfcb1479313157eeba370330a}\index{sprite.c@{sprite.c}!sprite\_instantiate@{sprite\_instantiate}}
 \index{sprite\_instantiate@{sprite\_instantiate}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_instantiate()}{sprite\_instantiate()}}
-{\footnotesize\ttfamily uint16\+\_\+t sprite\+\_\+instantiate (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+def\+\_\+id,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{position }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_abc9afcbdfcb1479313157eeba370330a} 
+uint16\+\_\+t sprite\+\_\+instantiate (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+def\+\_\+id}{, }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{position}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_abc9afcbdfcb1479313157eeba370330a_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_abc9afcbdfcb1479313157eeba370330a_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_a848f2de506a411786f9b80883d12eb76}\label{sprite_8c_a848f2de506a411786f9b80883d12eb76}} 
-\index{sprite.c@{sprite.c}!sprite\_set\_animation\_state@{sprite\_set\_animation\_state}}
+\Hypertarget{sprite_8c_a848f2de506a411786f9b80883d12eb76}\index{sprite.c@{sprite.c}!sprite\_set\_animation\_state@{sprite\_set\_animation\_state}}
 \index{sprite\_set\_animation\_state@{sprite\_set\_animation\_state}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_set\_animation\_state()}{sprite\_set\_animation\_state()}}
-{\footnotesize\ttfamily void sprite\+\_\+set\+\_\+animation\+\_\+state (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id,  }\item[{\mbox{\hyperlink{sprite_8h_aa0dd5a1c8bf41af8f5b5e8ae73df8b12}{SPRITE\+\_\+\+ANIMATION\+\_\+\+STATE}}}]{animation\+\_\+state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_a848f2de506a411786f9b80883d12eb76} 
+void sprite\+\_\+set\+\_\+animation\+\_\+state (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id}{, }\item[{\mbox{\hyperlink{sprite_8h_aa0dd5a1c8bf41af8f5b5e8ae73df8b12}{SPRITE\+\_\+\+ANIMATION\+\_\+\+STATE}}}]{animation\+\_\+state}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_a848f2de506a411786f9b80883d12eb76_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_a194d321f88b5c9a8c830172d8caed89c}\label{sprite_8c_a194d321f88b5c9a8c830172d8caed89c}} 
-\index{sprite.c@{sprite.c}!sprite\_set\_state@{sprite\_set\_state}}
+\Hypertarget{sprite_8c_a194d321f88b5c9a8c830172d8caed89c}\index{sprite.c@{sprite.c}!sprite\_set\_state@{sprite\_set\_state}}
 \index{sprite\_set\_state@{sprite\_set\_state}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_set\_state()}{sprite\_set\_state()}}
-{\footnotesize\ttfamily void sprite\+\_\+set\+\_\+state (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id,  }\item[{uint8\+\_\+t}]{sprite\+\_\+state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_a194d321f88b5c9a8c830172d8caed89c} 
+void sprite\+\_\+set\+\_\+state (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id}{, }\item[{uint8\+\_\+t}]{sprite\+\_\+state}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_a194d321f88b5c9a8c830172d8caed89c_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_aa22a392084f1be5fa7144a04f4a1d23b}\label{sprite_8c_aa22a392084f1be5fa7144a04f4a1d23b}} 
-\index{sprite.c@{sprite.c}!sprite\_set\_visible@{sprite\_set\_visible}}
+\Hypertarget{sprite_8c_aa22a392084f1be5fa7144a04f4a1d23b}\index{sprite.c@{sprite.c}!sprite\_set\_visible@{sprite\_set\_visible}}
 \index{sprite\_set\_visible@{sprite\_set\_visible}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_set\_visible()}{sprite\_set\_visible()}}
-{\footnotesize\ttfamily void sprite\+\_\+set\+\_\+visible (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id,  }\item[{\mbox{\hyperlink{sprite_8h_aab26495e13edfe56098239ac04707b20}{SPRITE\+\_\+\+VISIBLE\+\_\+\+STATE}}}]{visible\+\_\+state }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_aa22a392084f1be5fa7144a04f4a1d23b} 
+void sprite\+\_\+set\+\_\+visible (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+id}{, }\item[{\mbox{\hyperlink{sprite_8h_aab26495e13edfe56098239ac04707b20}{SPRITE\+\_\+\+VISIBLE\+\_\+\+STATE}}}]{visible\+\_\+state}{}\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6}\label{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6}} 
-\index{sprite.c@{sprite.c}!sprite\_system\_draw@{sprite\_system\_draw}}
+\Hypertarget{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6}\index{sprite.c@{sprite.c}!sprite\_system\_draw@{sprite\_system\_draw}}
 \index{sprite\_system\_draw@{sprite\_system\_draw}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_system\_draw()}{sprite\_system\_draw()}}
-{\footnotesize\ttfamily void sprite\+\_\+system\+\_\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6} 
+void sprite\+\_\+system\+\_\+draw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_ae5c64d48999accbf8b37bc1a22f41cd6_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab}\label{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab}} 
-\index{sprite.c@{sprite.c}!sprite\_system\_init@{sprite\_system\_init}}
+\Hypertarget{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab}\index{sprite.c@{sprite.c}!sprite\_system\_init@{sprite\_system\_init}}
 \index{sprite\_system\_init@{sprite\_system\_init}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_system\_init()}{sprite\_system\_init()}}
-{\footnotesize\ttfamily void sprite\+\_\+system\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab} 
+void sprite\+\_\+system\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{sprite_8c_a81488510f23ee0eba3fddd8f605c4aab_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{sprite_8c_a3b3bdcc8ac3999715adbcf3203fac1f9}\label{sprite_8c_a3b3bdcc8ac3999715adbcf3203fac1f9}} 
-\index{sprite.c@{sprite.c}!sprite\_system\_update@{sprite\_system\_update}}
+\Hypertarget{sprite_8c_a3b3bdcc8ac3999715adbcf3203fac1f9}\index{sprite.c@{sprite.c}!sprite\_system\_update@{sprite\_system\_update}}
 \index{sprite\_system\_update@{sprite\_system\_update}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprite\_system\_update()}{sprite\_system\_update()}}
-{\footnotesize\ttfamily void sprite\+\_\+system\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{sprite_8c_a3b3bdcc8ac3999715adbcf3203fac1f9} 
+void sprite\+\_\+system\+\_\+update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -183,9 +194,9 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{sprite_8c_a73483cd2f7f2f594eb95acbe9b3f4f9f}\label{sprite_8c_a73483cd2f7f2f594eb95acbe9b3f4f9f}} 
-\index{sprite.c@{sprite.c}!sprites@{sprites}}
+\Hypertarget{sprite_8c_a73483cd2f7f2f594eb95acbe9b3f4f9f}\index{sprite.c@{sprite.c}!sprites@{sprites}}
 \index{sprites@{sprites}!sprite.c@{sprite.c}}
 \doxysubsubsection{\texorpdfstring{sprites}{sprites}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}} sprites\mbox{[}\mbox{\hyperlink{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}{MAX\+\_\+\+SPRITES}}\mbox{]}}
+{\footnotesize\ttfamily \label{sprite_8c_a73483cd2f7f2f594eb95acbe9b3f4f9f} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} sprites\mbox{[}\mbox{\hyperlink{sprite_8c_aeb21c7ac080eea985b7701df626d9cf4}{MAX\+\_\+\+SPRITES}}\mbox{]}}
 

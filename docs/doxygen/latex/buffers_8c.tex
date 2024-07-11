@@ -1,23 +1,24 @@
-\hypertarget{buffers_8c}{}\doxysection{src/vdp/buffers.c File Reference}
-\label{buffers_8c}\index{src/vdp/buffers.c@{src/vdp/buffers.c}}
-{\ttfamily \#include \char`\"{}buffers.\+h\char`\"{}}\newline
+\doxysection{src/vdp/buffers.c File Reference}
+\hypertarget{buffers_8c}{}\label{buffers_8c}\index{src/vdp/buffers.c@{src/vdp/buffers.c}}
+{\ttfamily \#include "{}buffers.\+h"{}}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
-Include dependency graph for buffers.\+c\+:\nopagebreak
+{\ttfamily \#include "{}utils.\+h"{}}\newline
+Include dependency graph for buffers.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{buffers_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad}{vdp\+\_\+clear\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Clear the buffer with the given ID. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{buffers_8c_ac7354663885fb2b809128aff130c486b}{vdp\+\_\+select\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Select bitmap using a 16-\/bit buffer ID. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{buffers_8c_a47b28a2c359716782ca4299f96b83a28}{add\+\_\+stream\+\_\+to\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id, char $\ast$buffer\+\_\+content, uint16\+\_\+t buffer\+\_\+size)
+void \mbox{\hyperlink{buffers_8c_a47b28a2c359716782ca4299f96b83a28}{add\+\_\+stream\+\_\+to\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id, char \texorpdfstring{$\ast$}{*}buffer\+\_\+content, uint16\+\_\+t buffer\+\_\+size)
 \begin{DoxyCompactList}\small\item\em Writes data to a buffer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{buffers_8c_a49b72cc5962e1b043e656f531e1424e9}{vdp\+\_\+extended\+\_\+select}} (uint16\+\_\+t buffer\+\_\+id)
 \item 
@@ -30,11 +31,11 @@ void \mbox{\hyperlink{buffers_8c_a1424e00881180488719e3ffe6ac87bf3}{vdp\+\_\+spl
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{buffers_8c_a47b28a2c359716782ca4299f96b83a28}\label{buffers_8c_a47b28a2c359716782ca4299f96b83a28}} 
-\index{buffers.c@{buffers.c}!add\_stream\_to\_buffer@{add\_stream\_to\_buffer}}
+\Hypertarget{buffers_8c_a47b28a2c359716782ca4299f96b83a28}\index{buffers.c@{buffers.c}!add\_stream\_to\_buffer@{add\_stream\_to\_buffer}}
 \index{add\_stream\_to\_buffer@{add\_stream\_to\_buffer}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{add\_stream\_to\_buffer()}{add\_stream\_to\_buffer()}}
-{\footnotesize\ttfamily void add\+\_\+stream\+\_\+to\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{char $\ast$}]{buffer\+\_\+content,  }\item[{uint16\+\_\+t}]{buffer\+\_\+size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_a47b28a2c359716782ca4299f96b83a28} 
+void add\+\_\+stream\+\_\+to\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{buffer\+\_\+content}{, }\item[{uint16\+\_\+t}]{buffer\+\_\+size}{}\end{DoxyParamCaption})}
 
 
 
@@ -51,7 +52,8 @@ VDU 23, 0 \&A0, buffer\+Id; 0, length; \texorpdfstring{$<$}{<}buffer-\/data\texo
 {\em buffer\+\_\+size} & \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -66,11 +68,11 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{buffers_8c_a47b28a2c359716782ca4299f96b83a28_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad}\label{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad}} 
-\index{buffers.c@{buffers.c}!vdp\_clear\_buffer@{vdp\_clear\_buffer}}
+\Hypertarget{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad}\index{buffers.c@{buffers.c}!vdp\_clear\_buffer@{vdp\_clear\_buffer}}
 \index{vdp\_clear\_buffer@{vdp\_clear\_buffer}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_clear\_buffer()}{vdp\_clear\_buffer()}}
-{\footnotesize\ttfamily void vdp\+\_\+clear\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad} 
+void vdp\+\_\+clear\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
@@ -89,7 +91,8 @@ Calling this command with a buffer\+Id value of -\/1 (65535) will clear out all 
 {\em buffer\+\_\+id} & 16 bit Buffer ID \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -104,26 +107,28 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{buffers_8c_a2b6d1a72527a28e9a3689130b852ddad_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_addc73cb16c5076d2f49fdba2e1a1382e}\label{buffers_8c_addc73cb16c5076d2f49fdba2e1a1382e}} 
-\index{buffers.c@{buffers.c}!vdp\_consolidate\_buffer@{vdp\_consolidate\_buffer}}
+\Hypertarget{buffers_8c_addc73cb16c5076d2f49fdba2e1a1382e}\index{buffers.c@{buffers.c}!vdp\_consolidate\_buffer@{vdp\_consolidate\_buffer}}
 \index{vdp\_consolidate\_buffer@{vdp\_consolidate\_buffer}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_consolidate\_buffer()}{vdp\_consolidate\_buffer()}}
-{\footnotesize\ttfamily void vdp\+\_\+consolidate\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_addc73cb16c5076d2f49fdba2e1a1382e} 
+void vdp\+\_\+consolidate\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=316pt]{buffers_8c_addc73cb16c5076d2f49fdba2e1a1382e_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_a49b72cc5962e1b043e656f531e1424e9}\label{buffers_8c_a49b72cc5962e1b043e656f531e1424e9}} 
-\index{buffers.c@{buffers.c}!vdp\_extended\_select@{vdp\_extended\_select}}
+\Hypertarget{buffers_8c_a49b72cc5962e1b043e656f531e1424e9}\index{buffers.c@{buffers.c}!vdp\_extended\_select@{vdp\_extended\_select}}
 \index{vdp\_extended\_select@{vdp\_extended\_select}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_extended\_select()}{vdp\_extended\_select()}}
-{\footnotesize\ttfamily void vdp\+\_\+extended\+\_\+select (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_a49b72cc5962e1b043e656f531e1424e9} 
+void vdp\+\_\+extended\+\_\+select (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -138,11 +143,11 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{buffers_8c_a49b72cc5962e1b043e656f531e1424e9_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_ac7354663885fb2b809128aff130c486b}\label{buffers_8c_ac7354663885fb2b809128aff130c486b}} 
-\index{buffers.c@{buffers.c}!vdp\_select\_buffer@{vdp\_select\_buffer}}
+\Hypertarget{buffers_8c_ac7354663885fb2b809128aff130c486b}\index{buffers.c@{buffers.c}!vdp\_select\_buffer@{vdp\_select\_buffer}}
 \index{vdp\_select\_buffer@{vdp\_select\_buffer}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_select\_buffer()}{vdp\_select\_buffer()}}
-{\footnotesize\ttfamily void vdp\+\_\+select\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_ac7354663885fb2b809128aff130c486b} 
+void vdp\+\_\+select\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{}\end{DoxyParamCaption})}
 
 
 
@@ -157,33 +162,36 @@ This command is essentially identical to VDU 23, 27, 0, n, however it uses a 16-
 {\em buffer\+\_\+id} & 16 Bit Buffer ID \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=289pt]{buffers_8c_ac7354663885fb2b809128aff130c486b_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_ab34179b00c1af8145284d4baf0eea749}\label{buffers_8c_ab34179b00c1af8145284d4baf0eea749}} 
-\index{buffers.c@{buffers.c}!vdp\_split\_into\_cols\_from@{vdp\_split\_into\_cols\_from}}
+\Hypertarget{buffers_8c_ab34179b00c1af8145284d4baf0eea749}\index{buffers.c@{buffers.c}!vdp\_split\_into\_cols\_from@{vdp\_split\_into\_cols\_from}}
 \index{vdp\_split\_into\_cols\_from@{vdp\_split\_into\_cols\_from}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_split\_into\_cols\_from()}{vdp\_split\_into\_cols\_from()}}
-{\footnotesize\ttfamily void vdp\+\_\+split\+\_\+into\+\_\+cols\+\_\+from (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{cols,  }\item[{uint16\+\_\+t}]{from }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_ab34179b00c1af8145284d4baf0eea749} 
+void vdp\+\_\+split\+\_\+into\+\_\+cols\+\_\+from (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{cols}{, }\item[{uint16\+\_\+t}]{from}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=325pt]{buffers_8c_ab34179b00c1af8145284d4baf0eea749_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{buffers_8c_a1424e00881180488719e3ffe6ac87bf3}\label{buffers_8c_a1424e00881180488719e3ffe6ac87bf3}} 
-\index{buffers.c@{buffers.c}!vdp\_split\_into\_from@{vdp\_split\_into\_from}}
+\Hypertarget{buffers_8c_a1424e00881180488719e3ffe6ac87bf3}\index{buffers.c@{buffers.c}!vdp\_split\_into\_from@{vdp\_split\_into\_from}}
 \index{vdp\_split\_into\_from@{vdp\_split\_into\_from}!buffers.c@{buffers.c}}
 \doxysubsubsection{\texorpdfstring{vdp\_split\_into\_from()}{vdp\_split\_into\_from()}}
-{\footnotesize\ttfamily void vdp\+\_\+split\+\_\+into\+\_\+from (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{uint16\+\_\+t}]{into,  }\item[{uint16\+\_\+t}]{from }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{buffers_8c_a1424e00881180488719e3ffe6ac87bf3} 
+void vdp\+\_\+split\+\_\+into\+\_\+from (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{uint16\+\_\+t}]{into}{, }\item[{uint16\+\_\+t}]{from}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

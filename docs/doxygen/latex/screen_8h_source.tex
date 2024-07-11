@@ -1,28 +1,28 @@
-\hypertarget{screen_8h_source}{}\doxysection{screen.\+h}
-\label{screen_8h_source}\index{src/screen/screen.h@{src/screen/screen.h}}
+\doxysection{screen.\+h}
+\hypertarget{screen_8h_source}{}\label{screen_8h_source}\index{src/screen/screen.h@{src/screen/screen.h}}
 \mbox{\hyperlink{screen_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SCREEN\_H}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SCREEN\_H}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mos\_api.h>}}
-\DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{preprocessor}{\#define SCREEN\_WIDTH 1280}}
-\DoxyCodeLine{7 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT 1024}}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{comment}{// Forward declaration of Screen struct}}
-\DoxyCodeLine{10 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_screen}{Screen}};}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{comment}{// Define a type for each screen}}
-\DoxyCodeLine{13 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_screen}{Screen}} \mbox{\hyperlink{struct_screen}{Screen}};}
-\DoxyCodeLine{14 \textcolor{preprocessor}{\#define MAX\_SCREENS 10}}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16 \textcolor{comment}{// Function prototypes for screen-\/related functions}}
-\DoxyCodeLine{17 \textcolor{keywordtype}{void} \mbox{\hyperlink{screen_8h_a1cc9198a8da350baefe1506d81bdc59e}{set\_current\_screen}}(\textcolor{keywordtype}{int} screen\_id);}
-\DoxyCodeLine{18 \textcolor{keywordtype}{void} \mbox{\hyperlink{screen_8h_a3e60acd7192fba1d2dcf0dd167afd8b8}{define\_screen}}(\textcolor{keywordtype}{void} (*\mbox{\hyperlink{struct_screen_a70526eb95af7b40162c92b34a7124698}{init}})(\textcolor{keywordtype}{void}), \textcolor{keywordtype}{int} (*\mbox{\hyperlink{struct_screen_a6dc1a1f657f0cf3ac44e9ce7890283ca}{update}})(\textcolor{keywordtype}{void}), \textcolor{keywordtype}{void} (*\mbox{\hyperlink{struct_screen_ae2c87d1a93d75a50fadd7d6da4aa85f3}{draw}})(\textcolor{keywordtype}{void})); }
-\DoxyCodeLine{19 \textcolor{keywordtype}{void} \mbox{\hyperlink{screen_8h_a2ef9debd6345547680ac4bd178f03b01}{run\_screens}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{20 \textcolor{keywordtype}{void} \mbox{\hyperlink{screen_8h_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}{change\_screen\_mode}}(uint8\_t mode, uint8\_t enable\_cursor, uint8\_t logical\_screen);}
-\DoxyCodeLine{21 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* SCREEN\_H */}\textcolor{preprocessor}{}}
-\DoxyCodeLine{22 }
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCREEN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCREEN\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <mos\_api.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ SCREEN\_WIDTH\ 1280}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SCREEN\_HEIGHT\ 1024}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Forward\ declaration\ of\ Screen\ struct}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_screen}{Screen}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Define\ a\ type\ for\ each\ screen}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_screen}{Screen}}\ \mbox{\hyperlink{struct_screen}{Screen}};}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ MAX\_SCREENS\ 10}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ Function\ prototypes\ for\ screen-\/related\ functions}}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{screen_8h_a1cc9198a8da350baefe1506d81bdc59e}{set\_current\_screen}}(\textcolor{keywordtype}{int}\ screen\_id);}
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{screen_8h_a3e60acd7192fba1d2dcf0dd167afd8b8}{define\_screen}}(\textcolor{keywordtype}{void}\ (*\mbox{\hyperlink{struct_screen_a70526eb95af7b40162c92b34a7124698}{init}})(\textcolor{keywordtype}{void}),\ \textcolor{keywordtype}{int}\ (*\mbox{\hyperlink{struct_screen_a6dc1a1f657f0cf3ac44e9ce7890283ca}{update}})(\textcolor{keywordtype}{void}),\ \textcolor{keywordtype}{void}\ (*\mbox{\hyperlink{struct_screen_ae2c87d1a93d75a50fadd7d6da4aa85f3}{draw}})(\textcolor{keywordtype}{void}));\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{screen_8h_a2ef9debd6345547680ac4bd178f03b01}{run\_screens}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{screen_8h_a4eb2cdd7711cbbd0d1fb3e2aa6fe653b}{change\_screen\_mode}}(uint8\_t\ mode,\ uint8\_t\ enable\_cursor,\ uint8\_t\ logical\_screen);}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SCREEN\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00022\ }
 
 \end{DoxyCode}

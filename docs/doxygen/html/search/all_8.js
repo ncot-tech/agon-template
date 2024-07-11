@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['id_0',['id',['../struct_sprite.html#a4fc3a0c58dfbd1e68224521185cb9384',1,'Sprite::id()'],['../struct_bitmap__header.html#adcacc6073a524f5ac4afef405819093c',1,'Bitmap_header::id()'],['../colour__bars_8c.html#a4fc3a0c58dfbd1e68224521185cb9384',1,'id():&#160;colour_bars.c']]],
-  ['inactive_1',['INACTIVE',['../sprite_8h.html#a45a6ffa9a5d6174f37be78bb2f155552a3ff8ba88da6f8947ab7c22b7825c6bb6',1,'sprite.h']]],
-  ['init_2',['init',['../struct_screen.html#a70526eb95af7b40162c92b34a7124698',1,'Screen']]],
-  ['invisible_3',['INVISIBLE',['../sprite_8h.html#aab26495e13edfe56098239ac04707b20a59810d2438e63be8bce699880cb6dfad',1,'sprite.h']]],
-  ['is_5fkey_5fheld_4',['IS_KEY_HELD',['../keyboard_8h.html#a8477b68b0ba2bc2cf5ae0c9d7b121bcf',1,'keyboard.h']]],
-  ['is_5fkey_5fpressed_5',['IS_KEY_PRESSED',['../keyboard_8h.html#a398bae94cf163f9b1d0b196b57bf8536',1,'keyboard.h']]]
+  ['file_20formats_0',['File Formats',['../md_docs_2pages_2file-format.html',1,'']]],
+  ['file_2dformat_2emd_1',['file-format.md',['../file-format_8md.html',1,'']]],
+  ['font_2',['Font',['../struct_font.html',1,'Font'],['../bmprint_8h.html#a6793c760667fe6bf1481f61567954c12',1,'Font:&#160;bmprint.h']]],
+  ['font_5fname_3',['font_name',['../struct_font.html#ad382f9f597a08d047628a53899a67951',1,'Font']]],
+  ['fonts_4',['Fonts',['../md_docs_2pages_2file-format.html#autotoc_md16',1,'']]],
+  ['format_20images_5',['RGBA2222 format images',['../md_docs_2pages_2file-format.html#autotoc_md15',1,'']]],
+  ['formats_6',['File Formats',['../md_docs_2pages_2file-format.html',1,'']]],
+  ['forward_7',['FORWARD',['../sprite_8h.html#aa0dd5a1c8bf41af8f5b5e8ae73df8b12aa26736999186daf8146f809e863712a1',1,'sprite.h']]],
+  ['frame_8',['frame',['../struct_sprite_frame.html#ac3c4ff2019f2e9afafb4f6689c0ec591',1,'SpriteFrame']]],
+  ['frames_9',['frames',['../struct_sprite_animation_def.html#aa6946679845fa3ca4dd23e8c1f319644',1,'SpriteAnimationDef']]]
 ];

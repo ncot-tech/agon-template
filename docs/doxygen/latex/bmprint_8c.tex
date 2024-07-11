@@ -1,13 +1,13 @@
-\hypertarget{bmprint_8c}{}\doxysection{src/graphics/bmprint.c File Reference}
-\label{bmprint_8c}\index{src/graphics/bmprint.c@{src/graphics/bmprint.c}}
-{\ttfamily \#include \char`\"{}bmprint.\+h\char`\"{}}\newline
+\doxysection{src/graphics/bmprint.c File Reference}
+\hypertarget{bmprint_8c}{}\label{bmprint_8c}\index{src/graphics/bmprint.c@{src/graphics/bmprint.c}}
+{\ttfamily \#include "{}bmprint.\+h"{}}\newline
 {\ttfamily \#include $<$stdarg.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../maths/xitoa.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../vdp/bitmaps.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../vdp/graphics.\+h\char`\"{}}\newline
+{\ttfamily \#include "{}../maths/xitoa.\+h"{}}\newline
+{\ttfamily \#include "{}../vdp/bitmaps.\+h"{}}\newline
+{\ttfamily \#include "{}../vdp/graphics.\+h"{}}\newline
 Include dependency graph for bmprint.\+c\+:
 \nopagebreak
 \begin{figure}[H]
@@ -16,27 +16,27 @@ Include dependency graph for bmprint.\+c\+:
 \includegraphics[width=350pt]{bmprint_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6}{load\+\_\+font\+\_\+def}} (char $\ast$font\+\_\+def, \mbox{\hyperlink{struct_font}{Font}} $\ast$font)
+void \mbox{\hyperlink{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6}{load\+\_\+font\+\_\+def}} (char \texorpdfstring{$\ast$}{*}font\+\_\+def, \mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}font)
 \item 
-uint8\+\_\+t \mbox{\hyperlink{bmprint_8c_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font}} (char $\ast$font\+\_\+def, \mbox{\hyperlink{struct_font}{Font}} $\ast$font)
+uint8\+\_\+t \mbox{\hyperlink{bmprint_8c_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font}} (char \texorpdfstring{$\ast$}{*}font\+\_\+def, \mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}font)
 \begin{DoxyCompactList}\small\item\em Loads a font definition off the SD card and turns it into a font structure used by the print routines. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311}{bm\+\_\+put\+\_\+char}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, int16\+\_\+t screenx, int16\+\_\+t screeny, char c)
+void \mbox{\hyperlink{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311}{bm\+\_\+put\+\_\+char}} (\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}font, int16\+\_\+t screenx, int16\+\_\+t screeny, char c)
 \begin{DoxyCompactList}\small\item\em Prints a single character on the screen using the supplied font. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116}{bm\+\_\+put\+\_\+string}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, int16\+\_\+t screenx, int16\+\_\+t screeny, char $\ast$s)
+void \mbox{\hyperlink{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116}{bm\+\_\+put\+\_\+string}} (\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}font, int16\+\_\+t screenx, int16\+\_\+t screeny, char \texorpdfstring{$\ast$}{*}s)
 \begin{DoxyCompactList}\small\item\em Draws a string of characters on the screen, spaced apart an appropriate amount. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3}{bm\+\_\+printf}} (\mbox{\hyperlink{struct_font}{Font}} $\ast$font, int16\+\_\+t screenx, int16\+\_\+t screeny, char $\ast$format,...)
+void \mbox{\hyperlink{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3}{bm\+\_\+printf}} (\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}font, int16\+\_\+t screenx, int16\+\_\+t screeny, char \texorpdfstring{$\ast$}{*}format,...)
 \begin{DoxyCompactList}\small\item\em An implementation of printf() style text printing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{bmprint_8c_a867b981d550b09df515a4959bccbfea0}\label{bmprint_8c_a867b981d550b09df515a4959bccbfea0}} 
-\index{bmprint.c@{bmprint.c}!bm\_load\_font@{bm\_load\_font}}
+\Hypertarget{bmprint_8c_a867b981d550b09df515a4959bccbfea0}\index{bmprint.c@{bmprint.c}!bm\_load\_font@{bm\_load\_font}}
 \index{bm\_load\_font@{bm\_load\_font}!bmprint.c@{bmprint.c}}
 \doxysubsubsection{\texorpdfstring{bm\_load\_font()}{bm\_load\_font()}}
-{\footnotesize\ttfamily uint8\+\_\+t bm\+\_\+load\+\_\+font (\begin{DoxyParamCaption}\item[{char $\ast$}]{font\+\_\+def,  }\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bmprint_8c_a867b981d550b09df515a4959bccbfea0} 
+uint8\+\_\+t bm\+\_\+load\+\_\+font (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{font\+\_\+def}{, }\item[{\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}}]{font}{}\end{DoxyParamCaption})}
 
 
 
@@ -64,11 +64,11 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{bmprint_8c_a867b981d550b09df515a4959bccbfea0_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3}\label{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3}} 
-\index{bmprint.c@{bmprint.c}!bm\_printf@{bm\_printf}}
+\Hypertarget{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3}\index{bmprint.c@{bmprint.c}!bm\_printf@{bm\_printf}}
 \index{bm\_printf@{bm\_printf}!bmprint.c@{bmprint.c}}
 \doxysubsubsection{\texorpdfstring{bm\_printf()}{bm\_printf()}}
-{\footnotesize\ttfamily void bm\+\_\+printf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{int16\+\_\+t}]{screenx,  }\item[{int16\+\_\+t}]{screeny,  }\item[{char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3} 
+void bm\+\_\+printf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}}]{font}{, }\item[{int16\+\_\+t}]{screenx}{, }\item[{int16\+\_\+t}]{screeny}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{format}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
 
 
 
@@ -80,7 +80,7 @@ Use it to print hexadecimal characters to your display, or to make nicely format
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em font} & The font definition created by \mbox{\hyperlink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}}. \\
+\mbox{\texttt{ in}}  & {\em font} & The font definition created by \doxylink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}. \\
 \hline
 \mbox{\texttt{ in}}  & {\em screenx} & The X position of the first character. \\
 \hline
@@ -91,18 +91,19 @@ Use it to print hexadecimal characters to your display, or to make nicely format
 \mbox{\texttt{ in}}  & {\em varargs} & Pass in variables and other strings as appropriate. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bmprint_8c_aa36ee98d8335d26bbcdd7238a1e663b3_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311}\label{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311}} 
-\index{bmprint.c@{bmprint.c}!bm\_put\_char@{bm\_put\_char}}
+\Hypertarget{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311}\index{bmprint.c@{bmprint.c}!bm\_put\_char@{bm\_put\_char}}
 \index{bm\_put\_char@{bm\_put\_char}!bmprint.c@{bmprint.c}}
 \doxysubsubsection{\texorpdfstring{bm\_put\_char()}{bm\_put\_char()}}
-{\footnotesize\ttfamily void bm\+\_\+put\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{int16\+\_\+t}]{screenx,  }\item[{int16\+\_\+t}]{screeny,  }\item[{char}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311} 
+void bm\+\_\+put\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}}]{font}{, }\item[{int16\+\_\+t}]{screenx}{, }\item[{int16\+\_\+t}]{screeny}{, }\item[{char}]{c}{}\end{DoxyParamCaption})}
 
 
 
@@ -110,7 +111,7 @@ Prints a single character on the screen using the supplied font.
 
 Uses VDP bitmaps to place a single character on the screen. 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em font} & The font to use, see \mbox{\hyperlink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}}. \\
+\mbox{\texttt{ in}}  & {\em font} & The font to use, see \doxylink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}. \\
 \hline
 \mbox{\texttt{ in}}  & {\em screenx} & The X position of the character. \\
 \hline
@@ -119,18 +120,19 @@ Uses VDP bitmaps to place a single character on the screen.
 \mbox{\texttt{ in}}  & {\em c} & The character to print. If not found in the font it will be subsituted by an error char. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bmprint_8c_a36c02cc37ebf25cf04b23fdc54d95311_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116}\label{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116}} 
-\index{bmprint.c@{bmprint.c}!bm\_put\_string@{bm\_put\_string}}
+\Hypertarget{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116}\index{bmprint.c@{bmprint.c}!bm\_put\_string@{bm\_put\_string}}
 \index{bm\_put\_string@{bm\_put\_string}!bmprint.c@{bmprint.c}}
 \doxysubsubsection{\texorpdfstring{bm\_put\_string()}{bm\_put\_string()}}
-{\footnotesize\ttfamily void bm\+\_\+put\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font,  }\item[{int16\+\_\+t}]{screenx,  }\item[{int16\+\_\+t}]{screeny,  }\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116} 
+void bm\+\_\+put\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}}]{font}{, }\item[{int16\+\_\+t}]{screenx}{, }\item[{int16\+\_\+t}]{screeny}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
 
 
 
@@ -140,7 +142,7 @@ This is equivalent to puts() in POSIX. Feed it a string, it\textquotesingle{}ll 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em font} & The font definition created by \mbox{\hyperlink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}}. \\
+\mbox{\texttt{ in}}  & {\em font} & The font definition created by \doxylink{bmprint_8h_a867b981d550b09df515a4959bccbfea0}{bm\+\_\+load\+\_\+font()}. \\
 \hline
 \mbox{\texttt{ in}}  & {\em screenx} & The X position of the first character. \\
 \hline
@@ -149,27 +151,30 @@ This is equivalent to puts() in POSIX. Feed it a string, it\textquotesingle{}ll 
 \mbox{\texttt{ in}}  & {\em s} & The NULL-\/terminated ASCII string to print. \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=270pt]{bmprint_8c_a28232fb3c61fb6079f6189bad4c90116_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6}\label{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6}} 
-\index{bmprint.c@{bmprint.c}!load\_font\_def@{load\_font\_def}}
+\Hypertarget{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6}\index{bmprint.c@{bmprint.c}!load\_font\_def@{load\_font\_def}}
 \index{load\_font\_def@{load\_font\_def}!bmprint.c@{bmprint.c}}
 \doxysubsubsection{\texorpdfstring{load\_font\_def()}{load\_font\_def()}}
-{\footnotesize\ttfamily void load\+\_\+font\+\_\+def (\begin{DoxyParamCaption}\item[{char $\ast$}]{font\+\_\+def,  }\item[{\mbox{\hyperlink{struct_font}{Font}} $\ast$}]{font }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bmprint_8c_a7bb7c99ccc6f61452831abf824f73ad6} 
+void load\+\_\+font\+\_\+def (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{font\+\_\+def}{, }\item[{\mbox{\hyperlink{struct_font}{Font}} \texorpdfstring{$\ast$}{*}}]{font}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

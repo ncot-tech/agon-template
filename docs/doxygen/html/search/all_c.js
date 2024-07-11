@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['not_5fimage_0',['NOT_IMAGE',['../bitmaps_8h.html#a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370',1,'bitmaps.h']]],
-  ['notes_2emd_1',['notes.md',['../notes_8md.html',1,'']]],
-  ['num_5fscreens_2',['num_screens',['../screen_8c.html#a59ff745efdee354cf2bc3dd370fec282',1,'screen.c']]]
+  ['july_202024_0',['[refactoring/0.2.0] - 2 July 2024',['../md__changelog.html#autotoc_md5',1,'']]],
+  ['june_202024_1',['[refactoring/0.1.0] - 15 June 2024',['../md__changelog.html#autotoc_md9',1,'']]]
 ];

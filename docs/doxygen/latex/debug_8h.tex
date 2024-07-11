@@ -1,102 +1,107 @@
-\hypertarget{debug_8h}{}\doxysection{src/debug/debug.h File Reference}
-\label{debug_8h}\index{src/debug/debug.h@{src/debug/debug.h}}
+\doxysection{src/debug/debug.h File Reference}
+\hypertarget{debug_8h}{}\label{debug_8h}\index{src/debug/debug.h@{src/debug/debug.h}}
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
-Include dependency graph for debug.\+h\+:\nopagebreak
+Include dependency graph for debug.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=190pt]{debug_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{debug_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Macros}
+\doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{debug_8h_a7377cc956f5c81538f0fbf0a0492a539}{debug\+\_\+print}}(fmt, ...)
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{debug_8h_a40d9885a85bf94d787b850a7f34ab750}{log\+\_\+init}} (char $\ast$fname)
+void \mbox{\hyperlink{debug_8h_a40d9885a85bf94d787b850a7f34ab750}{log\+\_\+init}} (char \texorpdfstring{$\ast$}{*}fname)
 \item 
-void \mbox{\hyperlink{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}{log\+\_\+message}} (const char $\ast$format,...)
+void \mbox{\hyperlink{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}{log\+\_\+message}} (const char \texorpdfstring{$\ast$}{*}format,...)
 \item 
-void \mbox{\hyperlink{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}{debug\+\_\+printf}} (char $\ast$format,...)
+void \mbox{\hyperlink{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}{debug\+\_\+printf}} (char \texorpdfstring{$\ast$}{*}format,...)
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-volatile SYSVAR $\ast$ \mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}}
+volatile SYSVAR \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{debug_8h_a7377cc956f5c81538f0fbf0a0492a539}\label{debug_8h_a7377cc956f5c81538f0fbf0a0492a539}} 
-\index{debug.h@{debug.h}!debug\_print@{debug\_print}}
+\Hypertarget{debug_8h_a7377cc956f5c81538f0fbf0a0492a539}\index{debug.h@{debug.h}!debug\_print@{debug\_print}}
 \index{debug\_print@{debug\_print}!debug.h@{debug.h}}
 \doxysubsubsection{\texorpdfstring{debug\_print}{debug\_print}}
-{\footnotesize\ttfamily \#define debug\+\_\+print(\begin{DoxyParamCaption}\item[{}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{debug_8h_a7377cc956f5c81538f0fbf0a0492a539} 
+\#define debug\+\_\+print(\begin{DoxyParamCaption}\item[{}]{fmt}{, }\item[{}]{}...{}\end{DoxyParamCaption})}
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{        \textcolor{keywordflow}{do} \{ \textcolor{keywordflow}{if} (DEBUG) fprintf(stderr, \textcolor{stringliteral}{"{}[\%ld] \%s:\%d:\%s(): "{}} fmt, \mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}}-\/>time, \_\_FILE\_\_, \(\backslash\)}
-\DoxyCodeLine{                                \_\_LINE\_\_, \_\_func\_\_, \#\#\_\_VA\_ARGS\_\_); \} \textcolor{keywordflow}{while} (0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{\ \textcolor{keywordflow}{if}\ (DEBUG)\ fprintf(stderr,\ \textcolor{stringliteral}{"{}[\%ld]\ \%s:\%d:\%s():\ "{}}\ fmt,\ \mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}}-\/>time,\ \_\_FILE\_\_,\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_LINE\_\_,\ \_\_func\_\_,\ \#\#\_\_VA\_ARGS\_\_);\ \}\ \textcolor{keywordflow}{while}\ (0)}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}\label{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}} 
-\index{debug.h@{debug.h}!debug\_printf@{debug\_printf}}
+\Hypertarget{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}\index{debug.h@{debug.h}!debug\_printf@{debug\_printf}}
 \index{debug\_printf@{debug\_printf}!debug.h@{debug.h}}
 \doxysubsubsection{\texorpdfstring{debug\_printf()}{debug\_printf()}}
-{\footnotesize\ttfamily void debug\+\_\+printf (\begin{DoxyParamCaption}\item[{char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{debug_8h_a62c38c9caa26674373a77b2c8f53c68d} 
+void debug\+\_\+printf (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{format}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=237pt]{debug_8h_a62c38c9caa26674373a77b2c8f53c68d_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{debug_8h_a62c38c9caa26674373a77b2c8f53c68d_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{debug_8h_a40d9885a85bf94d787b850a7f34ab750}\label{debug_8h_a40d9885a85bf94d787b850a7f34ab750}} 
-\index{debug.h@{debug.h}!log\_init@{log\_init}}
+\Hypertarget{debug_8h_a40d9885a85bf94d787b850a7f34ab750}\index{debug.h@{debug.h}!log\_init@{log\_init}}
 \index{log\_init@{log\_init}!debug.h@{debug.h}}
 \doxysubsubsection{\texorpdfstring{log\_init()}{log\_init()}}
-{\footnotesize\ttfamily void log\+\_\+init (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{debug_8h_a40d9885a85bf94d787b850a7f34ab750} 
+void log\+\_\+init (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{fname}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=210pt]{debug_8h_a40d9885a85bf94d787b850a7f34ab750_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}\label{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}} 
-\index{debug.h@{debug.h}!log\_message@{log\_message}}
+\Hypertarget{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}\index{debug.h@{debug.h}!log\_message@{log\_message}}
 \index{log\_message@{log\_message}!debug.h@{debug.h}}
 \doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
-{\footnotesize\ttfamily void log\+\_\+message (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{debug_8h_a65e456c190118e43907e0e30f6aa0b4c} 
+void log\+\_\+message (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{format}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{debug_8h_ad5d3fc112316362c155d957861d0d023}\label{debug_8h_ad5d3fc112316362c155d957861d0d023}} 
-\index{debug.h@{debug.h}!sv@{sv}}
+\Hypertarget{debug_8h_ad5d3fc112316362c155d957861d0d023}\index{debug.h@{debug.h}!sv@{sv}}
 \index{sv@{sv}!debug.h@{debug.h}}
 \doxysubsubsection{\texorpdfstring{sv}{sv}}
-{\footnotesize\ttfamily volatile SYSVAR$\ast$ sv\hspace{0.3cm}{\ttfamily [extern]}}
+{\footnotesize\ttfamily \label{debug_8h_ad5d3fc112316362c155d957861d0d023} 
+volatile SYSVAR\texorpdfstring{$\ast$}{*} sv\hspace{0.3cm}{\ttfamily [extern]}}
 

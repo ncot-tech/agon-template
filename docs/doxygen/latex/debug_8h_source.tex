@@ -1,22 +1,22 @@
-\hypertarget{debug_8h_source}{}\doxysection{debug.\+h}
-\label{debug_8h_source}\index{src/debug/debug.h@{src/debug/debug.h}}
+\doxysection{debug.\+h}
+\hypertarget{debug_8h_source}{}\label{debug_8h_source}\index{src/debug/debug.h@{src/debug/debug.h}}
 \mbox{\hyperlink{debug_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_DEBUG\_H\_}}
-\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_DEBUG\_H\_}}
-\DoxyCodeLine{3 }
-\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <mos\_api.h>}}
-\DoxyCodeLine{5 }
-\DoxyCodeLine{6 \textcolor{keyword}{extern} \textcolor{keyword}{volatile} SYSVAR *\mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}};}
-\DoxyCodeLine{7 }
-\DoxyCodeLine{8 \textcolor{preprocessor}{\#define debug\_print(fmt, ...) \(\backslash\)}}
-\DoxyCodeLine{9 \textcolor{preprocessor}{        do \{ if (DEBUG) fprintf(stderr, "{}[\%ld] \%s:\%d:\%s(): "{}} fmt, sv-\/>time, \_\_FILE\_\_, \(\backslash\)}
-\DoxyCodeLine{10                                 \_\_LINE\_\_, \_\_func\_\_, \#\#\_\_VA\_ARGS\_\_); \} while (0)}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{keywordtype}{void} \mbox{\hyperlink{debug_8h_a40d9885a85bf94d787b850a7f34ab750}{log\_init}}(\textcolor{keywordtype}{char} *fname);}
-\DoxyCodeLine{13 \textcolor{keywordtype}{void} \mbox{\hyperlink{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}{log\_message}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *format, ...);}
-\DoxyCodeLine{14 \textcolor{keywordtype}{void} \mbox{\hyperlink{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}{debug\_printf}}(\textcolor{keywordtype}{char} *format, ...);}
-\DoxyCodeLine{15 }
-\DoxyCodeLine{16 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_DEBUG\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_DEBUG\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <mos\_api.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{extern}\ \textcolor{keyword}{volatile}\ SYSVAR\ *\mbox{\hyperlink{debug_8h_ad5d3fc112316362c155d957861d0d023}{sv}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ debug\_print(fmt,\ ...)\ \(\backslash\)}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ do\ \{\ if\ (DEBUG)\ fprintf(stderr,\ "{}[\%ld]\ \%s:\%d:\%s():\ "{}\ fmt,\ sv-\/>time,\ \_\_FILE\_\_,\ \(\backslash\)}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_LINE\_\_,\ \_\_func\_\_,\ \#\#\_\_VA\_ARGS\_\_);\ \}\ while\ (0)}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{debug_8h_a40d9885a85bf94d787b850a7f34ab750}{log\_init}}(\textcolor{keywordtype}{char}\ *fname);}
+\DoxyCodeLine{00013\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{debug_8h_a65e456c190118e43907e0e30f6aa0b4c}{log\_message}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{debug_8h_a62c38c9caa26674373a77b2c8f53c68d}{debug\_printf}}(\textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

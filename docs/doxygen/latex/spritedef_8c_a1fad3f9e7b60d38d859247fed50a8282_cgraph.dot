@@ -1,0 +1,13 @@
+digraph "spritedef_get"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="spritedef_get",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge3_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="debug_printf",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$debug_8c.html#a62c38c9caa26674373a77b2c8f53c68d",tooltip=" "];
+  Node2 -> Node3 [id="edge4_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="xitoa",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$xitoa_8c.html#a07f48abaff3d03e301b7cba644a97639",tooltip="Converts an integer to another number base as a string."];
+}

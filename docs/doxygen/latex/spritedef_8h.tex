@@ -1,22 +1,24 @@
-\hypertarget{spritedef_8h}{}\doxysection{src/sprites/spritedef.h File Reference}
-\label{spritedef_8h}\index{src/sprites/spritedef.h@{src/sprites/spritedef.h}}
+\doxysection{src/sprites/spritedef.h File Reference}
+\hypertarget{spritedef_8h}{}\label{spritedef_8h}\index{src/sprites/spritedef.h@{src/sprites/spritedef.h}}
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../maths/point.\+h\char`\"{}}\newline
-Include dependency graph for spritedef.\+h\+:\nopagebreak
+{\ttfamily \#include "{}../maths/point.\+h"{}}\newline
+Include dependency graph for spritedef.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=232pt]{spritedef_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Data Structures}
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_sprite_frame}{Sprite\+Frame}}
@@ -25,139 +27,148 @@ struct \mbox{\hyperlink{struct_sprite_animation_def}{Sprite\+Animation\+Def}}
 \item 
 struct \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \mbox{\hyperlink{struct_sprite_frame}{Sprite\+Frame}} \mbox{\hyperlink{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}{Sprite\+Frame}}
+typedef struct Sprite\+Frame \mbox{\hyperlink{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}{Sprite\+Frame}}
 \item 
-typedef struct \mbox{\hyperlink{struct_sprite_animation_def}{Sprite\+Animation\+Def}} \mbox{\hyperlink{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}{Sprite\+Animation\+Def}}
+typedef struct Sprite\+Animation\+Def \mbox{\hyperlink{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}{Sprite\+Animation\+Def}}
 \item 
-typedef struct \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \mbox{\hyperlink{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}{Sprite\+Def}}
+typedef struct Sprite\+Def \mbox{\hyperlink{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}{Sprite\+Def}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{spritedef_8h_abf9729efab439c1876f90ea162301839}{debug\+\_\+print\+\_\+spritedef}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$sprite\+\_\+def)
+void \mbox{\hyperlink{spritedef_8h_abf9729efab439c1876f90ea162301839}{debug\+\_\+print\+\_\+spritedef}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*}sprite\+\_\+def)
 \item 
 void \mbox{\hyperlink{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649}{spritedef\+\_\+init}} (uint16\+\_\+t start\+\_\+bitmap\+\_\+id)
 \item 
-uint16\+\_\+t \mbox{\hyperlink{spritedef_8h_a32370a91d4daa047533b818be1349a59}{spritedef\+\_\+load}} (char $\ast$sprite\+\_\+file)
+uint16\+\_\+t \mbox{\hyperlink{spritedef_8h_a32370a91d4daa047533b818be1349a59}{spritedef\+\_\+load}} (char \texorpdfstring{$\ast$}{*}sprite\+\_\+file)
 \item 
-\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$ \mbox{\hyperlink{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}{spritedef\+\_\+get}} (uint16\+\_\+t sprite\+\_\+def\+\_\+id)
+\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}{spritedef\+\_\+get}} (uint16\+\_\+t sprite\+\_\+def\+\_\+id)
 \item 
-void \mbox{\hyperlink{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}{spritedef\+\_\+draw\+\_\+frame}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$sprite\+\_\+def, uint16\+\_\+t state, uint16\+\_\+t frame, \mbox{\hyperlink{struct_point}{Point}} position)
+void \mbox{\hyperlink{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}{spritedef\+\_\+draw\+\_\+frame}} (\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*}sprite\+\_\+def, uint16\+\_\+t state, uint16\+\_\+t frame, \mbox{\hyperlink{struct_point}{Point}} position)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}\label{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}} 
-\index{spritedef.h@{spritedef.h}!SpriteAnimationDef@{SpriteAnimationDef}}
+\Hypertarget{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a}\index{spritedef.h@{spritedef.h}!SpriteAnimationDef@{SpriteAnimationDef}}
 \index{SpriteAnimationDef@{SpriteAnimationDef}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{SpriteAnimationDef}{SpriteAnimationDef}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_sprite_animation_def}{Sprite\+Animation\+Def}} \mbox{\hyperlink{struct_sprite_animation_def}{Sprite\+Animation\+Def}}}
+{\footnotesize\ttfamily \label{spritedef_8h_ad0758d09d6dac5c640fb18bb9d43494a} 
+typedef struct Sprite\+Animation\+Def Sprite\+Animation\+Def}
 
-\mbox{\Hypertarget{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}\label{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}} 
-\index{spritedef.h@{spritedef.h}!SpriteDef@{SpriteDef}}
+\Hypertarget{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024}\index{spritedef.h@{spritedef.h}!SpriteDef@{SpriteDef}}
 \index{SpriteDef@{SpriteDef}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{SpriteDef}{SpriteDef}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}}}
+{\footnotesize\ttfamily \label{spritedef_8h_a6b027a010f2706577e37c2cd00f1e024} 
+typedef struct Sprite\+Def Sprite\+Def}
 
-\mbox{\Hypertarget{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}\label{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}} 
-\index{spritedef.h@{spritedef.h}!SpriteFrame@{SpriteFrame}}
+\Hypertarget{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7}\index{spritedef.h@{spritedef.h}!SpriteFrame@{SpriteFrame}}
 \index{SpriteFrame@{SpriteFrame}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{SpriteFrame}{SpriteFrame}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_sprite_frame}{Sprite\+Frame}} \mbox{\hyperlink{struct_sprite_frame}{Sprite\+Frame}}}
+{\footnotesize\ttfamily \label{spritedef_8h_adc1937926f74f6d1538c0a6b192f56f7} 
+typedef struct Sprite\+Frame Sprite\+Frame}
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{spritedef_8h_abf9729efab439c1876f90ea162301839}\label{spritedef_8h_abf9729efab439c1876f90ea162301839}} 
-\index{spritedef.h@{spritedef.h}!debug\_print\_spritedef@{debug\_print\_spritedef}}
+\Hypertarget{spritedef_8h_abf9729efab439c1876f90ea162301839}\index{spritedef.h@{spritedef.h}!debug\_print\_spritedef@{debug\_print\_spritedef}}
 \index{debug\_print\_spritedef@{debug\_print\_spritedef}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{debug\_print\_spritedef()}{debug\_print\_spritedef()}}
-{\footnotesize\ttfamily void debug\+\_\+print\+\_\+spritedef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$}]{sprite\+\_\+def }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{spritedef_8h_abf9729efab439c1876f90ea162301839} 
+void debug\+\_\+print\+\_\+spritedef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*}}]{sprite\+\_\+def}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_abf9729efab439c1876f90ea162301839_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_abf9729efab439c1876f90ea162301839_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}\label{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}} 
-\index{spritedef.h@{spritedef.h}!spritedef\_draw\_frame@{spritedef\_draw\_frame}}
+\Hypertarget{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba}\index{spritedef.h@{spritedef.h}!spritedef\_draw\_frame@{spritedef\_draw\_frame}}
 \index{spritedef\_draw\_frame@{spritedef\_draw\_frame}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{spritedef\_draw\_frame()}{spritedef\_draw\_frame()}}
-{\footnotesize\ttfamily void spritedef\+\_\+draw\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$}]{sprite\+\_\+def,  }\item[{uint16\+\_\+t}]{state,  }\item[{uint16\+\_\+t}]{frame,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{position }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba} 
+void spritedef\+\_\+draw\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*}}]{sprite\+\_\+def}{, }\item[{uint16\+\_\+t}]{state}{, }\item[{uint16\+\_\+t}]{frame}{, }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{position}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_a586ef020ca5ace67c370e4c2ffd2edba_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}\label{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}} 
-\index{spritedef.h@{spritedef.h}!spritedef\_get@{spritedef\_get}}
+\Hypertarget{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282}\index{spritedef.h@{spritedef.h}!spritedef\_get@{spritedef\_get}}
 \index{spritedef\_get@{spritedef\_get}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{spritedef\_get()}{spritedef\_get()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} $\ast$ spritedef\+\_\+get (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+def\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282} 
+\mbox{\hyperlink{struct_sprite_def}{Sprite\+Def}} \texorpdfstring{$\ast$}{*} spritedef\+\_\+get (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{sprite\+\_\+def\+\_\+id}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_a1fad3f9e7b60d38d859247fed50a8282_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649}\label{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649}} 
-\index{spritedef.h@{spritedef.h}!spritedef\_init@{spritedef\_init}}
+\Hypertarget{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649}\index{spritedef.h@{spritedef.h}!spritedef\_init@{spritedef\_init}}
 \index{spritedef\_init@{spritedef\_init}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{spritedef\_init()}{spritedef\_init()}}
-{\footnotesize\ttfamily void spritedef\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{start\+\_\+bitmap\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649} 
+void spritedef\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{start\+\_\+bitmap\+\_\+id}{}\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_ae5ac18d8187e29efb8445b93aee0b649_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{spritedef_8h_a32370a91d4daa047533b818be1349a59}\label{spritedef_8h_a32370a91d4daa047533b818be1349a59}} 
-\index{spritedef.h@{spritedef.h}!spritedef\_load@{spritedef\_load}}
+\Hypertarget{spritedef_8h_a32370a91d4daa047533b818be1349a59}\index{spritedef.h@{spritedef.h}!spritedef\_load@{spritedef\_load}}
 \index{spritedef\_load@{spritedef\_load}!spritedef.h@{spritedef.h}}
 \doxysubsubsection{\texorpdfstring{spritedef\_load()}{spritedef\_load()}}
-{\footnotesize\ttfamily uint16\+\_\+t spritedef\+\_\+load (\begin{DoxyParamCaption}\item[{char $\ast$}]{sprite\+\_\+file }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{spritedef_8h_a32370a91d4daa047533b818be1349a59} 
+uint16\+\_\+t spritedef\+\_\+load (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{sprite\+\_\+file}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{spritedef_8h_a32370a91d4daa047533b818be1349a59_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

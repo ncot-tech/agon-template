@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['the_20makefile_0',['The Makefile',['../md_docs_pages_makefile.html',1,'']]],
-  ['the_20screen_20state_20machine_20system_1',['The Screen State Machine System',['../md_docs_pages_screens.html',1,'']]]
+  ['general_20notes_0',['General Notes',['../md_docs_2pages_2notes.html',1,'']]],
+  ['graphics_1',['Drawing Graphics',['../md_docs_2pages_2drawing-graphics.html',1,'']]]
 ];

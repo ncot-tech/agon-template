@@ -63,7 +63,7 @@ void vdp_move_origin(int16_t x, int16_t y);
  * 
  * @param colour 
  */
-void vdp_gcol(uint8_t colour);
+void vdp_set_gcol(uint8_t colour);
 
 void vdp_clg();
 

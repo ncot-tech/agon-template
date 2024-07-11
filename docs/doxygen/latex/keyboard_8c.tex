@@ -1,26 +1,27 @@
-\hypertarget{keyboard_8c}{}\doxysection{src/input/keyboard.c File Reference}
-\label{keyboard_8c}\index{src/input/keyboard.c@{src/input/keyboard.c}}
-{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+\doxysection{src/input/keyboard.c File Reference}
+\hypertarget{keyboard_8c}{}\label{keyboard_8c}\index{src/input/keyboard.c@{src/input/keyboard.c}}
+{\ttfamily \#include "{}keyboard.\+h"{}}\newline
 {\ttfamily \#include $<$agon/vdp\+\_\+key.\+h$>$}\newline
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
-Include dependency graph for keyboard.\+c\+:\nopagebreak
+Include dependency graph for keyboard.\+c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{keyboard_8c__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781}{keyboard\+\_\+init}} ()
 \begin{DoxyCompactList}\small\item\em Updates the pointer to the MOS keyboard map. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{keyboard_8c_a6bcd625c19ec94a2ea79cd6fe4f4d673}{keyboard\+\_\+update}} ()
 \begin{DoxyCompactList}\small\item\em Sets up the keystates arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-volatile uint8\+\_\+t $\ast$ \mbox{\hyperlink{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189}{keymap}}
+volatile uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189}{keymap}}
 \begin{DoxyCompactList}\small\item\em The raw keymap data from the OS. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a0c7174717a5b58fafc3e38ed466b7d0b}{previous\+\_\+keystates}} \mbox{[}3\mbox{]}
 \begin{DoxyCompactList}\small\item\em Array of the keyboard states in the previous frame. \end{DoxyCompactList}\item 
@@ -29,41 +30,44 @@ uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a0d5df65786753d4c462d5794d56e63e4}{cur
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781}\label{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781}} 
-\index{keyboard.c@{keyboard.c}!keyboard\_init@{keyboard\_init}}
+\Hypertarget{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781}\index{keyboard.c@{keyboard.c}!keyboard\_init@{keyboard\_init}}
 \index{keyboard\_init@{keyboard\_init}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{keyboard\_init()}{keyboard\_init()}}
-{\footnotesize\ttfamily void keyboard\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781} 
+void keyboard\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Updates the pointer to the MOS keyboard map. 
 
-Call this at the start of your Main function before trying to use the keyboard\+\_\+update function. Here is the call graph for this function\+:\nopagebreak
+Call this at the start of your Main function before trying to use the keyboard\+\_\+update function. Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=304pt]{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=242pt]{keyboard_8c_aaeb4e4a3c4813ee1efc6b98bba9ec781_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{keyboard_8c_a6bcd625c19ec94a2ea79cd6fe4f4d673}\label{keyboard_8c_a6bcd625c19ec94a2ea79cd6fe4f4d673}} 
-\index{keyboard.c@{keyboard.c}!keyboard\_update@{keyboard\_update}}
+\Hypertarget{keyboard_8c_a6bcd625c19ec94a2ea79cd6fe4f4d673}\index{keyboard.c@{keyboard.c}!keyboard\_update@{keyboard\_update}}
 \index{keyboard\_update@{keyboard\_update}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{keyboard\_update()}{keyboard\_update()}}
-{\footnotesize\ttfamily void keyboard\+\_\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{keyboard_8c_a6bcd625c19ec94a2ea79cd6fe4f4d673} 
+void keyboard\+\_\+update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Sets up the keystates arrays. 
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -73,31 +77,31 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{keyboard_8c_a0d5df65786753d4c462d5794d56e63e4}\label{keyboard_8c_a0d5df65786753d4c462d5794d56e63e4}} 
-\index{keyboard.c@{keyboard.c}!current\_keystates@{current\_keystates}}
+\Hypertarget{keyboard_8c_a0d5df65786753d4c462d5794d56e63e4}\index{keyboard.c@{keyboard.c}!current\_keystates@{current\_keystates}}
 \index{current\_keystates@{current\_keystates}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{current\_keystates}{current\_keystates}}
-{\footnotesize\ttfamily uint8\+\_\+t current\+\_\+keystates\mbox{[}3\mbox{]}}
+{\footnotesize\ttfamily \label{keyboard_8c_a0d5df65786753d4c462d5794d56e63e4} 
+uint8\+\_\+t current\+\_\+keystates\mbox{[}3\mbox{]}}
 
 
 
 Array of the current keyboard states. 
 
-\mbox{\Hypertarget{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189}\label{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189}} 
-\index{keyboard.c@{keyboard.c}!keymap@{keymap}}
+\Hypertarget{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189}\index{keyboard.c@{keyboard.c}!keymap@{keymap}}
 \index{keymap@{keymap}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{keymap}{keymap}}
-{\footnotesize\ttfamily volatile uint8\+\_\+t$\ast$ keymap}
+{\footnotesize\ttfamily \label{keyboard_8c_a706dd1763017e2307cd4085b6a5a7189} 
+volatile uint8\+\_\+t\texorpdfstring{$\ast$}{*} keymap}
 
 
 
 The raw keymap data from the OS. 
 
-\mbox{\Hypertarget{keyboard_8c_a0c7174717a5b58fafc3e38ed466b7d0b}\label{keyboard_8c_a0c7174717a5b58fafc3e38ed466b7d0b}} 
-\index{keyboard.c@{keyboard.c}!previous\_keystates@{previous\_keystates}}
+\Hypertarget{keyboard_8c_a0c7174717a5b58fafc3e38ed466b7d0b}\index{keyboard.c@{keyboard.c}!previous\_keystates@{previous\_keystates}}
 \index{previous\_keystates@{previous\_keystates}!keyboard.c@{keyboard.c}}
 \doxysubsubsection{\texorpdfstring{previous\_keystates}{previous\_keystates}}
-{\footnotesize\ttfamily uint8\+\_\+t previous\+\_\+keystates\mbox{[}3\mbox{]}}
+{\footnotesize\ttfamily \label{keyboard_8c_a0c7174717a5b58fafc3e38ed466b7d0b} 
+uint8\+\_\+t previous\+\_\+keystates\mbox{[}3\mbox{]}}
 
 
 

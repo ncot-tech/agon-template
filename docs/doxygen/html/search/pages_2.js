@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['drawing_20graphics_0',['Drawing Graphics',['../md_docs_pages_drawing_graphics.html',1,'']]]
+  ['c_20template_0',['Agon Light 2 C Template',['../index.html',1,'']]],
+  ['changelog_1',['Changelog',['../md__changelog.html',1,'']]]
 ];

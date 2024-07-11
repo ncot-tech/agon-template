@@ -1,8 +1,9 @@
-\hypertarget{bitmaps_8h}{}\doxysection{src/vdp/bitmaps.h File Reference}
-\label{bitmaps_8h}\index{src/vdp/bitmaps.h@{src/vdp/bitmaps.h}}
+\doxysection{src/vdp/bitmaps.h File Reference}
+\hypertarget{bitmaps_8h}{}\label{bitmaps_8h}\index{src/vdp/bitmaps.h@{src/vdp/bitmaps.h}}
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$mos\+\_\+api.\+h$>$}\newline
-Include dependency graph for bitmaps.\+h\+:\nopagebreak
+Include dependency graph for bitmaps.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -17,17 +18,17 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=350pt]{bitmaps_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Data Structures}
+\doxysubsubsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \mbox{\hyperlink{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}{Bitmap\+\_\+header}}
+typedef struct Bitmap\+\_\+header \mbox{\hyperlink{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}{Bitmap\+\_\+header}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Enumerations}
+\doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
 enum \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \{ \newline
@@ -44,73 +45,73 @@ enum \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+
 , \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0a3828195437a1112429b5c7a3e8780570}{MONO}}
  \}
 \end{DoxyCompactItemize}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{bitmaps_8h_a3d167a3f862e37179c73acca79022f56}{debug\+\_\+print\+\_\+bitmap}} (\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header)
+void \mbox{\hyperlink{bitmaps_8h_a3d167a3f862e37179c73acca79022f56}{debug\+\_\+print\+\_\+bitmap}} (\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}header)
 \item 
 void \mbox{\hyperlink{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d}{vdp\+\_\+assign\+\_\+buffer\+\_\+to\+\_\+bitmap}} (uint16\+\_\+t buffer\+\_\+id, \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}} bitmap\+\_\+format, uint16\+\_\+t width, uint16\+\_\+t height)
 \item 
-\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}{load\+\_\+bitmap\+\_\+into\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id, char $\ast$filename, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header\+\_\+data)
+\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}{load\+\_\+bitmap\+\_\+into\+\_\+buffer}} (uint16\+\_\+t buffer\+\_\+id, char \texorpdfstring{$\ast$}{*}filename, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}header\+\_\+data)
 \begin{DoxyCompactList}\small\item\em Loads a bitmap image into a VDP buffer. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284}{load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp}} (uint16\+\_\+t buffer\+\_\+id, uint8\+\_\+t file, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$header\+\_\+data)
+\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} \mbox{\hyperlink{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284}{load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp}} (uint16\+\_\+t buffer\+\_\+id, uint8\+\_\+t file, \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}header\+\_\+data)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}\label{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}} 
-\index{bitmaps.h@{bitmaps.h}!Bitmap\_header@{Bitmap\_header}}
+\Hypertarget{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47}\index{bitmaps.h@{bitmaps.h}!Bitmap\_header@{Bitmap\_header}}
 \index{Bitmap\_header@{Bitmap\_header}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{Bitmap\_header}{Bitmap\_header}}
-{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}}}
+{\footnotesize\ttfamily \label{bitmaps_8h_a2fb88151b995314fb98e914951c9fd47} 
+typedef struct Bitmap\+\_\+header Bitmap\+\_\+header}
 
 
 
 \doxysubsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0}} 
-\index{bitmaps.h@{bitmaps.h}!BITMAP\_FORMAT@{BITMAP\_FORMAT}}
+\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0}\index{bitmaps.h@{bitmaps.h}!BITMAP\_FORMAT@{BITMAP\_FORMAT}}
 \index{BITMAP\_FORMAT@{BITMAP\_FORMAT}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{BITMAP\_FORMAT}{BITMAP\_FORMAT}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}}}
+{\footnotesize\ttfamily \label{bitmaps_8h_a621226db864b071183decacb4e7db9f0} 
+enum \mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}}}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBA8888@{RGBA8888}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!RGBA8888@{RGBA8888}}}\mbox{\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0aa7c8962521c58548a2b8aed16d397d01}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0aa7c8962521c58548a2b8aed16d397d01}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBA8888@{RGBA8888}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!RGBA8888@{RGBA8888}}}\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0aa7c8962521c58548a2b8aed16d397d01}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0} 
 RGBA8888&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBA2222@{RGBA2222}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!RGBA2222@{RGBA2222}}}\mbox{\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0a6fddcb6a1db9c9d4b9c4a1a9ee27f409}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0a6fddcb6a1db9c9d4b9c4a1a9ee27f409}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RGBA2222@{RGBA2222}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!RGBA2222@{RGBA2222}}}\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0a6fddcb6a1db9c9d4b9c4a1a9ee27f409}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0} 
 RGBA2222&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MONO@{MONO}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!MONO@{MONO}}}\mbox{\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0a3828195437a1112429b5c7a3e8780570}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0a3828195437a1112429b5c7a3e8780570}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MONO@{MONO}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!MONO@{MONO}}}\Hypertarget{bitmaps_8h_a621226db864b071183decacb4e7db9f0a3828195437a1112429b5c7a3e8780570}\label{bitmaps_8h_a621226db864b071183decacb4e7db9f0} 
 MONO&\\
 \hline
 
 \end{DoxyEnumFields}
-\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}} 
-\index{bitmaps.h@{bitmaps.h}!BITMAP\_LOAD\_RESULT@{BITMAP\_LOAD\_RESULT}}
+\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}\index{bitmaps.h@{bitmaps.h}!BITMAP\_LOAD\_RESULT@{BITMAP\_LOAD\_RESULT}}
 \index{BITMAP\_LOAD\_RESULT@{BITMAP\_LOAD\_RESULT}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{BITMAP\_LOAD\_RESULT}{BITMAP\_LOAD\_RESULT}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}}}
+{\footnotesize\ttfamily \label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
+enum \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}}}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!SUCCESS@{SUCCESS}}}\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac7f69f7c9e5aea9b8f54cf02870e2bf8}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac7f69f7c9e5aea9b8f54cf02870e2bf8}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUCCESS@{SUCCESS}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!SUCCESS@{SUCCESS}}}\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac7f69f7c9e5aea9b8f54cf02870e2bf8}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
 SUCCESS&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{BAD\_FILE@{BAD\_FILE}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!BAD\_FILE@{BAD\_FILE}}}\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac35144c1ba1a5778f9ebeef61e4d7baf}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac35144c1ba1a5778f9ebeef61e4d7baf}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAD\_FILE@{BAD\_FILE}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!BAD\_FILE@{BAD\_FILE}}}\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeac35144c1ba1a5778f9ebeef61e4d7baf}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
 BAD\+\_\+\+FILE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MALLOC\_FAIL@{MALLOC\_FAIL}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!MALLOC\_FAIL@{MALLOC\_FAIL}}}\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea89a164ff453c45893033cf318906c2d7}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea89a164ff453c45893033cf318906c2d7}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MALLOC\_FAIL@{MALLOC\_FAIL}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!MALLOC\_FAIL@{MALLOC\_FAIL}}}\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea89a164ff453c45893033cf318906c2d7}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
 MALLOC\+\_\+\+FAIL&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_IMAGE@{NOT\_IMAGE}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!NOT\_IMAGE@{NOT\_IMAGE}}}\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_IMAGE@{NOT\_IMAGE}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!NOT\_IMAGE@{NOT\_IMAGE}}}\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aeaabfbf01eb78e0f75eebbd1cfe5f14370}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
 NOT\+\_\+\+IMAGE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{WRONG\_BPP@{WRONG\_BPP}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!WRONG\_BPP@{WRONG\_BPP}}}\mbox{\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea8aaa6abcd401f38c98b99d5301346110}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea8aaa6abcd401f38c98b99d5301346110}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRONG\_BPP@{WRONG\_BPP}!bitmaps.h@{bitmaps.h}}\index{bitmaps.h@{bitmaps.h}!WRONG\_BPP@{WRONG\_BPP}}}\Hypertarget{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775aea8aaa6abcd401f38c98b99d5301346110}\label{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae} 
 WRONG\+\_\+\+BPP&\\
 \hline
 
@@ -118,31 +119,33 @@ WRONG\+\_\+\+BPP&\\
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{bitmaps_8h_a3d167a3f862e37179c73acca79022f56}\label{bitmaps_8h_a3d167a3f862e37179c73acca79022f56}} 
-\index{bitmaps.h@{bitmaps.h}!debug\_print\_bitmap@{debug\_print\_bitmap}}
+\Hypertarget{bitmaps_8h_a3d167a3f862e37179c73acca79022f56}\index{bitmaps.h@{bitmaps.h}!debug\_print\_bitmap@{debug\_print\_bitmap}}
 \index{debug\_print\_bitmap@{debug\_print\_bitmap}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{debug\_print\_bitmap()}{debug\_print\_bitmap()}}
-{\footnotesize\ttfamily void debug\+\_\+print\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$}]{header }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bitmaps_8h_a3d167a3f862e37179c73acca79022f56} 
+void debug\+\_\+print\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}}]{header}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bitmaps_8h_a3d167a3f862e37179c73acca79022f56_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bitmaps_8h_a3d167a3f862e37179c73acca79022f56_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}\label{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}} 
-\index{bitmaps.h@{bitmaps.h}!load\_bitmap\_into\_buffer@{load\_bitmap\_into\_buffer}}
+\Hypertarget{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87}\index{bitmaps.h@{bitmaps.h}!load\_bitmap\_into\_buffer@{load\_bitmap\_into\_buffer}}
 \index{load\_bitmap\_into\_buffer@{load\_bitmap\_into\_buffer}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{load\_bitmap\_into\_buffer()}{load\_bitmap\_into\_buffer()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} load\+\_\+bitmap\+\_\+into\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$}]{header\+\_\+data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87} 
+\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} load\+\_\+bitmap\+\_\+into\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}}]{header\+\_\+data}{}\end{DoxyParamCaption})}
 
 
 
@@ -170,40 +173,44 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=340pt]{bitmaps_8h_a382846f69c1d1979fe2914dfe3f17a87_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284}\label{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284}} 
-\index{bitmaps.h@{bitmaps.h}!load\_bitmap\_into\_buffer\_fp@{load\_bitmap\_into\_buffer\_fp}}
+\Hypertarget{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284}\index{bitmaps.h@{bitmaps.h}!load\_bitmap\_into\_buffer\_fp@{load\_bitmap\_into\_buffer\_fp}}
 \index{load\_bitmap\_into\_buffer\_fp@{load\_bitmap\_into\_buffer\_fp}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{load\_bitmap\_into\_buffer\_fp()}{load\_bitmap\_into\_buffer\_fp()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{uint8\+\_\+t}]{file,  }\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} $\ast$}]{header\+\_\+data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284} 
+\mbox{\hyperlink{bitmaps_8h_a1dd114ba899432dd3ee4f0e801b775ae}{BITMAP\+\_\+\+LOAD\+\_\+\+RESULT}} load\+\_\+bitmap\+\_\+into\+\_\+buffer\+\_\+fp (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{uint8\+\_\+t}]{file}{, }\item[{\mbox{\hyperlink{struct_bitmap__header}{Bitmap\+\_\+header}} \texorpdfstring{$\ast$}{*}}]{header\+\_\+data}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{bitmaps_8h_a2524fe59bb1e40bdcd8b1bd65faf8284_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d}\label{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d}} 
-\index{bitmaps.h@{bitmaps.h}!vdp\_assign\_buffer\_to\_bitmap@{vdp\_assign\_buffer\_to\_bitmap}}
+\Hypertarget{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d}\index{bitmaps.h@{bitmaps.h}!vdp\_assign\_buffer\_to\_bitmap@{vdp\_assign\_buffer\_to\_bitmap}}
 \index{vdp\_assign\_buffer\_to\_bitmap@{vdp\_assign\_buffer\_to\_bitmap}!bitmaps.h@{bitmaps.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_assign\_buffer\_to\_bitmap()}{vdp\_assign\_buffer\_to\_bitmap()}}
-{\footnotesize\ttfamily void vdp\+\_\+assign\+\_\+buffer\+\_\+to\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{\mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}}}]{bitmap\+\_\+format,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{bitmaps_8h_a08f9873e481adb7aa8d93000f7166b1d} 
+void vdp\+\_\+assign\+\_\+buffer\+\_\+to\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{\mbox{\hyperlink{bitmaps_8h_a621226db864b071183decacb4e7db9f0}{BITMAP\+\_\+\+FORMAT}}}]{bitmap\+\_\+format}{, }\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

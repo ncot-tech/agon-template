@@ -1,10 +1,25 @@
 var searchData=
 [
-  ['file_20formats_0',['File Formats',['../md_docs_pages_file_format.html',1,'']]],
-  ['file_2dformat_2emd_1',['file-format.md',['../file-format_8md.html',1,'']]],
-  ['font_2',['Font',['../struct_font.html',1,'Font'],['../bmprint_8h.html#a6793c760667fe6bf1481f61567954c12',1,'Font():&#160;bmprint.h']]],
-  ['font_5fname_3',['font_name',['../struct_font.html#ad382f9f597a08d047628a53899a67951',1,'Font']]],
-  ['forward_4',['FORWARD',['../sprite_8h.html#aa0dd5a1c8bf41af8f5b5e8ae73df8b12aa26736999186daf8146f809e863712a1',1,'sprite.h']]],
-  ['frame_5',['frame',['../struct_sprite_frame.html#ac3c4ff2019f2e9afafb4f6689c0ec591',1,'SpriteFrame']]],
-  ['frames_6',['frames',['../struct_sprite_animation_def.html#aa6946679845fa3ca4dd23e8c1f319644',1,'SpriteAnimationDef']]]
+  ['c_20template_0',['Agon Light 2 C Template',['../index.html',1,'']]],
+  ['change_5fscreen_5fmode_1',['change_screen_mode',['../screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b',1,'change_screen_mode(uint8_t mode, uint8_t enable_cursor, uint8_t logical_screen):&#160;screen.c'],['../screen_8h.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b',1,'change_screen_mode(uint8_t mode, uint8_t enable_cursor, uint8_t logical_screen):&#160;screen.c']]],
+  ['changed_2',['Changed',['../md__changelog.html#autotoc_md7',1,'Changed'],['../md__changelog.html#autotoc_md11',1,'Changed']]],
+  ['changelog_3',['Changelog',['../md__changelog.html',1,'']]],
+  ['changelog_2emd_4',['Changelog.md',['../_changelog_8md.html',1,'']]],
+  ['char_5fcount_5',['char_count',['../struct_font.html#abd03aa4f3684e3f22b3775f9ba591662',1,'Font']]],
+  ['char_5fheight_6',['char_height',['../struct_font.html#ab331e5ec95ec3641561224b9abf3033e',1,'Font']]],
+  ['char_5fwidth_7',['char_width',['../struct_font.html#a218e3b7f63901451c5819b75eb18b05a',1,'Font']]],
+  ['collision_5ffunc_8',['collision_func',['../struct_sprite.html#a16905abde57750cec54de0311a6ae7e5',1,'Sprite']]],
+  ['collision_5frect_9',['collision_rect',['../struct_sprite.html#a68efe18d2e85e79644cc5f7179031c4c',1,'Sprite']]],
+  ['collisionfuncptr_10',['CollisionFuncPtr',['../sprite_8h.html#a8681b465d06864078791dea3ec347250',1,'sprite.h']]],
+  ['colour_5fbars_2ec_11',['colour_bars.c',['../colour__bars_8c.html',1,'']]],
+  ['colour_5fbars_2eh_12',['colour_bars.h',['../colour__bars_8h.html',1,'']]],
+  ['colour_5fbars_5fdraw_13',['colour_bars_draw',['../colour__bars_8c.html#a8c3915a46635ab2c06bab56e915d7c8e',1,'colour_bars_draw(void):&#160;colour_bars.c'],['../colour__bars_8h.html#a8c3915a46635ab2c06bab56e915d7c8e',1,'colour_bars_draw(void):&#160;colour_bars.c']]],
+  ['colour_5fbars_5finit_14',['colour_bars_init',['../colour__bars_8c.html#a9c0908d9b3b9927dffd249014fffdead',1,'colour_bars_init(void):&#160;colour_bars.c'],['../colour__bars_8h.html#a9c0908d9b3b9927dffd249014fffdead',1,'colour_bars_init(void):&#160;colour_bars.c']]],
+  ['colour_5fbars_5fupdate_15',['colour_bars_update',['../colour__bars_8c.html#ab2afa57f6df3d6fad304695e2c6f9e63',1,'colour_bars_update(void):&#160;colour_bars.c'],['../colour__bars_8h.html#ab2afa57f6df3d6fad304695e2c6f9e63',1,'colour_bars_update(void):&#160;colour_bars.c']]],
+  ['commands_16',['VIM Commands',['../md_docs_2pages_2notes.html#autotoc_md20',1,'']]],
+  ['current_5fanimation_5fframe_17',['current_animation_frame',['../struct_sprite.html#af6028bd63181bceb94d4b6dbabac5021',1,'Sprite']]],
+  ['current_5fanimation_5fstate_18',['current_animation_state',['../struct_sprite.html#af94d7260079d0691cea4563f1ab80c02',1,'Sprite']]],
+  ['current_5fbitmap_5fid_19',['current_bitmap_id',['../spritedef_8c.html#ae0382c963d3fcf79289fb53a7bf317e6',1,'spritedef.c']]],
+  ['current_5fkeystates_20',['current_keystates',['../keyboard_8c.html#a0d5df65786753d4c462d5794d56e63e4',1,'current_keystates:&#160;keyboard.c'],['../keyboard_8h.html#a8f5b922fa554929d59b4aed09ddfdabb',1,'current_keystates:&#160;keyboard.c']]],
+  ['current_5fscreen_5findex_21',['current_screen_index',['../screen_8c.html#a39a918bbb2c8ddf0bcf382b6d93f5516',1,'screen.c']]]
 ];

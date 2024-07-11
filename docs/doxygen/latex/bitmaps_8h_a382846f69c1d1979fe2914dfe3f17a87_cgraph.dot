@@ -1,0 +1,18 @@
+digraph "load_bitmap_into_buffer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="load_bitmap_into_buffer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Loads a bitmap image into a VDP buffer."];
+  Node1 -> Node2 [id="edge6_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="load_bitmap_into_buffer_fp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bitmaps_8c.html#a2524fe59bb1e40bdcd8b1bd65faf8284",tooltip=" "];
+  Node2 -> Node3 [id="edge7_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="add_stream_to_buffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$buffers_8c.html#a47b28a2c359716782ca4299f96b83a28",tooltip="Writes data to a buffer."];
+  Node3 -> Node4 [id="edge8_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="write16bit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$utils_8c.html#ad1c403a5b0d221c03e8563f389d74b10",tooltip="Writes a 16 bit value to the VDP."];
+  Node2 -> Node5 [id="edge9_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="vdp_clear_buffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$buffers_8c.html#a2b6d1a72527a28e9a3689130b852ddad",tooltip="Clear the buffer with the given ID."];
+  Node5 -> Node4 [id="edge10_Node000005_Node000004",color="steelblue1",style="solid",tooltip=" "];
+}

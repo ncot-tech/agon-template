@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['general_20notes_0',['General Notes',['../md_docs_pages_notes.html',1,'']]]
+  ['file_20formats_0',['File Formats',['../md_docs_2pages_2file-format.html',1,'']]],
+  ['formats_1',['File Formats',['../md_docs_2pages_2file-format.html',1,'']]]
 ];

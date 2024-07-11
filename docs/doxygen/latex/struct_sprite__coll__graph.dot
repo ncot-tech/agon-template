@@ -1,0 +1,19 @@
+digraph "Sprite"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="Sprite",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge7_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" sprite_def",fontcolor="grey" ];
+  Node2 [id="Node000002",label="SpriteDef",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_sprite_def.html",tooltip=" "];
+  Node3 -> Node2 [id="edge8_Node000002_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" state_frames",fontcolor="grey" ];
+  Node3 [id="Node000003",label="SpriteAnimationDef",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_sprite_animation_def.html",tooltip=" "];
+  Node4 -> Node3 [id="edge9_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" frames",fontcolor="grey" ];
+  Node4 [id="Node000004",label="SpriteFrame",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_sprite_frame.html",tooltip=" "];
+  Node5 -> Node1 [id="edge10_Node000001_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" position",fontcolor="grey" ];
+  Node5 [id="Node000005",label="Point",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_point.html",tooltip=" "];
+  Node6 -> Node1 [id="edge11_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" collision_rect",fontcolor="grey" ];
+  Node6 [id="Node000006",label="Rect",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_rect.html",tooltip=" "];
+  Node1 -> Node1 [id="edge12_Node000001_Node000001",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" collision_func\nupdate_func",fontcolor="grey" ];
+}

@@ -1,7 +1,7 @@
-\hypertarget{graphics_8h}{}\doxysection{src/vdp/graphics.h File Reference}
-\label{graphics_8h}\index{src/vdp/graphics.h@{src/vdp/graphics.h}}
+\doxysection{src/vdp/graphics.h File Reference}
+\hypertarget{graphics_8h}{}\label{graphics_8h}\index{src/vdp/graphics.h@{src/vdp/graphics.h}}
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}../maths/point.\+h\char`\"{}}\newline
+{\ttfamily \#include "{}../maths/point.\+h"{}}\newline
 Include dependency graph for graphics.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -18,7 +18,7 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=350pt]{graphics_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Functions}
+\doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{graphics_8h_aa73e15c3a69b169da85c45f234234222}{vdp\+\_\+draw\+\_\+line}} (int16\+\_\+t origin\+\_\+x, int16\+\_\+t origin\+\_\+y, int16\+\_\+t end\+\_\+x, int16\+\_\+t end\+\_\+y, uint8\+\_\+t colour)
@@ -38,11 +38,11 @@ void \mbox{\hyperlink{graphics_8h_a6307714183c020f335ec89a052b74787}{vdp\+\_\+pl
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{graphics_8h_a42b639c4a10d566b61e7567c1fe2a662}\label{graphics_8h_a42b639c4a10d566b61e7567c1fe2a662}} 
-\index{graphics.h@{graphics.h}!vdp\_draw\_current\_bitmap@{vdp\_draw\_current\_bitmap}}
+\Hypertarget{graphics_8h_a42b639c4a10d566b61e7567c1fe2a662}\index{graphics.h@{graphics.h}!vdp\_draw\_current\_bitmap@{vdp\_draw\_current\_bitmap}}
 \index{vdp\_draw\_current\_bitmap@{vdp\_draw\_current\_bitmap}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_draw\_current\_bitmap()}{vdp\_draw\_current\_bitmap()}}
-{\footnotesize\ttfamily void vdp\+\_\+draw\+\_\+current\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_a42b639c4a10d566b61e7567c1fe2a662} 
+void vdp\+\_\+draw\+\_\+current\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -52,11 +52,11 @@ Here is the call graph for this function\+:
 \includegraphics[width=331pt]{graphics_8h_a42b639c4a10d566b61e7567c1fe2a662_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_aa73e15c3a69b169da85c45f234234222}\label{graphics_8h_aa73e15c3a69b169da85c45f234234222}} 
-\index{graphics.h@{graphics.h}!vdp\_draw\_line@{vdp\_draw\_line}}
+\Hypertarget{graphics_8h_aa73e15c3a69b169da85c45f234234222}\index{graphics.h@{graphics.h}!vdp\_draw\_line@{vdp\_draw\_line}}
 \index{vdp\_draw\_line@{vdp\_draw\_line}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_draw\_line()}{vdp\_draw\_line()}}
-{\footnotesize\ttfamily void vdp\+\_\+draw\+\_\+line (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{origin\+\_\+x,  }\item[{int16\+\_\+t}]{origin\+\_\+y,  }\item[{int16\+\_\+t}]{end\+\_\+x,  }\item[{int16\+\_\+t}]{end\+\_\+y,  }\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_aa73e15c3a69b169da85c45f234234222} 
+void vdp\+\_\+draw\+\_\+line (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{origin\+\_\+x}{, }\item[{int16\+\_\+t}]{origin\+\_\+y}{, }\item[{int16\+\_\+t}]{end\+\_\+x}{, }\item[{int16\+\_\+t}]{end\+\_\+y}{, }\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
 
 
@@ -75,31 +75,33 @@ Draws a line between two points using the VDP.
 {\em colour} & Colour ID \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=272pt]{graphics_8h_aa73e15c3a69b169da85c45f234234222_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_a28a88ee103c8e7796c591ab84eac7dc2}\label{graphics_8h_a28a88ee103c8e7796c591ab84eac7dc2}} 
-\index{graphics.h@{graphics.h}!vdp\_draw\_triangle@{vdp\_draw\_triangle}}
+\Hypertarget{graphics_8h_a28a88ee103c8e7796c591ab84eac7dc2}\index{graphics.h@{graphics.h}!vdp\_draw\_triangle@{vdp\_draw\_triangle}}
 \index{vdp\_draw\_triangle@{vdp\_draw\_triangle}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_draw\_triangle()}{vdp\_draw\_triangle()}}
-{\footnotesize\ttfamily void vdp\+\_\+draw\+\_\+triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p1,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p2,  }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p3,  }\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_a28a88ee103c8e7796c591ab84eac7dc2} 
+void vdp\+\_\+draw\+\_\+triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p1}{, }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p2}{, }\item[{\mbox{\hyperlink{struct_point}{Point}}}]{p3}{, }\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=293pt]{graphics_8h_a28a88ee103c8e7796c591ab84eac7dc2_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_a6307714183c020f335ec89a052b74787}\label{graphics_8h_a6307714183c020f335ec89a052b74787}} 
-\index{graphics.h@{graphics.h}!vdp\_plot\_bitmap@{vdp\_plot\_bitmap}}
+\Hypertarget{graphics_8h_a6307714183c020f335ec89a052b74787}\index{graphics.h@{graphics.h}!vdp\_plot\_bitmap@{vdp\_plot\_bitmap}}
 \index{vdp\_plot\_bitmap@{vdp\_plot\_bitmap}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_plot\_bitmap()}{vdp\_plot\_bitmap()}}
-{\footnotesize\ttfamily void vdp\+\_\+plot\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id,  }\item[{int16\+\_\+t}]{x,  }\item[{int16\+\_\+t}]{y }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_a6307714183c020f335ec89a052b74787} 
+void vdp\+\_\+plot\+\_\+bitmap (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{buffer\+\_\+id}{, }\item[{int16\+\_\+t}]{x}{, }\item[{int16\+\_\+t}]{y}{}\end{DoxyParamCaption})}
 
 
 
@@ -132,24 +134,25 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{graphics_8h_a6307714183c020f335ec89a052b74787_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_a98c2cbc83d0c9cf100abd0d3a589feee}\label{graphics_8h_a98c2cbc83d0c9cf100abd0d3a589feee}} 
-\index{graphics.h@{graphics.h}!vdp\_plot\_circle@{vdp\_plot\_circle}}
+\Hypertarget{graphics_8h_a98c2cbc83d0c9cf100abd0d3a589feee}\index{graphics.h@{graphics.h}!vdp\_plot\_circle@{vdp\_plot\_circle}}
 \index{vdp\_plot\_circle@{vdp\_plot\_circle}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_plot\_circle()}{vdp\_plot\_circle()}}
-{\footnotesize\ttfamily void vdp\+\_\+plot\+\_\+circle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{diameter,  }\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_a98c2cbc83d0c9cf100abd0d3a589feee} 
+void vdp\+\_\+plot\+\_\+circle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{diameter}{, }\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=275pt]{graphics_8h_a98c2cbc83d0c9cf100abd0d3a589feee_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_ac823b71fd030bda38204a77602f95d41}\label{graphics_8h_ac823b71fd030bda38204a77602f95d41}} 
-\index{graphics.h@{graphics.h}!vdp\_plot\_point@{vdp\_plot\_point}}
+\Hypertarget{graphics_8h_ac823b71fd030bda38204a77602f95d41}\index{graphics.h@{graphics.h}!vdp\_plot\_point@{vdp\_plot\_point}}
 \index{vdp\_plot\_point@{vdp\_plot\_point}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_plot\_point()}{vdp\_plot\_point()}}
-{\footnotesize\ttfamily void vdp\+\_\+plot\+\_\+point (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_ac823b71fd030bda38204a77602f95d41} 
+void vdp\+\_\+plot\+\_\+point (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
 
 
@@ -164,20 +167,22 @@ Plots a point on the screen using the VDP.
 {\em colour} & \\
 \hline
 \end{DoxyParams}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=273pt]{graphics_8h_ac823b71fd030bda38204a77602f95d41_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{graphics_8h_a4f96120c506f2b22cc3f4c7792e0d86a}\label{graphics_8h_a4f96120c506f2b22cc3f4c7792e0d86a}} 
-\index{graphics.h@{graphics.h}!vdp\_plot\_rect@{vdp\_plot\_rect}}
+\Hypertarget{graphics_8h_a4f96120c506f2b22cc3f4c7792e0d86a}\index{graphics.h@{graphics.h}!vdp\_plot\_rect@{vdp\_plot\_rect}}
 \index{vdp\_plot\_rect@{vdp\_plot\_rect}!graphics.h@{graphics.h}}
 \doxysubsubsection{\texorpdfstring{vdp\_plot\_rect()}{vdp\_plot\_rect()}}
-{\footnotesize\ttfamily void vdp\+\_\+plot\+\_\+rect (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{w,  }\item[{uint16\+\_\+t}]{h,  }\item[{uint8\+\_\+t}]{colour }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{graphics_8h_a4f96120c506f2b22cc3f4c7792e0d86a} 
+void vdp\+\_\+plot\+\_\+rect (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{w}{, }\item[{uint16\+\_\+t}]{h}{, }\item[{uint8\+\_\+t}]{colour}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -1,0 +1,17 @@
+digraph "raise_fatal_error"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="raise_fatal_error",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge5_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="change_screen_mode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$screen_8c.html#a4eb2cdd7711cbbd0d1fb3e2aa6fe653b",tooltip=" "];
+  Node2 -> Node3 [id="edge6_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="vdp_enable_logical\l_screen_scaling",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$utils_8c.html#a606aa6336a757ee6ad2f3b446252b486",tooltip="Turn logical screen scaling on and off, where 1=on and 0=off."];
+  Node2 -> Node4 [id="edge7_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="vdp_set_screen_mode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$utils_8c.html#a2468052f8acab5e72b4b28e161cee0d0",tooltip="Changes the current screen mode."];
+  Node1 -> Node5 [id="edge8_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="vdp_colour",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$utils_8c.html#ae9960bce2205e56728ef713d34a40206",tooltip="Changes the text colour."];
+}

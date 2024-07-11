@@ -13,6 +13,6 @@ var searchData=
   ['start_5fbitmap_5fid_10',['start_bitmap_id',['../struct_font.html#a892710e59e383d1cfcf75bcab5586981',1,'Font']]],
   ['state_5fcount_11',['state_count',['../struct_sprite_def.html#ab7093f5cc4f0996575d0312058e6c6dd',1,'SpriteDef']]],
   ['state_5fframes_12',['state_frames',['../struct_sprite_def.html#a5e9dffa5eab2550f1a3a55d18195fe96',1,'SpriteDef']]],
-  ['sv_13',['sv',['../debug_8h.html#ad5d3fc112316362c155d957861d0d023',1,'sv():&#160;debug.h'],['../error_8c.html#ad5d3fc112316362c155d957861d0d023',1,'sv():&#160;error.c']]],
+  ['sv_13',['sv',['../debug_8h.html#ad5d3fc112316362c155d957861d0d023',1,'sv:&#160;debug.h'],['../error_8c.html#ad5d3fc112316362c155d957861d0d023',1,'sv:&#160;error.c']]],
   ['sysvars_14',['sysvars',['../struct_globals.html#a9a9be1412cc002d3bda1bc25838e246d',1,'Globals']]]
 ];
